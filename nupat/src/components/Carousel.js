@@ -18,18 +18,16 @@ const Carousel =()=>{
         
         });
 return(
-    <div style={{}}>
-        <h1 className='carouselHead' style={{textAlign: "start", padding: " 1em 1.7em", fontSize: "50px", fontWeight: "600"}}>NUPAT Code Camp</h1>
+    <div className='carouselContainer' >
+        <h1 className='carouselHead'>NUPAT Code Camp</h1>
     <div className='carousel'>
         <div className='heading'>
-        <p className='carouselText' style={{padding: "3em 0 3em 0", fontSize: "30px", fontStyle: "italic", lineHeight: "52.08px", width: "90%"}}>{carouselImages[currImg].Text}</p>
+        <p className='carouselText'>{carouselImages[currImg].Text}</p>
         <button style={{borderRadius: "10px", padding: "10px 30px",border: "none",fontSize: "15px", color: "#131e47"}}>Enroll Now</button>
         </div>
         
-        <div className='innerCarousel' style={{ borderRadius: "10px",}}>
-             <img className='images' src={carouselImages[currImg].Image}/> 
-            <div className='center'></div>
-            
+        <div className='innerCarousel'>
+             <img className='images' src={carouselImages[currImg].Image}/>
         </div>
     </div>
     </div>
