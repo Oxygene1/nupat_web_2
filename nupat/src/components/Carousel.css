@@ -1,6 +1,28 @@
+.App {
+  
+    text-align: center;
+    justify-content: center;
+    color: white;
+   }
+   
+   *, *::before, *::after{
+     margin: 0;
+     padding: 0;
+   }
+   
+   body{
+     margin:0;
+     padding: 0;
+     font-family: DM Sans, sans-serif;
+     line-height: 1.6;
+     font-weight: 400;
+   }
+
+
 .carouselContainer{
     background-color: #131e47;
     padding-bottom: 2em;
+    height: 100vh;
 }
 .carousel{
     margin: -2em 1em 3em;
@@ -13,6 +35,8 @@
     padding: 1em 1.7em;
     font-size: 50px;
     font-weight: 600;
+    animation-name: carouselTextMove;
+    animation-duration: 3s;
 }
 .carouselText{
     padding: 3em 0 3em 0;
@@ -20,6 +44,8 @@
     font-style: italic;
     line-height: 52.08px;
      width: 90%;
+     animation-name: carouselTextMove;
+    animation-duration: 3s;
 }
 .cardTitle1{
     padding-top: 3em;
@@ -30,6 +56,8 @@
 }
 .images{
     max-width: 170%;  
+    animation-name: CarouselMove;
+    animation-duration: 5s;
 }
 .cardTitle{
     padding: 5em 20em 3em;
@@ -56,6 +84,7 @@
 }
 .cardText1{
     padding: 1em 20em 3em;
+    font-size: 20px;
 }
 .accHead{
     text-align: start;
@@ -89,15 +118,25 @@
 }
 
 @media only screen and (max-width: 700px) {
+    
+  *, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+  }
     .carousel{
     display: block;
     margin: -7em 0 0 0;
     justify-content: center;
-    width: 95vw;
-    line-height: 0.5;
+    width: 100vw;
+    overflow-x: hidden;
  }  
  .carouselContainer{
-    width: 96vw;
+    width: 100vw;
+    height: 60vh;
+    font-size: 20px;
+    overflow-x: hidden;
  }
  .carouselHead{
     font-size: 20px;
@@ -108,6 +147,8 @@
     text-align: center;
     width: 50%;
     font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 3px;
 }
 .heading{
     padding: 4em 0 ;
@@ -121,35 +162,47 @@
 
  .cardContainer{
     display: block;
-    margin: 2em;
+    margin: 0 2em 2em;
     gap: 2em;
  }
  .card{
     margin-bottom: 2em;
 }
  .images{
-    width:70vw;
+    max-width: 60vw;
+    justify-content: center;
+    margin-top: -3em;
+    animation-name: CarouselMove;
+    animation-duration: 3s;
+    
  }
  .images2{
     max-width: 90%;
     align-items: center;
+    margin-top: -3em;
 }
  .innerCarousel{
-    width: 80vw;
     justify-content: center;
     align-items: center;
     margin-right: 0;
+    margin-top: -2em;
+    padding-top: 2em;
  }
  .carouselText{
     font-size: 15px;
     text-align: center;
     
  }
+ 
  .cardImage, .cardTitle, .cardText{
     padding: 0;
 }
+.cardText1{
+    margin-bottom: -2em;
+}
  .cardTitle1{
     padding-top: 0;
+    
 }
  .carouselHead{
     text-align: center; 
@@ -168,17 +221,37 @@
 .carousels{
     display: block;
     margin-right: 0;
+    margin-top: 3em;
 }
 .accHead{
-    font-size: 20px;
+    font-size: 30px;
     text-align: center;
     font-weight: 700;
+    margin-top: -3em;
+    margin-bottom: -1em;
+    margin-left: 10px;
 }
 .accText{
     font-size: 15px;
     width: 70%;
 }
-.images, .images2{
-    padding-left: 3em;
+
 }
+
+@keyframes CarouselMove{
+    0% {
+        transform: translateX(100px);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes carouselTextMove{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translate(0);
+    }
 }
