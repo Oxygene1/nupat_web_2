@@ -27,7 +27,7 @@ return(
         </div>
         
         <div className='innerCarousel'>
-             <img className='images' src={carouselImages[currImg].Image}/>
+             <img className='images' alt={carouselImages[currImg].Text} src={carouselImages[currImg].Img}/>
         </div>
     </div>
     </div>

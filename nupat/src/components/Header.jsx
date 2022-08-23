@@ -16,7 +16,7 @@ function Header() {
     <Link to="/Home">Home</Link>
      
       <Link to="/enrollment">CodeCademy</Link>
-      <a href="#" target="_blank" rel="noreferrer">IT <span>Services</span></a>
+      <Link to="/Home">IT</Link> <Link to="/Home">Services</Link> 
      
       
       
@@ -24,19 +24,20 @@ function Header() {
       
    
           <div className="dropdown">
-  <a href="#"className="dropbtn" target="_blank" rel="noreferrer">Products</a>
+  <a href=""className="dropbtn" target="_blank" rel="noreferrer">Products</a>
   <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />
   <div className="dropdown-content">
-    <a href="#" target="_blank" rel="noreferrer">Ulego</a>
-    <a href="#" target="_blank" rel="noreferrer">Selenia</a>
-    <a href="#" target="_blank" rel="noreferrer">SchoolBoard</a>
+  <Link to="/Home">Ulego </Link> 
+  <Link to="/Home">Selenia</Link> 
+  <Link to="/Home">SchoolBoard</Link> 
   </div>
 </div>
 <div className="dropdown">
-  <a href="#"className="dropbtn2" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></a>
+<Link to="/Home" className="dropbtn2" >NUPAT<span>Initiative</span></Link> 
+  {/* <a href=""className="dropbtn2" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></a> */}
   <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />
   <div className="dropdown-content">
-    <a href="#" target="_blank" rel="noreferrer">Project 1000</a>
+    <a>Project 1000</a>
    
   </div>
 </div>
@@ -66,9 +67,9 @@ function Header() {
                 <Link to="/Home">Home</Link>
      
                 <Link to="/enrollment">CodeCademy</Link>
-                <a href="#">IT Services</a>
-                <a href="#">Products</a>
-                <a href="#">Nupat Initiative</a>
+                <Link to="/enrollment">IT Services</Link>
+                <Link to="/enrollment">Products</Link>
+                <Link to="/enrollment">Nupat Initiative</Link>
             </div>
       </div>
             
