@@ -6,6 +6,7 @@ import Accomodation from './Accomodation'
 import Header from '../components/Header.jsx';
 // import Footer from './components/Footer.jsx';
 import WhatWeDo from './WhatWeDo/WhatWeDo.jsx';
+import Footer from './Footer';
 function Home() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function Home() {
       <Carousel/>
       <Card/>
       <Accomodation/>
+      <Footer />
     </div>
   );
 }
