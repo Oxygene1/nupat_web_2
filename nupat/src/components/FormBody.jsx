@@ -20,7 +20,10 @@ function FormBody() {
     <div className="FormContainer">
       
       <div className="Welcome">
-       <h1>Welcome to NUPAT Code Camp</h1>
+        <div>
+        <h1>Welcome to NUPAT Code Camp</h1>
+        </div>
+       
       
         <input className='groupImg' type="image" img src = {groupImage} alt="photo" />
         {/* <div className="play-panel">
