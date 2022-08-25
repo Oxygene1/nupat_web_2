@@ -35,6 +35,7 @@ import { useRef } from 'react';
     <div className='form_contain'>
     <h1 className='h1h1'>Join The next Cohort</h1>
     <div className='form_main1'>
+      
     
         <form className='form1' method="get" id='contact-form' onSubmit={sendEmail } ref={form}>
           <div className='inputs'>
@@ -50,6 +51,8 @@ import { useRef } from 'react';
             placeholder='Email'
            
           /><img className='envelope' src={envelope} alt="envelope"/>
+        
+
     
 
 

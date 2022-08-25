@@ -21,7 +21,7 @@ function FormBody() {
       
       <div className="Welcome">
         <div>
-        <h1>Welcome to NUPAT Code Camp</h1>
+        <h1 className='welcomIntro'>Welcome to NUPAT Code Camp</h1>
         </div>
        
       
@@ -41,7 +41,7 @@ function FormBody() {
         <div className='textsection' id='tex'>
         
         <div className='textsection1'>
-          <div id='textFormBody'>
+          <div>
             <div>
         <h2>Data Science and Machine Learning</h2>
         <p>Enroll to our Data Science and Machine Learning program to become a complete Data Scientist and Machine Learning engineer. Learn Data Science and Machine Learning from scratch and get hired. 
@@ -154,6 +154,10 @@ function FormBody() {
        <div className='coursesimgDIV'>
        <input className='coursesimg' type="image" img src = {Banner} alt='banner-picture'/>
        </div>
+
+
+        
+
        <Form/>
 
 

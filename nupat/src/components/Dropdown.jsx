@@ -1,17 +1,33 @@
 import React, {useState} from 'react';
-import {Dropdown} from 'react-bootstrap';
+// import { Link } from "react-router-dom";
+// import { useState } from "react";
+// import "bootstrap/dist/css/bootstrap.min.css";
+// import { Link } from "react-router-dom";
 
-export default function HoverControlledDropdown(Select) {
-    const [isHovered, setIsHovered] = useState(false);
-    const [isClicked, setIsClicked] = useState(false);
+   function Dropdown(e) {
+  //   const [isNavExpanded, setIsNavExpanded] = useState(false)
 
     return (
-        <Dropdown
-            {...props}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            onToggle={() => setIsClicked(!isClicked)}
-            show={isClicked || isHovered}
-        />
+  
+        <div className='nav2'>
+        <button className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true">
+          <span className='span1'></span>
+          <span className='span2'></span>
+          <span className='span3'></span>
+        </button>
+        <div className="dropdown-menu dropdropmenu" id='dropdropmenu'
+        
+        aria-labelledby="navbarDropdown">
+          <a className="dropdown-item" href="#">Action</a>
+          <a className="dropdown-item" href="#">Another action</a>
+          <div className="dropdown-divider"></div>
+          <a className="dropdown-item" href="#">Something else here</a>
+        </div>
+
+        </div>
+      
+
+  
     );
 }
+export default Dropdown;
