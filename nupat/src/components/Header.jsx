@@ -16,26 +16,26 @@ function Header() {
     <Link to="/Home">Home</Link>
      
       <Link to="/enrollment">CodeCademy</Link>
-      <a href="#" target="_blank" rel="noreferrer">IT <span>Services</span></a>
+      <Link to="/Services">IT <span>Services</span></Link>
      
       
       
     
       
    
-          <div className="dropdown">
+          <div className="dropdown dropnavy">
   <a href="#"className="dropbtn" target="_blank" rel="noreferrer">Products</a>
   <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />
-  <div className="dropdown-content">
+  <div className="dropdown-content dropcontendesktop">
     <a href="#" target="_blank" rel="noreferrer">Ulego</a>
     <a href="#" target="_blank" rel="noreferrer">Selenia</a>
     <a href="#" target="_blank" rel="noreferrer">SchoolBoard</a>
   </div>
 </div>
-<div className="dropdown">
+<div className="dropdown dropnavy">
   <a href="#"className="dropbtn2" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></a>
   <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />
-  <div className="dropdown-content">
+  <div className="dropdown-content dropcontendesktop">
     <a href="#" target="_blank" rel="noreferrer">Project 1000</a>
    
   </div>
@@ -52,9 +52,9 @@ function Header() {
   
      <div className='nav2'>
 
-     <div className="media_button">
-      <div className="dropdown">
-      <button className="btn btn-primary dropdown-toggle"  type="button" id="menu1 mediaButton" data-toggle="dropdown">
+    
+      <div className="dropdown" id="dropdropnav">
+      <button className="btn dropdown-toggle" type="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"  >
                 <span className='span1'></span>
                 <span></span>
                 <span></span>
@@ -62,11 +62,11 @@ function Header() {
                 
                
             </button>
-            <div className="dropdown-content dropdrop">
+            <div className="dropdown-content dropdrop ">
                 <Link to="/Home">Home</Link>
      
                 <Link to="/enrollment">CodeCademy</Link>
-                <a href="#">IT Services</a>
+                <Link to="/Services">IT <span>Services</span></Link>
                 <a href="#">Products</a>
                 <a href="#">Nupat Initiative</a>
             </div>
@@ -80,7 +80,7 @@ function Header() {
      
     </div>
    
-    </div>
+    
   );
 }
 

@@ -4,20 +4,18 @@ import manager from '../Images/manager.JPG'
 import paulo from '../Images/paulo.JPG'
 import cto from '../Images/cto.JPG'
 import ceo from '../Images/ceo.JPG'
-import Card from './Card'
-import Initiative from './Initiative'
-import Ulego from './Ulego'
-import Header from './Header.jsx'
-import Footer from './Footer.jsx'
+import Card from './Card.jsx'
+import Initiative from './Initiative.jsx'
+import Ulego from './Ulego.jsx'
+
+
 
 function Team() {
 
   
   return (
     <div className='team1'>
-    <div className='teamHeader'>
-    <Header />
-    </div>
+
    
     <div>
       <Ulego/>
@@ -52,7 +50,7 @@ function Team() {
       </div>
     </div>
     <div>
-    <Footer/>
+   
     </div>
     
     </div>

@@ -19,6 +19,13 @@ const Carousel =()=>{
         });
 return(
     <div className='carouselContainer' >
+        <div className='AppointmentDiv'>
+            <label>Book an appointment</label>
+            <div className='appointmentInput'>
+                <input type="email" placeholder='Send us an email'/>
+                <button>Send</button>
+            </div>
+        </div>
         <h1 className='carouselHead'>NUPAT Code Camp</h1>
     <div className='carousel'>
         <div className='heading'>

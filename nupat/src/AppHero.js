@@ -3,8 +3,9 @@ import React from 'react'
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import AboutBody from "./About/AboutBody.jsx";
 import FormBody from "./components/FormBody.jsx";
-import Team from "./components/Team.jsx";
+import OurTeam from "./components/OurTeam.jsx";
 import Home from "./components/Home.jsx";
+import ItServices from "./components/ItServices.jsx";
 const AppHero =()=>{
   return(
     <BrowserRouter>
@@ -12,8 +13,9 @@ const AppHero =()=>{
       <Route path="/" >
       <Route path="Home" element={<Home />}/>
         <Route path="about" element={<AboutBody />}/>
+        <Route path="Services" element={<ItServices />}/>
         <Route path="enrollment" element={<FormBody />}/>
-        <Route path="Team" element={<Team />}/>
+        <Route path="OurTeam" element={<OurTeam />}/>
       </Route>
      
     </Routes>

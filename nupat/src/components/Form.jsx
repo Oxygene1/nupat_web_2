@@ -18,8 +18,10 @@ import { useRef } from 'react';
     emailjs.sendForm('service_ajo817t', 'template_yg4ofjk', form.current, 'DTUz9LR9LJy63Sr6R')
       .then((result) => {
           console.log(result.text);
+          alert('Your Request is now being processed and you should get a response mail shortly')
       }, (error) => {
           console.log(error.text);
+          alert('Your Request is now being processed and you should get a response mail shortly')
       });
       e.target.reset()
 

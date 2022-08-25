@@ -66,7 +66,7 @@ function Footer() {
             <Link to="/about">About Us</Link>
           </li>
           <li>Career</li>
-          <li><Link to="/Team">Leadership</Link></li>
+          <li><Link to="/OurTeam">Leadership</Link></li>
           <li>Mentors</li>
           <li>Contact us</li>
         </ul>
