@@ -1,59 +1,7 @@
-.App {
-  
-    text-align: center;
-    justify-content: center;
-    color: white;
-   }
-   
-   *, *::before, *::after{
-     margin: 0;
-     padding: 0;
-   }
-   
-   body{
-     margin:0;
-     padding: 0;
-     font-family: DM Sans, sans-serif;
-     line-height: 1.6;
-     font-weight: 400;
-   }
-
-
 .carouselContainer{
     background-color: #131e47;
-    margin-top: 12vw;
     padding-bottom: 2em;
     height: 100vh;
-}
-.AppointmentDiv{
-    background-color: #03CFD6;
-    width: 30vw;
-    height: 6vw;
-}
-.AppointmentDiv label{
-    color: #131e47;
-}
-.appointmentInput{
-    background-color: #131e47;
-    width: 20vw;
-    margin-left: 5vw;
-    height: 3vw;
-    /* margin-bottom: 5vw; */
-}
-.appointmentInput input{
-    margin-top: .9vw;
-    margin-left: -3vw;
-    margin-right: 2vw;
-    color: #fff;
-    background-color: #131e47;
-    outline-style: none;
-}
-.appointmentInput button{
-    background-color: #fff;
-    color: #131e47;
-    padding: .2rem 1rem;
-    margin-right: -2vw;
-    border-radius: .2vw;
 }
 .carousel{
     margin: -2em 1em 3em;
@@ -149,16 +97,6 @@
 }
 
 @media only screen and (max-width: 700px) {
-    .carouselContainer{
-        margin-top: 10vw;
-    }
-    
-  *, *::before, *::after{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-    
-  }
     .carousel{
     display: block;
     margin: -7em 0 0 0;
@@ -289,14 +227,34 @@
         transform: translate(0);
     }
 }
-@media screen and (max-width:600px) {
-    .carouselContainer{
-        margin-top: 19vw;
-    }
-}
 
-@media screen and (max-width:400px) {
-    .carouselContainer{
-        margin-top: 25vw;
-    }
+.AppointmentDiv{
+    background-color: #03CFD6;
+    width: 30vw;
+    height: 6vw;
+}
+.AppointmentDiv label{
+    color: #131e47;
+}
+.appointmentInput{
+    background-color: #131e47;
+    width: 20vw;
+    margin-left: 5vw;
+    height: 3vw;
+    /* margin-bottom: 5vw; */
+}
+.appointmentInput input{
+    margin-top: .9vw;
+    margin-left: -3vw;
+    margin-right: 2vw;
+    color: #fff;
+    background-color: #131e47;
+    outline-style: none;
+}
+.appointmentInput button{
+    background-color: #fff;
+    color: #131e47;
+    padding: .2rem 1rem;
+    margin-right: -2vw;
+    border-radius: .2vw;
 }

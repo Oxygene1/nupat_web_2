@@ -30,7 +30,7 @@ return(
     <div className='carousel'>
         <div className='heading'>
         <p className='carouselText'>{carouselImages[currImg].Text}</p>
-        <Link to={'/enrollment'} style={{borderRadius: "10px", padding: "10px 30px",border: "none",fontSize: "15px", textDecoration: "none", color: "#131e47"}}>Enroll Now</Link>
+        <Link to={'/enrollment'} style={{borderRadius: "10px", padding: "10px 30px",border: "none",fontSize: "15px", textDecoration: "none", color: "#131e47", backgroundColor:"#fff" }}>Enroll Now</Link>
         </div>
         
         <div className='innerCarousel'>

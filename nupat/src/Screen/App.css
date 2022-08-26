@@ -6,18 +6,28 @@ body{
   background: #fff;
 }
 .ServicesIntro{
-  background-color: #131E47;
-  margin-top: 8em;
+  background-color: #fff;
+  margin-left:2vw ;
+  /* margin-top: 8em; */
 }
 .ServicesIntro h1{
+  color: #131E47;
   margin-left: 4vw;
 }
-.ServicesIntro img{
-  width: 30%;
-  margin-left:2vw ;
+.ServicesIntro p, h2, .h1h2{
+  color: #131E47;
+
+}
+.servicesImage{
+  /* width: 40vw; */
+  /* margin:2vw; */
+  /* height: 15rem; */
 }
 
+.servicePara{
+  color: #131E47;
 
+}
 .Logo{
   position: absolute;
 width: 82px;
@@ -125,9 +135,7 @@ a:hover{
   display: block;
   transition: .3s;
 }
-div{
-  border: 2px solid red;
-}
+
 
 .form1{
   display:grid;
@@ -135,14 +143,14 @@ div{
 
   width: 90%;
   margin-top: 3rem;
-  margin-left: 2%;
+  margin-left: 5%;
   background-color: #131E47;
  
 
 }
 
 .form_main1{
-    margin-right: 5%;
+  
     width:80%;
  
  
@@ -257,10 +265,8 @@ margin-right: 5%; */
   /* top: 100em; */
 }
 .courses{
-  position: relative;
-  /* top:.5rem; */
-  /* right:94%;
-  z-index:2; */
+  position: absolute;
+  z-index: 40;
   width:1.5rem;
   bottom:4em ;
   left: 1em;
@@ -326,7 +332,12 @@ opacity: 2rem;
   color: #131E47;
   text-decoration: none;
 }
+.firstServiceIntro , .SecondServiceIntro{
 
+display: flex;
+flex-direction: row;
+
+}
 .dropcontendesktop {
   display: none;
   position: absolute;
@@ -346,7 +357,7 @@ opacity: 2rem;
   display: none;
   position: relative;
   background-color: #fff;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   bottom: 2vw;
@@ -390,6 +401,25 @@ color: #131E47;
 margin-left: 4rem;
 margin-top: 4vw;  
 
+}
+.servicesDisplay1,.servicesDisplay2{
+  display: flex;
+  /* margin-left: 10%; */
+}
+.servicesDisplay2{
+  margin-bottom: 4em;
+}
+.scrollbtn{
+  color: #fff;
+  background-color: #131E47;
+  padding: .4rem;
+  border-style: none;
+  border-radius: .3vw;
+}
+.servicesDisplay1 img, .servicesDisplay2 img{
+  /* height:10vh; */
+  width: 10vw;
+  margin: 4vw;
 }
 .groupImg{
  
@@ -657,10 +687,10 @@ body{
   line-height: 1.6;
  
 }
-.Body{
+/* .Body{
   margin: 0 auto;
   overflow: hidden;
-}
+} */
 
 .carousel{
   /* width: 70%;
@@ -808,14 +838,14 @@ width: 100%;
   background-color: #131E47;
 }
 .homefooterhead{
-  font-size:20px;
+  /* font-size:20px; */
   display:flex;
   flex-direction: column;
-  width:100%;
-  margin-right: 0 auto;
+  /* width:100%; */
+  margin-left: 5%;
   overflow: hidden;
   background-color: #131E47;
-  height: 10rem;
+  /* height: 10rem; */
   margin-bottom: -4vw;
 }
 .homesubscribe{
@@ -880,6 +910,7 @@ width: 100%;
   color: #131E47;
   margin-top: -3vw;
 }
+
 .Foot-nav li{
   list-style: none;
   margin: 1.5em 0;
@@ -1003,6 +1034,16 @@ width: 100%;
 }
 
 @media only screen and (max-width: 600px) {
+
+  .servicesDisplay1, .servicesDisplay2{
+        display: block;
+  }
+
+  .FootWork{
+    width: 100%;
+  
+  }
+  
   nav{
     display: none;
   }
@@ -1215,7 +1256,7 @@ width: 100%;
   }
   .form_main1{
     /* width: 45%; */
-    margin-left: 4%;
+    margin-left: 9%;
   }
 
   nav{
@@ -1410,7 +1451,6 @@ width: 100%;
     height: 100vh;
   }
   .form_main1{
-    margin-left: -.1%;
     width: 100%;
     
     /* margin-left: -4%; */
@@ -1476,8 +1516,8 @@ width: 100%;
   }
 
   .courses{
-   
-   bottom:13.9vw;
+    display: none;
+  
   }
   .person{
     
@@ -1502,24 +1542,27 @@ width: 100%;
     padding-left: 0 auto;
 
   }
-  .text_button{
-    margin-left: -4vw;
-    width: 85%;
+
+  .inputs{
+    width: 90vw;
+    /* padding-right: -4vw; */
   }
-  .inputs ,select {
-    width: 85%;
-    /* height: 40vw; */
+  .names{
+    width: 100%;
+  }
+  .Course {
+    width:75vw;
+   
   }
   
   textarea{
-    width: 100%;
+    margin-left:-4vw;
+    padding-left: 5vw;
+    width: 88%;
     height: 35vw;
   }
   .homefooterhead{
-    margin-top: 4vw;
-    padding-left: 2vw;
-
-    padding-bottom: 7vw;
+    width: 100vw;
    
   }
   .homesubscribe{
@@ -1554,9 +1597,9 @@ width: 100%;
   }
   
   .btnbtn{
-    position: relative;
-    bottom: 8vw;
-    left: 79%;
+    /* position: relative; */
+    bottom: 11vw;
+    right: 9%;
     width: 13vw;
   }
   .btn-primary{
@@ -1584,13 +1627,17 @@ width: 100%;
 
   }
   .form1{
-    width: 90%;
+    width: 100%;
+    padding-right: 1%;
     margin: 0 auto;
     overflow: hidden;
+    /* background-color: red; */
   }
   .form_main1{
     width:100%;
-    margin-left: 0;
+    margin-left: -.2vw;
+    /* background-color: red; */
+   
   }
   .main-text{
     width: 100%;
@@ -1663,5 +1710,21 @@ width: 100%;
     margin-top: 2vw;
     height: 13vw;
     overflow: hidden;
+  }
+  .FootWork{
+    margin-left: -3vw;
+    width: 100%;
+  
+  }
+  .textsection h2{
+    line-height: 12vw;
+  }
+  .textIntro h1{
+    line-height: 16vw;
+  }
+  .dropdown-toggle{
+    overflow: hidden;
+    /* padding-top: -5vw; */
+    height:12vw;
   }
 }
