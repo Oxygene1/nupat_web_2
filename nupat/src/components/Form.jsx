@@ -15,7 +15,7 @@ import { useRef } from 'react';
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ajo817t', 'template_yg4ofjk', form.current, 'DTUz9LR9LJy63Sr6R')
+    emailjs.sendForm('service_vgg3epf', 'template_1m21wrj', form.current, 'Vu3u6JveYKJuJlB4u')
       .then((result) => {
           console.log(result.text);
           alert('Your Request is now being processed and you should get a response mail shortly')
@@ -67,22 +67,22 @@ import { useRef } from 'react';
          
         
         <div>  
-
+        {/* <img className='courses' src={courses} alt="courses"/> */}
       <select    type="Course"
             name="Course"
             className="Course" >
-        <option value="">Choose a Course</option>
+        <option value="NaN">Choose a Course</option>
         <optgroup>
-        <option value="subject-one">Fontend</option>
-        <option value="subject-two">Backend</option>
-        <option value="subject-three">UI/UX</option>
- 	      <option value="subject-four">Data Science</option>
-        <option value="subject-five">Data Analysis</option>
-        <option value="subject-six">Blockchain Technology</option>
+        <option value="Fontend">Fontend</option>
+        <option value="Backend">Backend</option>
+        <option value="UI/UX">UI/UX</option>
+ 	      <option value="Data Science">Data Science</option>
+        <option value="Data Analysis">Data Analysis</option>
+        <option value="Blockchain Technology">Blockchain Technology</option>
         </optgroup>
          </select>
          <div>
-         <img className='courses' src={courses} alt="courses"/>
+        
          </div>
         
         

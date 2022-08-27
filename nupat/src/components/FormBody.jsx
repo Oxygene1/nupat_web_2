@@ -1,8 +1,5 @@
 import React from 'react'
-import groupImage from '../Images/group-picture.jpg';
-import playcenter from '../Images/playcenter.svg';
-import play2 from '../Images/play2.svg';
-import playborder from '../Images/playborder.svg';
+import groupImage from '../Images/group-picture1.jpg';
 import Header from './Header.jsx'
 import Footer from './Footer.jsx';
 import Form from './Form.jsx';
@@ -12,11 +9,13 @@ import Banner from '../Images/display-courses.png';
 function FormBody() {
 
  
-
   return (
   <div>
+    <div className='fixedHeader'>
+      <Header/>
+      </div>
     <div>
-      <Header />
+    
     <div className="FormContainer">
       
       <div className="Welcome">
@@ -26,12 +25,12 @@ function FormBody() {
        
       
         <input className='groupImg' type="image" img src = {groupImage} alt="photo" />
-        <div className="play-panel">
+        {/* <div className="play-panel">
         <img className='playcenter' src={playcenter} alt='play icon'/>
         <img className='play2' src={play2} alt='play icon'/>
         <img className='playborder' src={playborder} alt='play icon'/>
         </div>
-      
+       */}
 
        </div>
        <div className='textIntro'>

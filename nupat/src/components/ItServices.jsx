@@ -21,7 +21,7 @@ const ItServices = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm('service_ajo817t', 'template_yg4ofjk', form.current, 'DTUz9LR9LJy63Sr6R')
+    emailjs.sendForm('service_vgg3epf', 'template_o2l38ia', form.current, 'Vu3u6JveYKJuJlB4u')
       .then((result) => {
           console.log(result.text);
           alert('Your Request is now being processed and you should get a response mail shortly')
@@ -41,7 +41,13 @@ const ItServices = () => {
 
   return (
     <div className='IT'>
+      <div className='fixedHeader2'>
       <Header/>
+      </div>
+      <div className='servicesmanin'>
+
+      
+      
       <div className='displayBanner' style={{ width:'contain'}} >
            
         </div>
@@ -121,7 +127,7 @@ const ItServices = () => {
         />
         <div>
         <div>
-        <h3>Frontend Service</h3>
+        <h3>Data Scientist Services</h3>
         <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
@@ -142,7 +148,7 @@ const ItServices = () => {
         />
         <div>
         <div>
-        <h3>Data Scientist Services</h3>
+        <h3>UI/UX Services</h3>
         <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
@@ -178,9 +184,6 @@ const ItServices = () => {
 
 
         <div className='form_contain'>
-          {/* <div className='h1h1'>
-             <h1>Tell Us What Services You need</h1>
-          </div> */}
    
     <div className='form_main1' >
       
@@ -190,7 +193,7 @@ const ItServices = () => {
           <input className='names'
           placeholder='Full Name / Company Name'
             type="fullNames"
-            name="names" 
+            name="name?companyName" 
           />
           
           <input className='email'
@@ -217,7 +220,7 @@ const ItServices = () => {
         <div>  
 
       <select    type="Course"
-            name="Course"
+            name="Service"
             className="Course" >
         <option value="Blank">Choose a Service</option>
         <optgroup>
@@ -247,6 +250,7 @@ const ItServices = () => {
         </form>
    
 
+    </div>
     </div>
     </div>
 

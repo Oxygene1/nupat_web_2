@@ -5,6 +5,9 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   background: #fff;
 }
+.servicesmanin{
+  margin-top: 4vw;
+}
 .ServicesIntro{
   background-color: #fff;
   /* margin-left:2vw ; */
@@ -38,9 +41,8 @@ body{
 .Logo{
   position: absolute;
 width: 82px;
-/* height: 82px; */
-/* left: 120px; */
-top: 1.5vw;
+top: .6vw;
+left: 2vw;
 
 }
 nav{
@@ -149,7 +151,6 @@ a:hover{
 .form1{
   display:grid;
   padding:3em;
-
   width: 90%;
   margin-top: 3rem;
   margin-left: 3%;
@@ -194,11 +195,24 @@ a:hover{
   border-radius: 2px;
   text-transform:capitalize;
   }
+  .fixedHeader{
+    z-index: 15;
+    position: fixed;
+    width: 100%;
+    margin-top: -12em;
+  }
+  .fixedHeader2{
+    position: fixed;
+    width: 100%;
+    margin-top: -4em;
+  }
+
 .Course{
   text-transform:capitalize;
   margin-bottom:1vw;
   margin-top: 1rem;
   width: 98%;
+  /* margin-left: -1.8%; */
   height: 4rem;
   padding-left: 3rem;
   border-radius: 4px;
@@ -227,7 +241,7 @@ color: #131E47;
   float: right;
   width: 6em;
   bottom: 3em;
-  z-index:3;
+  z-index:2;
   text-decoration: none;
   /* color: #131E47; */
   background-color:#fff;
@@ -256,12 +270,11 @@ color: #131E47;
   /* top: 100em; */
 }
 .courses{
-  position: absolute;
-  z-index: 40;
+  position: relative;
+  z-index: 5;
   width:1.5rem;
-  bottom:4em ;
   left: 1em;
- 
+ /* border: 2px solid red; */
   
 
 }
@@ -396,7 +409,7 @@ margin-top: 4vw;
   z-index: 3;
 }
 .displayBanner{
-  background-image: url('../Images/cleancont.jpg');
+  background-image: url('../Images/blackshake2.jpg');
   background-repeat: no-repeat;
   height: 33vw;
   background-size: 100%;
@@ -742,6 +755,7 @@ body{
 }
 .FormContainer{
 width: 100%;
+margin-top: 12em;
 }
 .container{
   margin-top: -15vw;
@@ -849,14 +863,12 @@ width: 100%;
   background-color: #131E47;
 }
 .homefooterhead{
-  /* font-size:20px; */
   display:flex;
   flex-direction: column;
-  /* width:100%; */
+
   margin-left: 5%;
-  overflow: hidden;
+
   background-color: #131E47;
-  /* height: 10rem; */
   margin-bottom: -4vw;
 }
 .homesubscribe{
@@ -870,6 +882,10 @@ width: 100%;
   margin-left: -5%;
 
 }
+
+/* div{
+  border: 2px solid red;
+} */
 .homesubscribe p, h1{
   color: #fff;
  
@@ -1295,9 +1311,9 @@ width: 100%;
 
   }
   .Logo{
-    position: absolute;
-    z-index: 4;
-    left: 6vw;
+
+    top: 3.5vw;
+    left: 3vw;
   }
   .welcomIntro{
     line-height: 8vw;
@@ -1349,6 +1365,10 @@ width: 100%;
 
 
 @media screen and (max-width:600px){
+  .fixedHeader2{
+  
+    margin-top: -2em;
+  }
   .coverButton{
   
     /* border: 2px solid red; */

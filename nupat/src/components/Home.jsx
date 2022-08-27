@@ -8,7 +8,7 @@ import Footer from '../components/Footer.jsx';
 function Home() {
   return (
     <div className="App">
-      <div className='HomeHeader'>
+     <div className='fixedHeader'>
       <Header/>
       </div>
   
