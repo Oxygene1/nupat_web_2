@@ -5,7 +5,7 @@ import AboutBody from "./About/AboutBody.jsx";
 import FormBody from "./components/FormBody.jsx";
 import OurTeam from "./components/OurTeam.jsx";
 import Home from "./components/Home.jsx";
-import ItServices from "./components/ItServices.jsx";
+import Services from "./components/Services.jsx";
 const AppHero =()=>{
   return(
     <BrowserRouter>
@@ -13,7 +13,7 @@ const AppHero =()=>{
       <Route path="/" >
       <Route path="Home" element={<Home />}/>
         <Route path="about" element={<AboutBody />}/>
-        <Route path="Services" element={<ItServices />}/>
+        <Route path="Services" element={<Services />}/>
         <Route path="enrollment" element={<FormBody />}/>
         <Route path="OurTeam" element={<OurTeam />}/>
       </Route>

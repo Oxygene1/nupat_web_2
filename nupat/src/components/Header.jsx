@@ -22,7 +22,7 @@ function Header() {
       <Link to="/enrollment">CodeCademy</Link>
       <Link to="/Services">IT <span>Services</span></Link>
     <div className="dropdown dropnavy">
-        <a href="#"className="dropbtn" target="_blank" rel="noreferrer">Products</a>
+        <a className="dropbtn" target="_blank" rel="noreferrer">Products</a>
         <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />
     <div className="dropdown-content dropcontendesktop">
         <a href="#" target="_blank" rel="noreferrer">Ulego</a>
@@ -31,7 +31,7 @@ function Header() {
     </div>
 </div>
 <div className="dropdown dropnavy">
-  <a href="#"className="dropbtn2" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></a>
+  <a className="dropbtn2" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></a>
   <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />
   <div className="dropdown-content dropcontendesktop">
     <a href="#" target="_blank" rel="noreferrer">Project 1000</a>

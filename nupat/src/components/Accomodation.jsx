@@ -18,11 +18,13 @@ const Accomodation = ()=>{
        
         });
         return(
+            <div style={{}}>
+               
             <div className='carousel carousels'>
                 <div className='heading'>
-                <h1 className='carouselHead accHead'>Accomodation</h1>
-                <p className='carouselText accText'>{accomodationImages[currImg].Text}</p>
-                <Link to={'/enrollment'} style={{borderRadius: "10px", padding: "10px 30px",border: "none",fontSize: "15px",textDecoration:"none", backgroundColor: "#131e47", color: "white"}}>Enroll Now</Link>
+                <h1 className='carouselHead' style={{textAlign: "start", fontSize: "40px", fontWeight: "700", marginTop:"2em" ,color:'#131e47'}}>Accomodation</h1>
+                <p className='carouselText' style={{padding: "3em 0", fontSize: "20px"}}>{accomodationImages[currImg].Text}</p>
+                <Link to="/enrollment" style={{borderRadius: "10px", padding: "10px 30px",border: "none",fontSize: "15px", backgroundColor: "#131e47",textDecoration:"none", color: "white"}}>Enroll Now</Link>
                 </div>
                 
                 <div className='innerCarousel' style={{ borderRadius: "10px",}}>
@@ -30,6 +32,7 @@ const Accomodation = ()=>{
                     <div className='center'></div>
                     
                 </div>
+            </div>
             </div>
         )
            

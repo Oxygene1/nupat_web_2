@@ -2,7 +2,7 @@ import emailjs from 'emailjs-com';
 import React from 'react'
 import telephone from '../Images/telephone.svg';
 import envelope from '../Images/envelope.svg';
-import courses from '../Images/mortarboard.svg';
+// import courses from '../Images/mortarboard.svg';
 import person from '../Images/person.svg';
 import { useRef } from 'react';
 

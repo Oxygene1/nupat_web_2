@@ -1,11 +1,11 @@
-import { cardData } from "../Data/cardData";
-
-import './Carousel.css'
 import React from "react";
-const OneCard = ()=>{
+import { cardData } from "../Data/cardData";
+import './Carousel.css'
+
+const Cards = ()=>{
 
     return(
-    <dir>
+    <div>
         <div className="cardTitle">
         <h2 className="cardTitle1">Courses</h2>
     <p className="cardText1">We have varieties of courses available at your disposals for either the weekend or weekdays sessions in order to suit your schedule</p> 
@@ -20,7 +20,7 @@ return <div className="card">
  })}
     
     </div>
-    </dir>
+    </div>
        )
 }
-export default OneCard
+export default Cards;

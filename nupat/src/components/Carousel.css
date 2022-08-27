@@ -1,52 +1,36 @@
-.carouselContainer{
-    background-color: #131e47;
-    padding-bottom: 2em;
-    height: 100vh;
-}
+
 .carousel{
+    /* width: 70%;
+    height: 70%; */
     margin: -2em 1em 3em;
     display: flex;
     justify-content: center;
-    
-}
-.carouselHead{
-    text-align: start; 
-    padding: 1em 1.7em;
-    font-size: 50px;
-    font-weight: 600;
-    animation-name: carouselTextMove;
-    animation-duration: 3s;
-}
-.carouselText{
-    padding: 3em 0 3em 0;
-    font-size: 30px;
-    font-style: italic;
-    line-height: 52.08px;
-     width: 90%;
-     animation-name: carouselTextMove;
-    animation-duration: 3s;
+    background-color: #131e47;
+
 }
 .cardTitle1{
     padding-top: 3em;
 }
+/* div{
+    border: 2px solid red;
+} */
 .heading{
     padding-left: 4em;
     text-align: start;
 }
 .images{
     max-width: 170%;  
-    animation-name: CarouselMove;
-    animation-duration: 5s;
 }
 .cardTitle{
     padding: 5em 20em 3em;
-    color: black; 
+    color: black;
+    
 }
 
 .card{
     border-radius: 10px;
     box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
-    padding: 4em 0 5em;
+    padding: 4em 0;
     
 }
 .cardImage, .cardTitle, .cardText{
@@ -63,198 +47,40 @@
 }
 .cardText1{
     padding: 1em 20em 3em;
-    font-size: 20px;
-}
-.accHead{
-    text-align: start;
-    font-size: 40px;
-    font-weight: 700;
-    margin: 2em 0 0 -1.5em;
-}
-.accText{
-    padding: 2em 0;
-    font-size: 20px;
 }
 .innerCarousel{
+    /* width: 70%;
+    height: 60%; */
     margin-right: 20em;
 }
-.carousels{ 
-    margin: -2em 1em 2em;
-    display: flex;
+.carousels{
     margin-top: 5em;
     padding-bottom: 3em;
     background-color: white;
     color:  #131e47;
     justify-content: center;
 }
-.innerCarousel2{
-    width: 80vw;
-}
-
 .images2{
-    max-width: 150%;
-    padding-top: 2em;
+    width: 150%; 
+    margin-left: 2em;
 }
 
-@media only screen and (max-width: 700px) {
-    .carousel{
+@media only screen and (max-width: 600px) {
+ .carousel{
     display: block;
-    margin: -7em 0 0 0;
-    justify-content: center;
-    width: 100vw;
-    overflow-x: hidden;
- }  
- .carouselContainer{
-    width: 100vw;
-    height: 60vh;
     font-size: 20px;
-    overflow-x: hidden;
- }
+ }  
  .carouselHead{
     font-size: 20px;
  } 
- .carouselText{
-    margin: auto;
-    font-style: italic;
-    text-align: center;
-    width: 50%;
-    font-size: 15px;
-    line-height: 25px;
-    letter-spacing: 3px;
-}
-.heading{
-    padding: 4em 0 ;
-    margin: 0;
-    text-align: center;
-    
-}
-.heading2{
-    padding-right: -5em;
-}
-
  .cardContainer{
     display: block;
-    margin: 0 2em 2em;
-    gap: 2em;
  }
- .card{
-    margin-bottom: 2em;
-}
  .images{
-    max-width: 60vw;
-    justify-content: center;
-    margin-top: -3em;
-    animation-name: CarouselMove;
-    animation-duration: 3s;
-    
- }
- .images2{
-    max-width: 90%;
-    align-items: center;
-    margin-top: -3em;
-}
- .innerCarousel{
-    justify-content: center;
-    align-items: center;
-    margin-right: 0;
-    margin-top: -2em;
-    padding-top: 2em;
+    width: 50%;
  }
  .carouselText{
-    font-size: 15px;
-    text-align: center;
-    
- }
- 
- .cardImage, .cardTitle, .cardText{
-    padding: 0;
-}
-.cardText1{
-    margin-bottom: -2em;
-}
- .cardTitle1{
-    padding-top: 0;
-    
-}
- .carouselHead{
-    text-align: center; 
-    padding: 1em 0;
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.cardTitle{
-    padding: 2em 0;
-    color: black;
-}
-.cardText1{
-    padding: 1em;
-}
-.carousels{
-    display: block;
-    margin-right: 0;
-    margin-top: 3em;
-}
-.accHead{
-    font-size: 30px;
-    text-align: center;
-    font-weight: 700;
-    margin-top: -3em;
-    margin-bottom: -1em;
-    margin-left: 10px;
-}
-.accText{
-    font-size: 15px;
-    width: 70%;
-}
-
-}
-
-@keyframes CarouselMove{
-    0% {
-        transform: translateX(100px);
-    }
-
-    100%{
-        transform: translate(0);
-    }
-}
-@keyframes carouselTextMove{
-    0%{
-        transform: translateX(-100px);
-    }
-    100%{
-        transform: translate(0);
-    }
-}
-
-.AppointmentDiv{
-    background-color: #03CFD6;
-    width: 30vw;
-    height: 6vw;
-}
-.AppointmentDiv label{
-    color: #131e47;
-}
-.appointmentInput{
-    background-color: #131e47;
-    width: 20vw;
-    margin-left: 5vw;
-    height: 3vw;
-    /* margin-bottom: 5vw; */
-}
-.appointmentInput input{
-    margin-top: .9vw;
-    margin-left: -3vw;
-    margin-right: 2vw;
+    font-size: 10px;
     color: #fff;
-    background-color: #131e47;
-    outline-style: none;
-}
-.appointmentInput button{
-    background-color: #fff;
-    color: #131e47;
-    padding: .2rem 1rem;
-    margin-right: -2vw;
-    border-radius: .2vw;
+ }
 }
