@@ -3,7 +3,7 @@ import Footer from './Footer.jsx'
 import Header from './Header.jsx'
 // import FrontPic from '../Images/hire us.gif'
 import Frontend from '../Images/FrontEnd.jpg'
-import Backend from '../Images/BackEnd.jpg'
+import Backend from '../Images/BackendNew.jpg'
 import API from '../Images/API1.png'
 import Data from '../Images/DataScience.svg'
 import UI from  '../Images/UIModern.svg'
@@ -11,9 +11,12 @@ import Blockchain from '../Images/BlockTech.jpg'
 // import { Link, animateScroll as scroll } from "react-scroll";
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
+// import Banner from '../Images/cont3.jpg'
+
 
 const ItServices = () => {
   const form = useRef();
+  
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -39,9 +42,12 @@ const ItServices = () => {
   return (
     <div className='IT'>
       <Header/>
+      <div className='displayBanner' style={{ width:'contain'}} >
+           
+        </div>
      
       <div className='ServicesIntro'>
-       <div><h1>Hire Our Gifted Hands</h1></div>
+       <div className='Hireh1div'><h1>Hire Our Gifted Hands</h1></div>
       
         <div className='servicesDisplay1'>
         <div><img
@@ -73,7 +79,7 @@ const ItServices = () => {
           alt="Second slide"
         />
        <div>
-        <h3>Frontend Service</h3>
+        <h3>Backend Services</h3>
         <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}  to="form1"
@@ -94,7 +100,7 @@ const ItServices = () => {
         />
         <div>
         <div>
-        <h3>Frontend Service</h3>
+        <h3>API Service</h3>
         <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
@@ -136,7 +142,7 @@ const ItServices = () => {
         />
         <div>
         <div>
-        <h3>Frontend Service</h3>
+        <h3>Data Scientist Services</h3>
         <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
@@ -156,7 +162,7 @@ const ItServices = () => {
         />
         <div>
         <div>
-        <h3>Frontend Service</h3>
+        <h3>Blockchain Expert Service</h3>
         <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
@@ -172,7 +178,10 @@ const ItServices = () => {
 
 
         <div className='form_contain'>
-    <h1 className='h1h2'>Tell Us What Services You need</h1>
+          {/* <div className='h1h1'>
+             <h1>Tell Us What Services You need</h1>
+          </div> */}
+   
     <div className='form_main1' >
       
     

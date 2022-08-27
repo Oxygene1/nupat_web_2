@@ -21,7 +21,7 @@ import { useRef } from 'react';
           alert('Your Request is now being processed and you should get a response mail shortly')
       }, (error) => {
           console.log(error.text);
-          alert('Your Request is now being processed and you should get a response mail shortly')
+          alert('There was an error trying to process your message, refresh your browser and try again!')
       });
       e.target.reset()
 

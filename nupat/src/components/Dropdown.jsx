@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+import { Link } from "react-router-dom";
 // import { Link } from "react-router-dom";
 // import { useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
@@ -15,13 +16,13 @@ import React, {useState} from 'react';
           <span className='span2'></span>
           <span className='span3'></span>
         </button>
-        <div className="dropdown-menu dropdropmenu" id='dropdropmenu'
-        
-        aria-labelledby="navbarDropdown">
-          <a className="dropdown-item" href="#">Action</a>
-          <a className="dropdown-item" href="#">Another action</a>
-          <div className="dropdown-divider"></div>
-          <a className="dropdown-item" href="#">Something else here</a>
+        <div className='coverButton'></div>
+        <div className="dropdown-menu dropdropmenu" id='dropdropmenu' aria-labelledby="navbarDropdown">
+          <Link className="dropdown-item" to="/Home">Home</Link>
+          <Link className="dropdown-item" to="/enrollment">CodeCademy</Link>
+          <Link className="dropdown-item"  to="/Services">IT <span>Services</span></Link>
+          <a href="#" className="dropdown-item" target="_blank" rel="noreferrer">Products</a>
+          <a href="#" className="dropdown-item" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></a>
         </div>
 
         </div>
