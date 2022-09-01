@@ -1,5 +1,6 @@
 import phone from '../Images/phone.jpeg'
 import React from 'react';
+import './app.css'
 
 function Ulego() {
     return (
