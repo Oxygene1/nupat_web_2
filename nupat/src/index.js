@@ -1,6 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './Screen/App.css';
+import './Screen/FirstCarousel.css'
+import './components/Carousel.css'
 // import './header.js'
 // import './email.js'
 

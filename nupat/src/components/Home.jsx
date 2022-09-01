@@ -1,13 +1,13 @@
 // import Card from './Card';
 import Cards from './Cards';
-import OneCard from './OneCard'
+// import OneCard from './OneCard'
 import React from 'react';
 import Carousel from './Carousel';
 import Accomodation from './Accomodation'
 import Footer from './Footer';
-import ITServices from './ITservices';
+import ITServices from './ItServices.jsx';
 import Join from './joinusCarousel'
-
+import Init from '../init/Init'
 import Header from './Header';
 // import Initiative from './Initiative'
 import Team from './Team' 
@@ -16,26 +16,36 @@ function App() {
   return (
 
     <div>
+    <Header/>
+      {/* <div className='fixedHeader'>
+      
+      </div> */}
 
-      <div className='fixedHeader'>
-      <Header/>
-      </div>
-
-    <div className="App">
+    <div>
      
     <Join/>
-      <Carousel/>
-  
-        <OneCard/>
-        
-      <Accomodation/>
+    <div>
+       <Carousel/>
+    </div>
+     
+        <div>
+           <Cards/>
+        </div>
+        <div>
+        <Accomodation/>
+
+        </div>
+    
       <div>
-            <ITServices/>
+        <ITServices/>
+      </div>
+      <div>
+          <Init/>
         </div>
     
  
-      {/* <Initiative/> */}
-      <Cards/>
+    
+     
       <Team/>
       <Footer/>
       </div>

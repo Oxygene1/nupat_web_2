@@ -11,9 +11,9 @@ function FormBody() {
  
   return (
   <div>
-    <div className='fixedHeader'>
+    {/* <div className='fixedHeader'> */}
       <Header/>
-      </div>
+      {/* </div> */}
     <div>
     
     <div className="FormContainer">

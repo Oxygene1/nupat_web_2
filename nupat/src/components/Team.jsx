@@ -5,8 +5,8 @@ import paulo from '../Images/paulo.JPG'
 import cto from '../Images/cto.JPG'
 import ceo from '../Images/ceo.JPG'
 import Card from './Card.jsx'
-import Initiative from './Initiative.jsx'
-import Ulego from './Ulego.jsx'
+// import Initiative from './Initiative.jsx'
+// import Ulego from './Ulego.jsx'
 
 
 
@@ -18,35 +18,43 @@ function Team() {
 
    
     <div>
-      <Ulego/>
+      {/* <Ulego/> */}
     </div>
     <div>
-      <Initiative/>
+      {/* <Initiative/> */}
     </div>
     
-    <div className='wrapper'>
+    <div className='wrapperPaper'>
       <div className='wrap'>
-      <Card
-    img={ceo}
-    title="Nnamdi Ugwu"
-    post="CEO"/>
+     
    
+    <div>
+    <Card
+        img={ceo}
+        title="Nnamdi Ugwu"
+        post="CEO"/>
+    </div>
 
-<Card 
+    <div>
+      <Card 
     img={cto}
     title="Chibuike Ugwu"
     post="CTO"/>
+    </div>
 
-<Card
+  <div>
+      <Card
     img={paulo}
     title="Olarenwaju paul"
     post="COO"/>
+      </div>
 
-<Card
+        <div>
+      <Card
     img={manager}
     title="Ogunfunmilade Ibukun"
     post="Brand Manager"/>
-
+      </div>
       </div>
     </div>
     <div>

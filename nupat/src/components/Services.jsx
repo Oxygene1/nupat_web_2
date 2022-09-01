@@ -75,9 +75,6 @@ const Services = () => {
          
         </div>
 
-       
-        
-        
      
         <div><img
           className="servicesImage"

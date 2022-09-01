@@ -18,7 +18,7 @@ const Carousel =()=>{
         
         });
 return(
-    <div style={{}}>
+    <div className='carouselContainer'>
         <h1 className='carouselHead' style={{textAlign: "start", padding: " 1em 1.7em", fontSize: "50px", fontWeight: "600"}}>NUPAT Code Camp</h1>
     <div className='carousel'>
         <div className='heading'>

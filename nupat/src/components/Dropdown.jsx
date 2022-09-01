@@ -16,7 +16,7 @@ import { Link } from "react-router-dom";
           <span className='span2'></span>
           <span className='span3'></span>
         </button>
-        <div className='coverButton'></div>
+        {/* <div className='coverButton'></div> */}
         <div className="dropdown-menu dropdropmenu" id='dropdropmenu' aria-labelledby="navbarDropdown">
           <Link className="dropdown-item" to="/Home">Home</Link>
           <Link className="dropdown-item" to="/enrollment">CodeCademy</Link>

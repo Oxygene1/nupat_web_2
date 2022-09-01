@@ -18,13 +18,15 @@ function AboutBody() {
 
   return (
     <div>
-      <div className='HeadAbout'>
-      <Header/>
+      <div>
+          <Header/>
       </div>
+    
+     
       
       <div>
       
-      <div className="container">
+      <div className="myContainer">
         <div className='About_1'>
           <h1>About Us</h1>
           <p>NUPAT Technologies is a software development company from African descent birthed by the vision of becoming a leading brand in world class innovation and delivery of masterpiece and cutting edge technology.

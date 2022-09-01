@@ -5,6 +5,9 @@ body{
   font-family: 'Source Sans Pro', sans-serif;
   background: #fff;
 }
+.mainAboutPage{
+  width: 100%;
+}
 .servicesmanin{
   margin-top: 4vw;
 }
@@ -26,6 +29,20 @@ body{
   color: #131E47;
 
 }
+.Benefitss{
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 3rem;
+}
+.Benefitss h1{
+  font-weight: 700;
+}
+.Benefitss p{
+  font-size: 30px;
+  width: 70%;
+  margin-left: 15%;
+  line-height: 3vw;
+}
 .h1h2{
   margin-top: 4rem;
 }
@@ -40,22 +57,20 @@ body{
 }
 .Logo{
   position: absolute;
-width: 82px;
-top: .6vw;
+width: 10vw;
+top: .4vw;
 left: 2vw;
 
 }
-nav{
-  display: flex;
 
- 
-}
 nav{
-  margin-left: 40vw;
-  float: right;
-  margin-top: 2rem;
+  margin-left: 45vw;
+  /* float: right; */
+  /* margin-top: 2rem; */
   /* text-align: center; */
   /* justify-content: space-between; */
+    display: flex;
+    align-self: flex-end;
 }
 nav a{
   text-decoration: none;
@@ -65,14 +80,18 @@ nav a{
 li{
   margin: 3rem;
 }
+.HomeDropDown{
+  display: none;
+}
 .Nav{
   justify-content: space-between;
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   flex-direction: row;
- 
+ align-items: center;
   width: 100%;
-  height: 7rem;
+  padding-top: 2vw;
+  /* height: 7rem; */
   /* top: -1vw; */
   /* z-index: 50; */
   border-bottom:2px solid #131E47;
@@ -112,10 +131,10 @@ li{
 
 }
 
-.nav2{
-  /* display: none; */
-  visibility: hidden;
-}
+/* .nav2{
+  display: none;
+
+} */
 
 /* .dropdown-menu{
   position:relative;
@@ -123,15 +142,20 @@ li{
   z-index: 100;
 } */
 .dropdown-toggle{
+  display: none;
   border-style: none;
   position: relative;
-  top: 4vw;
+  bottom: 5.5vw;
   left: 85vw;
   padding: 5px;
   background-color: transparent;
   cursor: pointer;
-  height: 7vw;
+  height: 5vw;
 }
+
+/* .HomeDropDown{
+  position: absolute;
+} */
 
 a:hover{
   text-decoration: none;
@@ -420,11 +444,15 @@ margin-top: 4vw;
   margin-left: 3%;
   justify-content: space-between;
   display: flex;
+  text-align: center;
  
   /* margin-left: 10%; */
 }
+.servicesDisplay1{
+  margin-top: 4em;
+}
 .servicesDisplay1 p,.servicesDisplay2 p{
-  /* margin-right: 1vw; */
+ margin: 1rem 2rem 2rem 2rem;
 }
 .servicesDisplay2{
   margin-bottom: 4em;
@@ -432,7 +460,7 @@ margin-top: 4vw;
 .scrollbtn{
   color: #fff;
   background-color: #131E47;
-  padding: .4rem;
+  padding: 1rem;
   border-style: none;
   border-radius: .3vw;
 }
@@ -552,20 +580,14 @@ margin-top: 2rem;
 
 .About_1{
   position: relative;
-  width: 80%;
-  margin-top: -10em;
-  margin-left: 10%;
+  width: 70%;
+  margin-left: 13%;
   height: 1rem;
-  /* left: 120px; */
   z-index: 3;
-  /* top: 10rem; */
-  
-  /* font-family: 'Inter';
-  font-style: normal; */
   font-weight: 600;
   font-size: 20px;
   line-height: 24px;
-  margin-bottom: -8em;
+  margin-bottom: -5em;
   color: #000000;
 }
 .oval{
@@ -597,7 +619,7 @@ background: #FFFFFF;
 }
 .aboutpics img{
   margin: .2rem;
-  width: 50%;
+  width: 40%;
 }
 .Ellipse_contain{
   display: flex;
@@ -651,15 +673,16 @@ background: #FFFFFF;
 } */
 
 
-.initiative , .wrapper{
+.initiative {
   background-color: #131E47;
 }
-.wrapper{
+.wrapper1{
   display: flex;
   gap: 1rem;
   grid-template-columns: 1fr;
   justify-content: center;
   padding-bottom: 4em;
+  margin: 4rem;
 }
 .Cardy{
    margin: 7px;
@@ -745,7 +768,7 @@ body{
   
 }
 
-.card{
+.cardey{
   border-radius: 10px;
   box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
   padding: 4em 0;
@@ -756,11 +779,11 @@ body{
 }
 .FormContainer{
 width: 100%;
-margin-top: 12em;
+margin-top: 6em;
 }
-.container{
-  margin-top: -15vw;
-  margin-bottom: -15vw;
+.myContainer{
+  /* margin-top: -15vw; */
+  /* margin-bottom: -15vw; */
 }
 .cardContainer{
   background-color: #fff;
@@ -819,6 +842,7 @@ margin-top: 12em;
   
 }
 
+
 .card{
   border-radius: 10px;
   box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
@@ -858,9 +882,17 @@ margin-top: 12em;
 }
 
 .wrap{
+  padding-top: 4rem;
   display: flex;
+  background-color: #131E47;
+  justify-content: center;
 }
-.wrapper ,.footFoot ,#homeform{
+/* .Leadership{
+  height: 25rem;
+} */
+
+
+.footFoot ,#homeform{
   background-color: #131E47;
 }
 .homefooterhead{
@@ -920,7 +952,7 @@ margin-top: 12em;
   border-radius: 5px;
   padding: 0em 1em ;
   margin-left: 8%;
-  max-width: 25%;
+  width: 25%;
   font-size: 20px;
   font-weight: 10px;
   color: #131E47;
@@ -1023,10 +1055,7 @@ margin-top: 12em;
   .play-panel{
     top: 55vw;
   }
-  .nav2{
-    margin-top: 2vw;
-    visibility: visible;
-  }
+
 
   .navigation-menu.expanded {
     display: block;
@@ -1036,7 +1065,14 @@ margin-top: 12em;
   }
 }
 
+@media screen and (max-width:737px){
+  .HomeDropDown{
+    display: flex;
+  }
+}
+
 @media screen and (min-width:737px){
+  
   .play-panel{
     top: 55vw;
   }
@@ -1094,10 +1130,16 @@ margin-top: 12em;
     bottom: 70vw;
   }
 }
+.HomeDropDown{
+  display: flex;
+}
 
 @media only screen and (max-width: 650px){
   .play-panel{
     top: 66vw;
+  }
+  .HomeDropDown{
+    display: flex;
   }
 
   .form1{
@@ -1106,6 +1148,9 @@ margin-top: 12em;
 }
 
 @media only screen and (max-width: 600px) {
+  .HomeDropDown{
+    display: flex;
+  }
   .play-panel{
     top: 75vw;
     right: 25vw;
@@ -1142,9 +1187,14 @@ margin-top: 12em;
     display: grid;
   }
   .homesubscribe{
-    padding: 5vw;
+    /* padding: 5vw; */
     height: 30vw;
-    margin-left: 5%;
+  
+    /* padding-left: 2rem; */
+    margin-left: 12%;
+  }
+  .homesubscribe h1{
+    padding: 1vw;
   }
   .form-btn{
     margin-left: 9%;
@@ -1217,6 +1267,9 @@ margin-top: 12em;
 }
 
 @media screen and (max-width: 670px){
+  .HomeDropDown{
+    display: flex;
+  }
   #dropAppend{
     display: none;
   }
@@ -1279,6 +1332,16 @@ margin-top: 12em;
   }
 }
 @media screen and (max-width: 786px){
+  .Nav{
+    height: 5em;
+
+  }
+  nav{
+    display: none;
+  }
+  .dropdown-toggle{
+    display:flex;
+  }
   .navigation-menu {
     margin-left: auto;
   }
@@ -1286,8 +1349,8 @@ margin-top: 12em;
     display: grid;
   }
   .join-us{
-    /* height: 8vw; */
-    margin-top: 1.2vw;
+    height: 7vw;
+    margin-top: 4vw;
     margin-left: -2%;
     margin-bottom: 1.2vw;
   }
@@ -1313,7 +1376,7 @@ margin-top: 12em;
   }
   .Logo{
 
-    top: 3.5vw;
+    top: 2vw;
     left: 3vw;
   }
   .welcomIntro{
@@ -1322,9 +1385,10 @@ margin-top: 12em;
   }
   
 
-  nav{
+  /* nav{
     display: none;
-  }
+    height: 4vw;
+  } */
  
   .navigation-menu a, Link {
   
@@ -1335,6 +1399,9 @@ margin-top: 12em;
 }
 
 @media screen and(max-width:583px) {
+  .HomeDropDown{
+    display: flex;
+  }
   #dropAppend{
     display: none;
   }
@@ -1354,6 +1421,9 @@ margin-top: 12em;
   }
 }
 @media screen and (max-width:500px){
+  .HomeDropDown{
+    display: flex;
+  }
   .coverButton{
   
     /* border: 2px solid red; */
@@ -1366,6 +1436,12 @@ margin-top: 12em;
 
 
 @media screen and (max-width:600px){
+  .Nav{
+    height: 5em;
+  }
+  .HomeDropDown{
+    display: flex;
+  }
   .fixedHeader2{
   
     margin-top: -2em;
@@ -1382,6 +1458,10 @@ margin-top: 12em;
   }
   .navigation-menu {
     margin-left: auto;
+  }
+  nav{
+    /* height: 4vw; */
+    display: none;
   }
   .dropdrop{
     display: grid;
@@ -1443,9 +1523,10 @@ margin-top: 12em;
   }
   .join-us{
     /* height: 8vw; */
-    padding: 1vw;
-    margin-top: 1.2vw;
+    padding: 3vw;
+    margin-top: 1vw;
     margin-left: -2%;
+    /* width: 25em; */
     margin-bottom: 1.2vw;
     
   }
@@ -1513,9 +1594,9 @@ margin-top: 12em;
     
     display: none;
   }
-  .Nav{
+  /* .Nav{
     height: 22vw;
-  }
+  } */
   .btn-primary{
     position: relative;
     z-index: 40;
@@ -1577,6 +1658,9 @@ margin-top: 12em;
   }
 }
 @media screen and (max-width:400px){
+  .HomeDropDown{
+    display: flex;
+  }
   #dropAppend{
     display: none;
   }
@@ -1601,9 +1685,9 @@ margin-top: 12em;
     /* top: 4rem; */
     right: 80%;
   }
-  .container{
+  /* .myContainer{
     width:100%;
-  }
+  } */
   .wrap{
     display: grid;
   }
@@ -1666,7 +1750,7 @@ margin-top: 12em;
     height: 65vw;
   }
   .join-us{
-    min-width: 40vw;
+    /* width: 40vw; */
     height: 9vw;
     margin-top: 1.7vw;
     padding: .2rem 2rem 2rem;
@@ -1760,6 +1844,8 @@ margin-top: 12em;
   .one{
     margin-top: -17vw;
     margin-left: -15vw;
+    display: flex;
+    flex-direction: row;
   }
   .two{
     margin-top: -95vw;
@@ -1768,6 +1854,8 @@ margin-top: 12em;
   .three{
     margin-top: -25vw;
     margin-left: -15vw;
+    display: flex;
+    flex-direction: row;
   }
   .four{
     margin-top: -87vw;
@@ -1776,6 +1864,8 @@ margin-top: 12em;
   .five{
     margin-top: -17vw;
     margin-left: -15vw;
+      display: flex;
+    flex-direction: row;
   }
   .aboutpics img{
     height: 90vw;
@@ -1810,3 +1900,4 @@ margin-top: 12em;
     }
   } */
 }
+

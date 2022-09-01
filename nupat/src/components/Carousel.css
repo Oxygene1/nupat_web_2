@@ -1,42 +1,84 @@
+.App {
+  
+    text-align: center;
+    justify-content: center;
+    color: white;
+   }
+   
+   *, *::before, *::after{
+     margin: 0;
+     padding: 0;
+   }
+   
+   body{
+     margin:0;
+     padding: 0;
+     font-family: DM Sans, sans-serif;
+     line-height: 1.6;
+     font-weight: 400;
+   }
 
+
+.carouselContainer{
+    background-color: #131e47;
+    padding-bottom: 2em;
+    height: 100%;
+    
+}
 .carousel{
-    /* width: 70%;
-    height: 70%; */
     margin: -2em 1em 3em;
     display: flex;
     justify-content: center;
-    background-color: #131e47;
-
+    
 }
-.cardTitle1{
-    padding-top: 3em;
+.carouselHead{
+    text-align: start; 
+    padding: 1em 1.7em;
+    font-size: 50px;
+    font-weight: 600;
+    animation-name: carouselTextMove;
+    animation-duration: 3s;
 }
-/* div{
-    border: 2px solid red;
-} */
+.carouselText{
+    padding: 3em 0 3em 0;
+    font-size: 30px;
+    font-style: italic;
+    line-height: 52.08px;
+     width: 90%;
+     animation-name: carouselTextMove;
+    animation-duration: 3s;
+}
+.card1Title1{
+    padding-top: 2em;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 600;
+}
 .heading{
     padding-left: 4em;
     text-align: start;
 }
 .images{
     max-width: 170%;  
+    animation-name: CarouselMove;
+    animation-duration: 5s;
 }
-.cardTitle{
-    padding: 5em 20em 3em;
-    color: black;
-    
+.card1Title{
+    /* padding: 5em 20em 3em; */
+    text-align: center;
+    color: black; 
 }
 
-.card{
+.card1{
     border-radius: 10px;
     box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
-    padding: 4em 0;
+    padding: 4em 0 5em;
     
 }
-.cardImage, .cardTitle, .cardText{
+.card1Image, .card1Title, .card1Text{
     padding: 1em;
 }
-.cardContainer{
+.card1Container{
     background-color: white;
     color: black;
     text-align: center;
@@ -45,42 +87,181 @@
     gap: 1.5em;
     justify-content: center;
 }
-.cardText1{
-    padding: 1em 20em 3em;
+.card1Text1{
+    margin-left: 13rem;
+    text-align: center;
+    font-size: 30px;
+    width: 70%;
+    justify-content: center;
+}
+.accHead{
+    text-align: start;
+    font-size: 40px;
+    font-weight: 700;
+    margin-left: -1.5em;
+    font-style: italic;
+}
+.accText{
+    padding: 1em 0;
+    font-size: 20px;
 }
 .innerCarousel{
-    /* width: 70%;
-    height: 60%; */
     margin-right: 20em;
 }
-.carousels{
+.carousels{ 
+    margin: -2em 1em 9em;
+    display: flex;
     margin-top: 5em;
-    padding-bottom: 3em;
+    padding-bottom: 4em;
     background-color: white;
     color:  #131e47;
     justify-content: center;
 }
-.images2{
-    width: 150%; 
-    margin-left: 2em;
+.innerCarousel2{
+    width: 80vw;
 }
 
-@media only screen and (max-width: 600px) {
- .carousel{
+.images2{
+    max-width: 140%;
+    padding-top: 2em;
+}
+
+@media only screen and (max-width: 550px) {
+    
+  *, *::before, *::after{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+  }
+    .carousel{
     display: block;
-    font-size: 20px;
+    margin: -7em 0 0 0;
+    justify-content: center;
+    width: 100vw;
+    overflow-x: hidden;
  }  
+ .carouselContainer{
+    width: 100vw;
+    height: 60vh;
+    font-size: 20px;
+    overflow-x: hidden;
+    display: block;
+ }
  .carouselHead{
     font-size: 20px;
  } 
- .cardContainer{
-    display: block;
- }
- .images{
+ .carouselText{
+    margin: auto;
+    font-style: italic;
+    text-align: center;
     width: 50%;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 3px;
+}
+.heading{
+    padding: 4em 0 ;
+    margin: 0;
+    text-align: center;
+    
+}
+.heading2{
+    padding-right: -5em;
+}
+
+ .card1Container{
+    display: block;
+    margin: 0 2em 2em;
+    gap: 2em;
+ }
+ .card1{
+    margin-bottom: 2em;
+}
+ .images{
+    max-width: 60vw;
+    justify-content: center;
+    margin-top: -3em;
+    animation-name: CarouselMove;
+    animation-duration: 3s;
+    
+ }
+ .images2{
+    max-width: 90%;
+    align-items: center;
+    margin-top: -3em;
+}
+ .innerCarousel{
+    justify-content: center;
+    align-items: center;
+    margin-right: 0;
+    margin-top: -2em;
+    padding-top: 2em;
  }
  .carouselText{
-    font-size: 10px;
-    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    
  }
+ 
+ .card1Image, .card1Title, .card1Text{
+    padding: 0;
+}
+.card1Text1{
+    margin-bottom: -2em;
+}
+ .card1Title1{
+    padding-top: 0;
+    
+}
+ .carouselHead{
+    text-align: center; 
+    padding: 1em 0;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.card1Title{
+    padding: 2em 0;
+    color: black;
+}
+.card1Text1{
+    padding: 1em;
+}
+.carousels{
+    display: block;
+    margin-right: 0;
+    margin-top: 3em;
+}
+.accHead{
+    font-size: 30px;
+    text-align: center;
+    font-weight: 700;
+    margin-top: -3em;
+    margin-bottom: -1em;
+    margin-left: 10px;
+}
+.accText{
+    font-size: 15px;
+    width: 70%;
+}
+
+}
+
+@keyframes CarouselMove{
+    0% {
+        transform: translateX(100px);
+    }
+
+    100%{
+        transform: translate(0);
+    }
+}
+@keyframes carouselTextMove{
+    0%{
+        transform: translateX(-100px);
+    }
+    100%{
+        transform: translate(0);
+    }
 }

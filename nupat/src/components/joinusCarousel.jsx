@@ -26,9 +26,9 @@ const CarouselOne = () => {
         <button
           style={{
             borderRadius: "10px",
-            padding: "10px 30px",
+            padding: "10px 40px",
             border: "none",
-            fontSize: "15px",
+            fontSize: "20px",
             textDecoration: "none",
             backgroundColor: "#131e47",
             color: "white"}}
