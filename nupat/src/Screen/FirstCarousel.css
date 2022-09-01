@@ -27,10 +27,10 @@ body {
 }
 .firstTitle{
   text-align: start;
-  font-size: 70px;
+  font-size: 60px;
   font-weight: 600;
-  margin-top: 4rem;
-  width: 90%;
+  margin-top: 2rem;
+  width: 80%;
   animation: firstMove 3s;
   color:#131e47;
   font-style: italic;
@@ -44,6 +44,15 @@ body {
   animation: firstMove 3s;
   color:#131e47;
 
+}
+.firstBtn{
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #131e47;
+    color: white;
 }
 .imageCarousel{
   margin-left: -5em;
@@ -196,7 +205,7 @@ margin:0.5em 0 0.5em 0;
   padding-bottom: 2em;
 }
 
-@media screen and (max-width: 550px){
+@media screen and (max-width: 900px){
    
 *,
 *::before,
@@ -209,225 +218,32 @@ margin:0.5em 0 0.5em 0;
     display: block;
     overflow-x: hidden;
     padding: 0;
+    margin-bottom: 0;
   }
   .Images{
-    width: 50vw;
-    height: 50vh;
-  }
-  .imageCarousel{
-    margin-top: -5em;
+    width: 120vw;
+    height: 70vh;
+    padding-top: 0;
+    /* margin-top: -20rem; */
   }
   .firstTitle{
-    font-size: 25px;
+    font-size: 1.5rem;
+    width: 80%;
   }
   .firstText{
+    font-size: 1rem;
+    width: 50%;
+    line-height: 1.5rem;
+  }
+  .firstheading{
+    margin: 1em 2em;
+    margin-bottom: -35rem;
+  }
+  .firstBtn{
+    padding: 1em 2em;
     font-size: 15px;
-    line-height: 20px;
-    width: fit-content;
   }
-  .firstheading{
-    font-size: 20px;
-    height: 40vh;
-    margin-left: 2em;
-  }
-  .ITcarousel{
-    display: inline-block;
-    overflow: hidden;
-  }
-  .ITheading{
-    position: absolute;
-    top: -10;
-    left: 15;
-    }
-    
-    .ITTitle{
-      font-size: 30px;
-      margin: 3em 3em 1em 1em;
-      width: fit-content;
-    }
-    .ITImages{
-      height: 40vh;
-    }
-    .ITText{
-      font-size: 15px;
-      /* width: 50%; */
-      margin: 0;
-      display: none;
-    }
-    .ITBtn{
-      margin: 0 0 1em 4em;
-      padding: 1em;
-      font-size: 9px;
-    }
-    /* .ulego{
-      display: inline-block;
-      align-items: center;
-      justify-content: center;
-    }
-    .ulegoh2{
-      text-align: start;
-      margin-left: 0;
-    }
-    .ulego-img1{
-      margin-left: 5em;
-    }
-    .ulego-img2{
-      display: none;
-    }
-    .ulego-text-img{
-      display: block;
-    }
-    .ulego-textbtn{
-      margin: 0;
-    }
-    .ulego-text{
-      font-size: 20px;
-      margin: 1em 0;
-    } */
-    /* .ulego-img2{
-      
-    } */
-    /* .initiative{
-  padding: 0;
-  display: block;
-} */
-/* div{
-  border: 2px solid red;
-} */
-/* .init-textbtn{
-  margin-left: 3em;
-  margin-top: 3em;
-} */
-/* .init-imgs{
-  width: 50vw;
-} */
-.imginit2{
-  width: 100px;
-  margin-top: -5em;
-  margin-right: 2em;
-}
-/* .init-text{
-  font-size: 15px;
-  width: 70%;
-  line-height: 22px;
-} */
-.imginit1{
-  width: 100px;
-}
-.eclipse, .eclipse1, .star, .star2, .eclipse3{
-  display: none;
-}
-}
-@media screen and (max-width:900px){
-  /* *,
-*::before,
-*::after {
-  overflow-x: hidden;
-} */
-  .firstcarousel{
-    display: block;
-  }
-  
-  .Images{
-    width: 120vw;
-    height: 80vh;
-  }
-  .imageCarousel{
-    width: 120vw;
-    height: 60vh;
-  }
-  .firstTitle{
-    font-size: 30px;
-  }
-  .firstText{
-    font-size: 18px;
-    line-height: 24px;
-    width: fit-content;
-  }
-  .firstheading{
-    font-size: 20px;
-    height: 40vh;
-    margin-left: 2em;
-    padding-right: 2em;
-  }
-  .ITheading{
-    position: absolute;
-    top: 30;
-    left: 8em;
-    }
-    .ITTitle{
-      font-size: 30px;
-      margin: 3em 3em 1em 1em;
-      width: fit-content;
-    }
-    .ITImages{
-      height: 50vh;
-      width: 120vw;
-    }
-    .ITText{
-      font-size: 15px;
-      margin: 1em;
-    }
-    .ITBtn{
-      margin: 0 0 1em 4em;
-      padding: 1em;
-      font-size: 9px;
-    }
-    .ulego{
-      display: block;
-      /* padding-left: 2em; */
-    }
-    .ulegoh2{
-      text-align: start;
-    }
-    .ulego-img1{
-      margin-left: 5em;
-      height: 60vh;
-    }
-    .ulego-img2{
-      display: none;
-    }
-    .ulego-text-img{
-      display: block;
-    }
-    .ulego-textbtn{
-      margin-left: 5em;
-    }
-    .ulego-text{
-      font-size: 20px;
-      margin: 1em 0;
-    }
-    /* .initiative{
-      padding: 0;
-      display: block;
-    } */
-    /* div{
-      border: 2px solid red;
-    } */
-    /* .init-textbtn{
-      margin-left: 3em;
-      margin-top: 3em;
-    } */
-    /* .init-imgs{
-      width: 50vw;
-    } */
-    .imginit2{
-      width: 100px;
-      margin-top: -5em;
-      margin-right: 2em;
-    }
-    /* .init-text{
-      font-size: 15px;
-      width: 70%;
-      line-height: 22px;
-    } */
-    .imginit1{
-      width: 100px;
-    }
-    .eclipse, .eclipse1, .star, .star2, .eclipse3{
-      display: none;
-    }
-}
+
  @media screen  and (min-width:900px){
   .firstcarousel{
     display: flex;
@@ -481,305 +297,4 @@ margin:0.5em 0 0.5em 0;
   }
 
  }
- @media screen and (max-width: 1250px) {
-  *,
-*::before,
-*::after {
-  overflow-x: hidden;
- 
 }
-  .firstheading{
-    height: 40vh;
-    margin-left: 0;
-  }
-  .firstTitle{
-    text-align: start;
-    font-size: 30px;
-    font-weight: 600;
-    
-  }
-  .firstText{
-    text-align: start;
-    font-size: 20px;
-    font-weight: 600;
-    line-height: 30px;
-    width: 40%;
-    
-  
-  }
-  .imageCarousel{
-    margin-left: -38em;
-    margin-right: 0;
-    width: 50vw;
-  }
-  .Images{
-    width: 60vw;
-    height: 60vh;
-  }
-  
-  .ITTitle{
-    font-size: 60px;
-    margin: 4em 1em 0 2em;
-    width: 50%;
-  }
-  .ITheading{
-  position: absolute;
-  top: -70;
-  left: 8;
-  }
-  .ITImages{
-    height: 100vh;
-    width: 98vw;
-  }
-  .ITText{
-    font-size: 20px;
-    width: 60%;
-    margin: 1em 0 1em 7em;
-    color: white;
-  }
-  .ITBtn{
-    border-radius: 10px;
-    padding: 10px 30px;
-    color:#131e47;
-    margin-left: 8em;
-    margin-bottom: 9em;
-  }
-  .ulego-img{
-    width: 200%;
-    margin: 0;
-  }
-  .ulego-img1{
-    margin-left: -5em;
-    width: 200%;
-  }
-  .ulego-text{
-    width: 100%;
-    font-weight: 400;
-    font-size: 23px;
-    padding-right: 2em;
-  }
-  .ulego-img2{
-    display: none;
-  }
-  .ulego-textbtn{
-    margin-left: -20em;
-  }
-  .ulego-btn{
-    font-size: 15px;
-    margin-left: 5em;
-    margin-top: 1em;
-    padding: 0.5em 1em;
-    border-radius: 8px;
-  }
-  .init-textbtn{
-    margin-left: -5em;
-    margin-top: 0;
-    margin-bottom: -5em;
-  }
-  /* .init-text-img{
-    padding-top:2em;
-    display: block;
-    margin: 0;
-    flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   overflow: hidden;
-  } */
-  .imginit1, .imginit2{
-    width: 200px;
-  }
-  /* .init-btn {
-    margin: 2em 0 4em 0;
-    padding: 0.5em 2em;
-    background-color: white;
-    font-weight: 700;
-    font-size: 19px;
-    border-radius: 8px;
-    color: rgb(1, 1, 44);
-  } */
-  .eclipse, .eclipse1, .star, .star2, .eclipse3{
-    display: none;
-  }
- }
-
-
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
- 
-}
-.ulegoh2{
- font-size: 30px;
- color: #131e47;
-}
-.ulego{
-  margin:1em 3em;
-}
-.ulego-text{
-  width: 100%;
-  font-weight: 400;
-  font-size: 20px;
-}
-.ulego-img{
-  width: 100%;
-}
-.ulego-text-img{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
-.initiative{
-  padding: 1em 1em 1em 2em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #131E47;
-  color: white;
-}
-.h1 {
-  font-weight: 400;
-}
-.init-img {
-  width: 90%;
-}
-.ulego-btn{
-  background-color: #131e47;
-  color: white;
-  font-weight: 200;
-  font-size: 19px;
-  padding: 0.5em 2em;
-  border-radius: 8px;
-  margin-top: 3em;
-}
-.init-text{
-  width: 90%;
-}
-.init-textbtn{
-  margin-left: 4em;
-}
-.init-text-img{
-  padding-top:2em;
-  display: flex;
-  flex-direction: column;
- align-items: center;
- justify-content: center;
-}
-.init-btn {
-  margin: 2em 0 4em 2em;
-  padding: 0.5em 2em;
-  background-color: white;
-  font-weight: 700;
-  font-size: 19px;
-  border-radius: 8px;
-  color: #131e47;
-}
- body {
-  width: 100%;
-  font-weight: 500;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* margin-left: 50px; */
-
-}
- 
- .head {
-  font-weight: 500;
-  font-size: 35px;
-margin:0.5em 0 0.5em 0;
- }
- .head-text{
-  font-weight: 400;
-  font-size: 23px;
- }
- .heading{
-  text-align: center;
-  width: 95%;
- }
-.wrapper, .wrapper2{
-  margin: 0 3em 0 1em ;
-  display: grid;
-  grid-template-columns: 3fr;
-  justify-content: center;
-  align-items: center; 
-}
-.Card {
-
-  border-radius: 10px;
-  box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  padding: 3em 0em;
-  background-color: rgb(254, 255, 246);
-}
-.card-title{
-  margin-bottom: 1em;
-}
-.Card img {
-  width: 4em;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom:  2em;
-}
-.card-text {
-  margin: 1em;
-  padding-bottom: 2em;
-}
-
- @media screen  and (min-width:900px){
-  .wrapper, .wrapper2 {
-    display: flex;
-    /* margin: 1em 8em; */
-  }
-  .card{
-    width: 5em;
-  }
-  .init-text-img{
-    display: flex;
-    flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   padding: 4em 6em;
-  }
-  .init-img{
-    width: 500px;
-  }
-  .initiative{
-    padding: 1em 1em 1em 2em;
-  }
-  .init-text{
-    width: 70%;
-    font-size: 25px;
-  }
-  .ulego-text-img{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    text-align: left;
-    padding: 2em 0 3em 0;
-  }
-  .ulego-text{
-    font-size: 40px;
-    padding-left: 3em;
-  }
-  .ulego-btn{margin-left: 6.5em;
-    background-color: #131e47;
-  }
-  .ulego-img{
-    width: 600px;
-    margin-left: 2em;
-  }
-  .ulegoh2{
-    margin-left: 2em;
-  }
-
- }

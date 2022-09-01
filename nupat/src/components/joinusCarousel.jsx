@@ -23,15 +23,8 @@ const CarouselOne = () => {
           {carouselOneData[currImg].Title}
         </h1>
         <p className="firstText">{carouselOneData[currImg].Text}</p>
-        <button
-          style={{
-            borderRadius: "10px",
-            padding: "10px 40px",
-            border: "none",
-            fontSize: "20px",
-            textDecoration: "none",
-            backgroundColor: "#131e47",
-            color: "white"}}
+        <button className="firstBtn"
+         
         >
           {carouselOneData[currImg].Button}
         </button>

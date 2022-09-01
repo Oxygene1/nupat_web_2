@@ -47,6 +47,7 @@
      width: 90%;
      animation-name: carouselTextMove;
     animation-duration: 3s;
+    color:#fff;
 }
 .card1Title1{
     padding-top: 2em;
@@ -126,7 +127,7 @@
     padding-top: 2em;
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 900px) {
     
   *, *::before, *::after{
     margin: 0;
@@ -136,7 +137,7 @@
   }
     .carousel{
     display: block;
-    margin: -7em 0 0 0;
+    margin: 2em 0 0 0;
     justify-content: center;
     width: 100vw;
     overflow-x: hidden;
@@ -148,15 +149,21 @@
     overflow-x: hidden;
     display: block;
  }
+ div{
+    border: 2px solid red;
+ }
  .carouselHead{
     font-size: 20px;
  } 
+ .heading{
+    margin: -2rem auto 0;
+ }
  .carouselText{
-    margin: auto;
+    margin: -2rem auto;
     font-style: italic;
     text-align: center;
-    width: 50%;
-    font-size: 15px;
+    width: 70%;
+    font-size: 10px;
     line-height: 25px;
     letter-spacing: 3px;
 }
