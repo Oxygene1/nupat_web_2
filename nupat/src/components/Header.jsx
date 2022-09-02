@@ -16,8 +16,8 @@ function Header() {
             <img src={logo} alt="Logo" />
           </Link>
         </div>
-       <div style={{display:"flex"}}>
-        <nav>
+       <div className="navDiv" style={{display:"flex"}}>
+        {/* <nav> */}
 
 
           <Link to="/">Home</Link>
@@ -49,7 +49,7 @@ function Header() {
 
 
 
-        </nav>
+        {/* </nav> */}
         
         
          

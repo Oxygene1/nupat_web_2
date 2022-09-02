@@ -63,8 +63,9 @@ left: 2vw;
 
 }
 
-nav{
+.navDiv{
   margin-left: 45vw;
+  /* max-width: 40%; */
   /* float: right; */
   /* margin-top: 2rem; */
   /* text-align: center; */
@@ -72,7 +73,7 @@ nav{
     display: flex;
     align-self: flex-end;
 }
-nav a{
+.navDiv a{
   text-decoration: none;
   color: #131E47;
   margin: .8rem;
@@ -1170,7 +1171,7 @@ margin-top: 6em;
   
   }
   
-  nav{
+  .navDiv{
     display: none;
   }
   .navigation-menu.expanded {
@@ -1336,7 +1337,7 @@ margin-top: 6em;
     height: 5em;
 
   }
-  nav{
+  .navDiv{
     display: none;
   }
   .dropdown-toggle{
@@ -1459,10 +1460,7 @@ margin-top: 6em;
   .navigation-menu {
     margin-left: auto;
   }
-  nav{
-    /* height: 4vw; */
-    display: none;
-  }
+
   .dropdrop{
     display: grid;
     position: absolute;
