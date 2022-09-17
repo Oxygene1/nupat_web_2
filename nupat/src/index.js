@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './Screen/App.css';
 import './Screen/FirstCarousel.css'
 import './components/Carousel.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
 // import './header.js'
 // import './email.js'
 

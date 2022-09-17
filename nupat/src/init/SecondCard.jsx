@@ -3,7 +3,9 @@ import React from "react";
 
 function SecondCard(props) {
   return ( 
-      <div className="Card">
+    <div className='CardlistItemContainers'>
+
+  <div className="Card">
     <img src={props.img} alt="/" className="card-img" />
     <div className="card-text">
       {props.text}
@@ -12,6 +14,9 @@ function SecondCard(props) {
          {props.title}
       </h3>
     </div>
+
+    </div>
+    
   );
 }
 

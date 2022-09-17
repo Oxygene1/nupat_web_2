@@ -4,6 +4,7 @@ import Header from './Header.jsx'
 import Footer from './Footer.jsx';
 import Form from './Form.jsx';
 import Banner from '../Images/display-courses.png';
+import MobileHeader from './MobileHeader.jsx'
 
 
 function FormBody() {
@@ -13,6 +14,7 @@ function FormBody() {
   <div>
     {/* <div className='fixedHeader'> */}
       <Header/>
+      <MobileHeader/>
       {/* </div> */}
     <div>
     

@@ -5,24 +5,12 @@ import paulo from '../Images/paulo.JPG'
 import cto from '../Images/cto.JPG'
 import ceo from '../Images/ceo.JPG'
 import Card from './Card.jsx'
-// import Initiative from './Initiative.jsx'
-// import Ulego from './Ulego.jsx'
-
-
 
 function Team() {
 
   
   return (
     <div className='team1'>
-
-   
-    <div>
-      {/* <Ulego/> */}
-    </div>
-    <div>
-      {/* <Initiative/> */}
-    </div>
     
     <div className='wrapperPaper'>
       <div className='wrap'>

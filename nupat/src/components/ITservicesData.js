@@ -1,12 +1,12 @@
 export const ITserviceData = [
     {
-        Image: require ("../Images/ITcarousel1.jpeg"),
+        Image: require ("../Images/ITcarousel1.jpg"),
        Title: "IT SERVICES",
         Text: "We offer technological solutions ranging from building website to building website to building both web and mobile applications",
         Button:  "EMPLOY US"
     },
     {
-        Image: require("../Images/ITcarousel2.jpeg"),
+        Image: require("../Images/ITcarousel2.jpg"),
         Title: "Software Development",
         Text: "",
         Button:  "JOIN US"
@@ -29,5 +29,5 @@ export const ITserviceData = [
         Title: "Search Engine Optimization",
         Text: "",
         Button:  ""
-    }, 
+    }
 ]

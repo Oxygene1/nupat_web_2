@@ -9,7 +9,10 @@
      margin: 0;
      padding: 0;
    }
-   
+   .ITcarousel{
+    max-width: 100%;
+   }
+
    body{
      margin:0;
      padding: 0;
@@ -76,6 +79,9 @@
     padding: 4em 0 5em;
     
 }
+.card1Image{
+    width: 4rem;
+}
 .card1Image, .card1Title, .card1Text{
     padding: 1em;
 }
@@ -130,6 +136,9 @@
 }
 
 @media only screen and (max-width: 900px) {
+    .card1Image{
+        width: 3rem;
+    }
     
   *, *::before, *::after{
     margin: 0;
@@ -151,9 +160,9 @@
     overflow-x: hidden;
     display: block;
  }
- div{
+ /* div{
     border: 2px solid red;
- }
+ } */
  .carouselHead{
     font-size: 20px;
  } 

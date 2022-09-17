@@ -12,7 +12,7 @@ import About4 from '../Images/AboutPic4.jpg';
 import Ellipse2 from '../Images/Ellipse2.jpg';
 import Ellipse3 from '../Images/Ellipse3.jpg';
 import Ellipse4 from '../Images/Ellipse4.jpg';
-
+import MobileHeader from '../components/MobileHeader.jsx'
 function AboutBody() {
 
 
@@ -20,6 +20,7 @@ function AboutBody() {
     <div>
       <div>
           <Header/>
+          <MobileHeader/>
       </div>
     
      

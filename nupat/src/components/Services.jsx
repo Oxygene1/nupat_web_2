@@ -11,6 +11,7 @@ import Blockchain from '../Images/BlockTech.jpg'
 // import { Link, animateScroll as scroll } from "react-scroll";
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
+import MobileHeader from './MobileHeader.jsx'
 // import Banner from '../Images/cont3.jpg'
 
 
@@ -42,7 +43,9 @@ const Services = () => {
   return (
     <div className='IT'>
       <div className='fixedHeader2'>
+
       <Header/>
+      <MobileHeader/>
       </div>
       <div className='servicesmanin'>
 

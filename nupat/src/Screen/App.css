@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Source+Sans+Pro:wght@400;600&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 body{
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'DM Sans', sans-serif;
   background: #fff;
 }
 .mainAboutPage{
@@ -56,15 +56,23 @@ body{
 
 }
 .Logo{
+  position: relative;
+/* width: 10vw; */
+/* height: 2rem; */
+  top: -5vw;
+    left: -4vw;
+}
+.Logo img{
   position: absolute;
-width: 10vw;
-top: .4vw;
-left: 2vw;
-
+  /* top: -4rem; */
+  /* width: 10rem; */
+  height: 8rem;
+  /* left: -4vw; */
 }
 
 .navDiv{
   margin-left: 45vw;
+  margin-bottom:1vw;
   /* max-width: 40%; */
   /* float: right; */
   /* margin-top: 2rem; */
@@ -75,7 +83,7 @@ left: 2vw;
 }
 .navDiv a{
   text-decoration: none;
-  color: #131E47;
+  color: #fff;
   margin: .8rem;
 }
 li{
@@ -84,20 +92,16 @@ li{
 .HomeDropDown{
   display: none;
 }
-.Nav{
+.Navigation{
   justify-content: space-between;
   display: flex;
-  /* flex-wrap: wrap; */
   flex-direction: row;
  align-items: center;
   width: 100%;
   padding-top: 2vw;
-  /* height: 7rem; */
-  /* top: -1vw; */
-  /* z-index: 50; */
-  border-bottom:2px solid #131E47;
-  /* position: fixed; */
-  background: #FFFFFF;
+  /* border-bottom:2px solid #131E47; */
+  background: #131E47;
+  height: 5rem;
 }
 .HeadAbout{
   margin-top: 3rem;
@@ -106,70 +110,64 @@ li{
   z-index: 20;
 }
 
-/* .dropAppend{
-  justify-content: space-between;
-  float: left;
-  display: flex;
-} */
-.Join{
-  text-decoration: none;
-  color: white;
-  background-color: #131E47;
 
+.Joiny{
+  text-decoration: none;
+  background: #fff;
+  border-style: none;
   border-radius: .5rem;
-  /* margin-left: 20%; */
   position: relative;
   left: 6%;
-  bottom: .8vw;
   display: flex;
+  font-size: 16px;
   flex-direction: row;
   align-items: center;
-  height: 3vw;
-  padding: .1rem .5rem;
-  /* gap: 10px; */
-  
+  padding: .5rem 1rem;
+  color: #131E47;
+  outline-style:none
 
 
 }
 
-/* .nav2{
+
+.nav2{
   display: none;
 
-} */
+}
 
-/* .dropdown-menu{
-  position:relative;
-  top: 11vw;
-  z-index: 100;
-} */
-.dropdown-toggle{
-  display: none;
+
+.DropButtonDiv1{
+  position: absolute;
+  top: 2vw;
+  right: 4%;
+}
+.toggle1{
+  /* display:grid; */
+  align-items: center;
   border-style: none;
-  position: relative;
-  bottom: 5.5vw;
-  left: 85vw;
   padding: 5px;
   background-color: transparent;
   cursor: pointer;
-  height: 5vw;
+  /* height: 5vw; */
+  width: 4vw;
+  display:flex;
+  /* margin: ; */
+}
+.toggle1 :hover{
+  border-style: none;
 }
 
-/* .HomeDropDown{
-  position: absolute;
-} */
+
 
 a:hover{
   text-decoration: none;
 }
-.dropdown-toggle span {
-  background-color: #131E47;
- 
-  display: grid;
-  margin: .4rem;
-  width: 28px;
-  height: 3px;
+.dropdown-toggle{
   display: block;
-  transition: .3s;
+}
+.Hamburger1{
+  width: 4vw;
+  height: 5vw;
 }
 
 
@@ -335,7 +333,8 @@ opacity: 2rem;
   
 }
 .dropbtn {
-  color: white;
+  color: #fff;
+  text-decoration: none;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -358,7 +357,7 @@ opacity: 2rem;
  
 }
 .dropnavy a{
-  color: #131E47;
+  color: #fff;
   text-decoration: none;
 }
 .firstServiceIntro , .SecondServiceIntro{
@@ -693,19 +692,14 @@ background: #FFFFFF;
 .ulego{
   background-color: white;
 }
-.initiative{
-  padding: 3em 0 1rem 7.5%;
-  color: white;
-  font-size: 31px;
-}
 .post{
   color: #fff;
   font-weight: bold;
   font-size: 20px;
 }
-.initiative h1 {
+/* .initiative h1 {
   font-size: 40px;
-}
+} */
 .ulegoh2{
   padding: 1em 0;
   margin-left: 8%;
@@ -736,10 +730,7 @@ body{
   line-height: 1.6;
  
 }
-/* .Body{
-  margin: 0 auto;
-  overflow: hidden;
-} */
+
 
 .carousel{
   /* width: 70%;
@@ -975,6 +966,7 @@ margin-top: 6em;
 .Foot-nav li{
   list-style: none;
   margin: 1.5em 0;
+  color: #131E47;
 }
 .Foot-nav a{
   text-decoration: none;
@@ -1000,12 +992,12 @@ margin-top: 6em;
   left:86.6vw;
 }
 .dropdropmenu{
-  /* position: relative; */
-  /* right: 70vw; */
+  padding-left: 20vw;
   margin-top: 5vw;
-  margin-left: -70vw;
-  width: 80%;
-  padding-left: 25vw;
+  margin-left: -90vw;
+  width: 80vw;
+
+
 }
 .dropdropmenu a, Link{
   padding-bottom:1.5rem ;
@@ -1038,10 +1030,7 @@ margin-top: 6em;
   /* background-color: #283b8b; */
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
-/* // positions the icon to the right and center aligns it vertically */
-  /* position: absolute; */
-  /* top: 50%; */
-  /* right: 25px; */
+
   transform: translateY(-50%);
   display: none;
 }
@@ -1050,13 +1039,43 @@ margin-top: 6em;
   z-index: 100;
   top: 20vw;
 }
+@media screen and (max-width:914px) {
+  .nav2{
+    display:block;
+    border-bottom:2px solid #131E47;
+    height:5em;
+    align-items: center;
+    width: 100%;
+  }
+  .Navigation{
+    display:none;
+
+  }
+  .dropdropmenu{
+
+    padding-left: 20vw;
+    margin-top: 5vw;
+    margin-left: -90vw;
+    width: 80vw;
+  
+  
+  }
+}
 
 
 @media screen and (max-width: 768px) {
   .play-panel{
     top: 55vw;
   }
+  .dropdropmenu{
 
+    padding-left: 20vw;
+    margin-top: 5vw;
+    margin-left: -120vw;
+    /* width: 80vw; */
+  
+  
+  }
 
   .navigation-menu.expanded {
     display: block;
@@ -1077,9 +1096,7 @@ margin-top: 6em;
   .play-panel{
     top: 55vw;
   }
-  .nav2{
-    display:flex;
-  }
+
   /* #dropAppend{
     display: none;
   } */
@@ -1299,9 +1316,6 @@ margin-top: 6em;
      
   .form1{
     width: 100%;
-    /* margin-left: 10vw; */
-    overflow: hidden;
-    /* margin-right: -2rem; */
     overflow: hidden;
   }
 }
@@ -1309,9 +1323,6 @@ margin-top: 6em;
      
   .form1{
     width: 100%;
-    /* margin-left: 6vw; */
-    /* overflow: hidden; */
-    /* margin-right: -2rem; */
     overflow: hidden;
   }
 }
@@ -1326,23 +1337,19 @@ margin-top: 6em;
      
   .form1{
     width: 80%;
-    /* margin-left: 4vw; */
     overflow: hidden;
     margin-right: -2rem;
-    overflow: hidden;
   }
 }
 @media screen and (max-width: 786px){
-  .Nav{
-    height: 5em;
+  .Navigation{
+    display:none;
 
   }
   .navDiv{
     display: none;
   }
-  .dropdown-toggle{
-    display:flex;
-  }
+
   .navigation-menu {
     margin-left: auto;
   }
@@ -1367,7 +1374,6 @@ margin-top: 6em;
   .form1{
     width: 89%;
     margin-left: 5vw;
-    /* overflow: hidden; */
   
   }
   .Course{
@@ -1437,7 +1443,7 @@ margin-top: 6em;
 
 
 @media screen and (max-width:600px){
-  .Nav{
+  .Navigation{
     height: 5em;
   }
   .HomeDropDown{
@@ -1871,7 +1877,6 @@ margin-top: 6em;
   .dropdown-toggle{
     margin-top: 2vw;
     height: 13vw;
-    overflow: hidden;
   }
   .FootWork{
     margin-left: -3vw;
@@ -1884,11 +1889,7 @@ margin-top: 6em;
   .textIntro h1{
     line-height: 16vw;
   }
-  .dropdown-toggle{
-    overflow: hidden;
-    /* padding-top: -5vw; */
-    height:12vw;
-  }
+
   .coverButton{
     display: none;
   }

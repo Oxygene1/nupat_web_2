@@ -11,19 +11,19 @@ import Excellence from '../Images/excellence.jpg'
 // import ux from '../src/images/ux.svg'
 // import Heading from './Init/Heading'
 // import './App.css';
-import Card from './Card.jsx'
-import Initiative from './Initiative'
-import Ulego from './Ulego'
+import Card from './SecondCard.jsx'
+// import Initiative from './Initiative'
+// import Ulego from './Ulego'
 
 function init() {
   return (
     <>
-    <div>
+    {/* <div>
       <Ulego/>
     </div>
     <div>
       <Initiative/>
-    </div>
+    </div> */}
     <div className="Benefitss">
      <h1 style={{color:"black"}}>Benefits of working with us</h1>
      <p>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules</p>
