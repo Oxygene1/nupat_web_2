@@ -1,23 +1,133 @@
 import React from 'react'
-import logoo from '../Images/Logo.svg';
+import logoo from '../Images/Logoo.svg';
 import { Link } from "react-router-dom";
 import FootExtension from './FootExtension.jsx';
-
+import Facebook from '../Images/Facebook-icon.svg';
+import Linkedin from '../Images/Linkedin.svg';
+import Instagram from '../Images/Insta-icon.svg';
+import Twitter from '../Images/twitter-icon.svg';
+import styled from 'styled-components';
 function Footer() {
+  const FaceBook = styled.input`
+    background: #1877F2;
+    padding: .5rem;
+    border-radius:45%;
+    // marging-right:1rem;
+    `
+  const Socialdiv = styled.div`
+    display: flex;
+    padding-left: 3rem;
+    @media only screen (max-width: 768px) {
+      justify-content: center;
+      margin-left:20rem;
+      margin-right: auto;
+    }
+    `
+  const Linkedinn = styled.input`
+    margin-left: 1rem;
+    marging-right:1rem;
+    `
+  const Insta =styled.input`
+    margin-left: 1rem;
+    marging-right:1rem;
+    `
+  const Tweet = styled.input`
+    margin-left: 1rem;
+    marging-right:1rem;
+    `
+  const Homefooterhead = styled.div`
+  display:flex;
+  flex-direction: row;
+    @media (max-width:786px){
+      display:block;
+    width: 90%;
+
+    }
+  margin-left: 5%;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #131E47;
+  margin-bottom: -4vw;
+  padding: 2rem;
+  border-radius: .5rem;
+  margin-bottom: 2rem;
+  `
+  const FormBtn = styled.div`
+  
+  width: 80%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size:20px;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 7px;
+  height: 5rem;
+  // padding: 3rem;
+  background-color: #131E47;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 3rem;
+  @media (max-width:786px){
+    padding-right:5rem;
+    width: 100%;
+    // margin-left: 4rem;
+  }
+  `
+  const JoinUs = styled.button`
+  border:2px solid white;
+  border-radius: 5px;
+  padding: .5rem;
+  margin-left: 8%;
+  font-size: 20px;
+  font-weight: 10px;
+  color: #131E47;
+  width:6vw;
+  background-color: #fff;
+  @media (max-width:786px){
+    padding:.2rem;
+    width:22vw;
+    // margin-right: -10%;
+  }
+  
+  `
+  const Subscribeinput = styled.input`
+  @media(max-width:786px){
+    width: 100%;
+    margin-right: 4rem;
+
+  }
+  `
+  const Subscribeform = styled.form`
+  @media(max-width:786px){
+    // padding:3rem;
+    width: 100%;
+
+  }
+  `
+  const Subscribeform2 = styled.div`
+  @media(max-width:786px){
+    // padding:3rem;
+    width: 100%;
+
+  }
+  `
   return (
     <div className='FootWork'>
-     <div className="homefooterhead">
+     <Homefooterhead>
     <div className='homesubscribe'>
     <h1>Subscribe</h1>
     <p>Join our community and get the latest <br /> information about our products an services. </p>
     </div>
-    <div className="form-btn">
-    <form>
-    <input type="text" placeholder="your email address" id="homeform"></input>
-   </form>
-   <button className="join-us">Join Us</button>
-    </div>
-    </div>
+    <FormBtn>
+    <Subscribeform>
+    <Subscribeinput type="text" placeholder="your email address" id="homeform"></Subscribeinput>
+   </Subscribeform>
+    <Subscribeform2> <JoinUs>Join Us</JoinUs> </Subscribeform2>
+  
+    </FormBtn>
+    </Homefooterhead>
 
 
 
@@ -30,7 +140,8 @@ function Footer() {
         <ul>
           <li>Quick Links</li>
           <li>FAQ</li>
-          <li>News</li>  
+          <li>News</li>
+          <li>Nupat Initiative</li>
         </ul>
         </div>
         </div>
@@ -39,26 +150,18 @@ function Footer() {
           <li>What we do</li>
           <li>Codecamp</li>
           <li>IT Services</li>
-          <li>Our products</li>
+          {/* <li>Our products</li> */}
          
         </ul>
         </div>
-        <div>
+        {/* <div>
         <ul>
           <li>Community</li>
-          <li>Nupat Initiative</li>
           <li>Project 1000</li>
           
         </ul>
-        </div>
-        <div>
-        <ul>
-          <li>Join US</li>
-          <li>Donate</li>
-          <li>Be a partner</li>
-          <li>Pitch your idea</li>
-        </ul>
-        </div>
+        </div> */}
+       
         <div>
         <ul>
           <li>About</li>
@@ -70,6 +173,18 @@ function Footer() {
           <li>Mentors</li>
           <li>Contact us</li>
         </ul>
+        </div>
+         <div>
+        <ul>
+          <li>48, Community Road,Akoka Lagos</li>
+        
+        </ul>
+        <Socialdiv>
+          <div><FaceBook type='image' src={Facebook}/></div>
+          <div><Linkedinn type='image' src={Linkedin}/></div>
+          <div><Insta type='image' src={Instagram}/></div>
+          <div><Tweet type='image' src={Twitter}/></div>
+        </Socialdiv>
         </div>
        
         </div>

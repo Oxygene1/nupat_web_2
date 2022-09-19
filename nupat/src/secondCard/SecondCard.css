@@ -111,9 +111,7 @@ margin:0.5em 0 0.5em 0;
   padding: 3em 0em;
   background-color: rgb(254, 255, 246);
 }
-.card-title{
-  margin-bottom: 1em;
-}
+
 .Card img {
   /* width: 4em; */
   display: flex;
@@ -121,10 +119,7 @@ margin:0.5em 0 0.5em 0;
   align-items: center;
   margin-bottom:  2em;
 }
-.card-text {
-  margin: 1em;
-  padding-bottom: 2em;
-}
+
 
  @media screen  and (min-width:900px){
   .wrapper, .wrapper2 {

@@ -14,8 +14,21 @@ import Excellence from '../Images/excellence.jpg'
 import Card from './SecondCard.jsx'
 // import Initiative from './Initiative'
 // import Ulego from './Ulego'
-
+import styled from 'styled-components'
 function init() {
+  const Wrapper = styled.div `
+  display: flex;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  // padding-bottom: 4em;
+  margin: 4rem;
+  @media (max-width: 768px) {
+    display: block;
+    place-items:center;
+  }
+  
+  `
   return (
     <>
     {/* <div>
@@ -25,23 +38,23 @@ function init() {
       <Initiative/>
     </div> */}
     <div className="Benefitss">
-     <h1 style={{color:"black"}}>Benefits of working with us</h1>
+     <h1>Benefits of working with us</h1>
      <p>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules</p>
     </div>
   
-    <div className='wrapper1'>
+    <Wrapper>
       <Card
-    img={Mentor}
+    image={Mentor}
     text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
     title="Mentorship"/>
 
 <Card
-    img={Community}
+    image={Community}
     text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
     title="Community"/>
 
 <Card
-    img={Portfolio}
+    image={Portfolio}
     text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
     title="Portfolio"/>
 
@@ -50,24 +63,24 @@ function init() {
 
 
     
-    </div>
-    <div className='wrapper1'>
+    </Wrapper>
+    <Wrapper>
 <Card
-    img={Internship}
+    image={Internship}
     text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
     title="Internships"/>
 
 <Card
-    img={Master}
+    image={Master}
     text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
     title="Masterclass"/>
 
 <Card
-    img={Excellence}
+    image={Excellence}
     text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
     title="Excellence"/>
 
-    </div>
+    </Wrapper>
     </>
     );
 }

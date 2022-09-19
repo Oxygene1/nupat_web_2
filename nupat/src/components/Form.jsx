@@ -50,7 +50,7 @@ import { useRef } from 'react';
             name="email"
             placeholder='Email'
            
-          /><img className='envelope' src={envelope} alt="envelope"/>
+          /><a href="https://medium.com"><img className='envelope' src={envelope} alt="envelope"/></a>
         
 
     
@@ -63,7 +63,7 @@ import { useRef } from 'react';
             
            
             
-          /><img className='telephone' src={telephone} alt="" />
+          /><a href="https://medium.com"><img className='telephone' src={telephone} alt="" /></a>
          
         
         <div>  

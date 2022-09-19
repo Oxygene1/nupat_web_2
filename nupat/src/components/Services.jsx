@@ -42,11 +42,11 @@ const Services = () => {
 
   return (
     <div className='IT'>
-      <div className='fixedHeader2'>
+      {/* <div className='fixedHeader2'> */}
 
       <Header/>
       <MobileHeader/>
-      </div>
+      {/* </div> */}
       <div className='servicesmanin'>
 
       
@@ -59,11 +59,12 @@ const Services = () => {
        <div className='Hireh1div'><h1>Hire Our Gifted Hands</h1></div>
       
         <div className='servicesDisplay1'>
-        <div><img
+        <div>
+        <a href="https://medium.com"><img
           className="servicesImage"
           src={Frontend}
           alt="First slide"
-        />
+        /></a>
         <div>
         <h3>Frontend Service</h3>
         <p className='servicePara'>

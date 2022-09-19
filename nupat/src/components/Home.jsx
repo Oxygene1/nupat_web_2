@@ -10,21 +10,27 @@ import Header from './Header';
 import MobileHeader from './MobileHeader.jsx'
 import Team from './Team' 
 import Testimonials from './Testimonials';
+import Clients from './Clients';
+import styled from 'styled-components';
 
 function App() {
+  const HeaderMobile = styled(MobileHeader)`
+  display: none;
+  @media (max-width: 768px) {
+    display:flex;
+  }
+  
+  `
   return (
 
-    <div>
+    <div >
     <div>
     <Header/>
-
+    <HeaderMobile/>
     </div>
-    <MobileHeader/>
-      {/* <div className='fixedHeader'>
-      
-      </div> */}
 
-    <div>
+
+    <div >
      
     <Join/>
     <div>
@@ -36,6 +42,9 @@ function App() {
         </div>
         <div>
         <ITServices/>
+        </div>
+        <div>
+          <Clients/>
         </div>
         <div>
           <Testimonials/>

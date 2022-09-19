@@ -28,7 +28,7 @@ const Accomodation = ()=>{
                 </div>
                 
                 <div className='innerCarousel' style={{ borderRadius: "10px"}}>
-                     <img className='images2' alt={accomodationImages[currImg].Text} src={accomodationImages[currImg].Image}/> 
+              <img className='images2' alt={accomodationImages[currImg].Text} src={accomodationImages[currImg].Image}/>
                     <div className='center'></div>
                     
                 </div>

@@ -6,7 +6,7 @@ function Card(props) {
 
       <div>
         <div className="Cardy">
-      <img style={{height:"30rem"}} src={props.img} alt="/" className="card-img" />
+    <img style={{height:"30rem"}} src={props.img} alt="/" className="card-img" />  
       <div style={{ textAlign:"center"}} className="Card-body">
       <h3 className="card-title" style={{color:'#fff'}}>
            {props.title}

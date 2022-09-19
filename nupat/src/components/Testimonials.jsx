@@ -11,13 +11,13 @@ const Testimonials = () => {
   font-weight: 700;
   font-size: 40px;
   line-height: 54px;`
-const Para = styled.p`
-font-family: 'DM Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 24px;
-line-height: 33px;
-`
+// const Para = styled.p`
+// font-family: 'DM Sans';
+// font-style: normal;
+// font-weight: 400;
+// font-size: 24px;
+// line-height: 33px;
+// `
 const TestimonialIMGContainer = styled.div`
 display: flex;
 @media (max-width: 768px) {
@@ -42,6 +42,7 @@ color: #1E1E1E;
 `
 const TestimonialIMGmain = styled.img`
 border-radius: .5rem;
+width: 100%;
 `
   return (
     <div>
@@ -55,10 +56,10 @@ border-radius: .5rem;
         </TestimonialTextDiv>
         <TestimonialIMGContainer>
           <TestimonialIMGDIV>
-          <TestimonialIMGmain src={TestimonialIMG} alt="" />
+          <a href="https://medium.com"><TestimonialIMGmain src={TestimonialIMG} alt="" /></a>
           </TestimonialIMGDIV>
           <TestimonialIMGDIV>
-          <TestimonialIMGmain src={TestimonialIMG} alt="" />
+          <a href="https://medium.com"><TestimonialIMGmain src={TestimonialIMG} alt="" /></a>
           </TestimonialIMGDIV>
         </TestimonialIMGContainer>
       </div>

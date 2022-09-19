@@ -7,7 +7,7 @@ import React from 'react'
 // import ux from '../src/images/ux.svg'
 // import Heading from './Components/Heading'
 import './SecondCard.css';
-import Card from '../components/CardProp.jsx'
+// import Card from '../components/CardProp.jsx'
 // import Initiative from './Components/Initiative'
 // import Ulego from './Components/Ulego'
 const secondCard = () => {

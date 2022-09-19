@@ -67,11 +67,10 @@
     animation-name: CarouselMove;
     animation-duration: 5s;
 }
-.card1Title{
-    /* padding: 5em 20em 3em; */
-    text-align: center;
+/* .card1Title{
+
     color: black; 
-}
+} */
 
 .card1{
     border-radius: 10px;
@@ -82,7 +81,7 @@
 .card1Image{
     width: 4rem;
 }
-.card1Image, .card1Title, .card1Text{
+.card1Image, .card1Text{
     padding: 1em;
 }
 .card1Container{
@@ -239,10 +238,10 @@
     font-weight: 400;
 }
 
-.card1Title{
+/* .card1Title{
     padding: 2em 0;
     color: black;
-}
+} */
 .card1Text1{
     padding: 1em;
 }

@@ -23,7 +23,7 @@ function  Homefooter() {
     <div className="Foot-nav">
         <div className="logo-nav">
         <div>
-        <img className="Logoo" src={logoo} alt="Logo" />
+       <img className="Logoo" src={logoo} alt="Logo" />
         </div>
         <div>
         <ul>

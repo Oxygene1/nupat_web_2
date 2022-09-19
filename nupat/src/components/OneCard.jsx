@@ -13,7 +13,7 @@ const OneCard = ()=>{
     <div className="cardContainer">  
     {cardData.map((single)=>{const {Image, Title, Text} = single
 return <div className="card">
-<img className="cardImage" width={"10%"} src={Image} alt=""/>
+    <a href="https://medium.com"><img className="cardImage" width={"10%"} src={Image} alt=""/></a>
 <div className="cardTitle"><h5>{Title}</h5></div>
 <div className="cardText"><p>{Text}</p></div>
 </div>

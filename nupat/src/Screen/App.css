@@ -8,9 +8,7 @@ body{
 .mainAboutPage{
   width: 100%;
 }
-.servicesmanin{
-  margin-top: 4vw;
-}
+
 .ServicesIntro{
   background-color: #fff;
   /* margin-left:2vw ; */
@@ -31,24 +29,32 @@ body{
 }
 .Benefitss{
   justify-content: space-between;
-  text-align: center;
+  /* text-align: center; */
   margin-top: 3rem;
+  margin-left: 4rem;
 }
 .Benefitss h1{
+  font-family: 'DM Sans';
+  font-style: normal;
   font-weight: 700;
+  font-size: 40px;
+  line-height: 54px;
+  color: #131E47;
 }
 .Benefitss p{
-  font-size: 30px;
-  width: 70%;
-  margin-left: 15%;
-  line-height: 3vw;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 31px;
+  color: #1E1E1E;
 }
 .h1h2{
   margin-top: 4rem;
 }
-.h1h2 h1{
+/* .h1h2 h1{
 
-}
+} */
 
 
 .servicePara{
@@ -85,6 +91,11 @@ body{
   text-decoration: none;
   color: #fff;
   margin: .8rem;
+  cursor: pointer;
+}
+.navDiv a:hover{
+  color: #fff;
+  cursor: pointer;
 }
 li{
   margin: 3rem;
@@ -136,23 +147,8 @@ li{
 }
 
 
-.DropButtonDiv1{
-  position: absolute;
-  top: 2vw;
-  right: 4%;
-}
-.toggle1{
-  /* display:grid; */
-  align-items: center;
-  border-style: none;
-  padding: 5px;
-  background-color: transparent;
-  cursor: pointer;
-  /* height: 5vw; */
-  width: 4vw;
-  display:flex;
-  /* margin: ; */
-}
+
+
 .toggle1 :hover{
   border-style: none;
 }
@@ -174,18 +170,22 @@ a:hover{
 .form1{
   display:grid;
   padding:3em;
-  width: 90%;
+  width: 100%;
   margin-top: 3rem;
-  margin-left: 3%;
-  background-color: #131E47;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-color: #131E47; */
  
 
 }
 
 .form_main1{
   
-    width:80%;
- 
+    width:90%;
+    background-color: #131E47;
+    padding-right: 7%;
+    margin-left: auto;
+    margin-right: auto;
  
 }
 
@@ -418,16 +418,7 @@ flex-direction: row;
 
 
 
-.welcomIntro{
- 
-  /* margin-bottom: -5vw; */
-   
-color: #131E47;
-/* position: relative; */
-margin-left: 4rem;
-margin-top: 4vw;  
 
-}
 .Hireh1div{
   position: absolute;
   z-index: 3;
@@ -450,6 +441,10 @@ margin-top: 4vw;
 }
 .servicesDisplay1{
   margin-top: 4em;
+}
+.servicesDisplay1 h3, .servicesDisplay2 h3{
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .servicesDisplay1 p,.servicesDisplay2 p{
  margin: 1rem 2rem 2rem 2rem;
@@ -517,7 +512,7 @@ margin-top: 2rem;
 .textsection{
   display: flex;
   width: 100%;
-
+  margin-top:-3rem;
 }
 .textsection a{
   text-decoration: none;
@@ -534,8 +529,17 @@ margin-top: 2rem;
 }
 .textsection1, .textsection2{
   display: grid;
-  width: 90%;
-  margin: 5%;
+  width: 80%;
+  margin-left:auto;
+  margin-right: auto;
+  /* margin: 5%; */
+}
+.TextContent{
+  justify-items:space-between;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  align-items:center;
 }
 
 .main-text h1{
@@ -553,64 +557,21 @@ margin-top: 2rem;
   padding-top: 1rem;
   padding-bottom: .1rem;
 }
-.coursesimg{
-  width: 90%;
-  height: 40vw;
-  margin-left: 5%;
-  margin-bottom: 4em;
-}
+
 
 .Foot_extension{
-  height: 10vw;
+  height:6vw;
   width: 100%;
   background-color: #131E47;
 }
 .Logoo{
-  margin-top: 4rem;
+  margin-left: -3rem;
 }
 
-.About_1 h1 ,p{
-  color: #131E47;
-}
 
-.About_1 h1{
-  margin-bottom: 2rem;
-  line-height: 4vw;
-}
 
-.About_1{
-  position: relative;
-  width: 70%;
-  margin-left: 13%;
-  height: 1rem;
-  z-index: 3;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  margin-bottom: -5em;
-  color: #000000;
-}
-.oval{
-  position: relative;
-width:100%;
-height: 20em;
 
-top: 10em;
-z-index: 2;
-border-radius: 100%;
-/* border: 2px solid #131E47; */
-background: #FFFFFF;
-}
-.oval2{
-  position: relative;
-width:100%;
-height: 20em;
-bottom: 9em;
-z-index: 2;
-border-radius: 100%;
-/* border: 2px solid #131E47; */
-background: #FFFFFF;
-}
+
 .aboutpics{
   display: flex;
   flex-direction: row;
@@ -621,13 +582,7 @@ background: #FFFFFF;
   margin: .2rem;
   width: 40%;
 }
-.Ellipse_contain{
-  display: flex;
-  width: 90%;
-}
-.Ellipse_contain div{
- margin: 4rem;
-}
+
 .Ellipse_contain li{
   color: #000000;
   width: 60%;
@@ -641,10 +596,14 @@ background: #FFFFFF;
   width: 16vw;
 }
 .Ellipseimg{
-  margin-left: 15vw;
+  /* margin-left: 15vw; */
+  width: 15rem;
+  border-radius: 50%;
 }
 .Ellipseimg2{
-  margin-right: 8vw;
+  /* margin-right: 8vw; */
+  width: 15rem;
+  border-radius: 50%;
 }
 
 
@@ -654,12 +613,7 @@ background: #FFFFFF;
   color: #000000;
 }
 
-.Ellipse_main{
-  position: relative;
-  z-index: 3;
-  top: -25em;
-  margin-left: 13%;
-}
+
 .benefit{
   display: grid;
 }
@@ -679,10 +633,9 @@ background: #FFFFFF;
 .wrapper1{
   display: flex;
   gap: 1rem;
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   padding-bottom: 4em;
-  margin: 4rem;
 }
 .Cardy{
    margin: 7px;
@@ -696,6 +649,11 @@ background: #FFFFFF;
   color: #fff;
   font-weight: bold;
   font-size: 20px;
+  margin-top: 3rem;
+  font-family: DM Sans;
+}
+.navigation-menu{
+  display: none;
 }
 /* .initiative h1 {
   font-size: 40px;
@@ -771,12 +729,11 @@ body{
 }
 .FormContainer{
 width: 100%;
-margin-top: 6em;
 }
-.myContainer{
-  /* margin-top: -15vw; */
-  /* margin-bottom: -15vw; */
+.Welcome{
+  margin-top:-2rem;
 }
+
 .cardContainer{
   background-color: #fff;
   color: black;
@@ -887,24 +844,14 @@ margin-top: 6em;
 .footFoot ,#homeform{
   background-color: #131E47;
 }
-.homefooterhead{
-  display:flex;
-  flex-direction: column;
 
-  margin-left: 5%;
-
-  background-color: #131E47;
-  margin-bottom: -4vw;
-}
 .homesubscribe{
   width:80%;
-  height: 6rem;
+  /* height: 6rem; */
+  margin-bottom:2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  /* margin: 0 auto; */
-  margin-top: 4vw;
-  margin-left: -5%;
 
 }
 
@@ -915,20 +862,8 @@ margin-top: 6em;
   color: #fff;
  
 }
-.form-btn{
-  width: 80%;
-  display:flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size:20px;
-  border: 2px solid white;
-  border-radius: 5px;
-  padding: 7px;
-  margin-left: -12vw;
-  height: 5rem;
-  margin-top: 4vw;
-  background-color: #131E47;
+.homesubscribe h1{
+  padding: 2rem;
 }
 #homeform{
   font-size:20px;
@@ -938,18 +873,7 @@ margin-top: 6em;
   margin-right: 1em;
   background-color: #131E47;
 }
-.join-us{
-  height:3vw;
-  border:2px solid white;
-  border-radius: 5px;
-  padding: 0em 1em ;
-  margin-left: 8%;
-  width: 25%;
-  font-size: 20px;
-  font-weight: 10px;
-  color: #131E47;
-  background-color: #fff; 
-}
+
 .Foot-nav{
   padding: 4em 0;
   display: flex;
@@ -1003,10 +927,7 @@ margin-top: 6em;
   padding-bottom:1.5rem ;
 }
 
-.form_main1{
-  width: 100%;
-  /* margin-left: 7%; */
-}
+
 .teamHeader{
   margin-top: 12vw;
 }
@@ -1014,35 +935,22 @@ margin-top: 6em;
   border: 2px solid red;
 } */
 .textIntro h1{
-  margin-bottom: 2vw;
+  /* margin-bottom: 2vw; */
   margin-left: 5vw;
   color: #131E47;
+  padding:2rem;
 }
 
-.hamburger {
-  /* // removes default border on button element */
-  border: 0;
-  height: 40px;
-  width: 40px;
-  padding: 0.5rem;
-  border-radius: 50%;
-  color: #131E47;
-  /* background-color: #283b8b; */
-  cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
 
-  transform: translateY(-50%);
-  display: none;
-}
-.navigation-menu{
+/* .navigation-menu{
   position: relative;
   z-index: 100;
   top: 20vw;
-}
+} */
 @media screen and (max-width:914px) {
   .nav2{
     display:block;
-    border-bottom:2px solid #131E47;
+    background-color: #131E47;
     height:5em;
     align-items: center;
     width: 100%;
@@ -1097,32 +1005,12 @@ margin-top: 6em;
     top: 55vw;
   }
 
-  /* #dropAppend{
-    display: none;
-  } */
-  .homefooterhead{
-      font-size:20px;
-      flex-direction: row;
-      width:90%;
-      padding: 0em 1em 0.5em 6em;
-      color: white;
-      background-color: #131E47;
-      height: 20vw;
-    }
-    .homesubscribe{
+
+    /* .homesubscribe{
       width:70%;
     }
-    
-    .form-btn{
-      width: 45%;
-      display:flex;
-      flex-direction: row;
-      align-items: center;
-      justify-content: center;
-      background-color: #131E47;
-      margin-right: -4vw;
-      
-    }
+     */
+
     .Foot-nav{
       padding: 4em 7em;
       text-align: left;
@@ -1136,9 +1024,9 @@ margin-top: 6em;
       flex-direction: row;
       /* align-items: center; */
     }
-    .navigation-menu.expanded {
+    /* .navigation-menu.expanded {
       display: block;
-    }
+    } */
     .form1{
       margin-left: 5%;
     }
@@ -1191,37 +1079,18 @@ margin-top: 6em;
   .navDiv{
     display: none;
   }
-  .navigation-menu.expanded {
-    display: block;
-    z-index: 70;
-    position: relative;
-  }
 
-  .coursesimgDIV{
-    margin-bottom: 13vw;
-  }
+
 
   .wrap{
     display: grid;
   }
-  .homesubscribe{
-    /* padding: 5vw; */
-    height: 30vw;
-  
-    /* padding-left: 2rem; */
-    margin-left: 12%;
-  }
-  .homesubscribe h1{
-    padding: 1vw;
-  }
-  .form-btn{
-    margin-left: 9%;
-    height: 25vw;
-  }
+
+
 
   
   .Foot_extension{
-    height: 50vw;
+    height: 20vw;
   }
   .textsection{
     display: block;
@@ -1233,8 +1102,11 @@ margin-top: 6em;
   }
   .textsection1, .textsection2{
     /* justify-content: center; */
-    width: 75%;
-    margin-left: .6em;
+    width: 80%;
+    margin-left:2%;
+    margin-right: auto;
+    align-items: center;
+  
     
   }
   #textFormBody{
@@ -1259,9 +1131,7 @@ margin-top: 6em;
  /* margin-left: 2%; */
   width: 100%;
 } 
-.About_1{
-  width: 60%;
-}
+
 .carouselHead{
   font-size: 20px;
 } 
@@ -1301,23 +1171,17 @@ margin-top: 6em;
     overflow: hidden;
     /* margin: 2px solid red; */
   }
-  /* .homesubscribe{
-    height: 15vw;
-  } */
+
 }
 @media screen and (max-width: 820px){
   .form_main1{
-    width: 100%;
+    width: 90%;
     /* margin-left: 6%; */
     overflow: hidden;
   }
 }
 @media screen and (max-width: 1000px){
      
-  .form1{
-    width: 100%;
-    overflow: hidden;
-  }
 }
 @media screen and (max-width: 1240px){
      
@@ -1334,12 +1198,7 @@ margin-top: 6em;
 }
 
 @media screen and (max-width: 1400px){
-     
-  .form1{
-    width: 80%;
-    overflow: hidden;
-    margin-right: -2rem;
-  }
+
 }
 @media screen and (max-width: 786px){
   .Navigation{
@@ -1356,12 +1215,12 @@ margin-top: 6em;
   .wrap{
     display: grid;
   }
-  .join-us{
+  /* .join-us{
     height: 7vw;
     margin-top: 4vw;
     margin-left: -2%;
     margin-bottom: 1.2vw;
-  }
+  } */
 
   .btnbtn{
     position: relative;
@@ -1386,10 +1245,10 @@ margin-top: 6em;
     top: 2vw;
     left: 3vw;
   }
-  .welcomIntro{
+  /* .welcomIntro{
     line-height: 8vw;
  
-  }
+  } */
   
 
   /* nav{
@@ -1418,9 +1277,7 @@ margin-top: 6em;
     display: block;
     width: 100%;
   }
-  .form-btn{
-    overflow: hidden;
-  }
+
   .coverButton{
     width: 4vw;
     top: 10vw;
@@ -1443,6 +1300,17 @@ margin-top: 6em;
 
 
 @media screen and (max-width:600px){
+
+  .h1h1{
+    padding: 2rem;
+ 
+   }
+  .textsection{
+    margin-top:-3rem;
+  }
+  .textsection h2{
+    padding: 2rem;
+  }
   .Navigation{
     height: 5em;
   }
@@ -1479,11 +1347,11 @@ margin-top: 6em;
     padding-bottom: 2vw;
     list-style-type: decimal;
   }
-  .welcomIntro {
+  /* .welcomIntro {
     line-height: 14vw;
     width: 80%;
     margin-left: 10vw;
-  }
+  } */
   .enroll{
     height: 18vw;
   }
@@ -1494,63 +1362,22 @@ margin-top: 6em;
   .aboutpics img{
     height: 70vw;
   }
-  .Ellipse_contain{
-    display: flex;
-    flex-direction: column;
-  }
 
 
-  .oval{
-    height: 70vw;
-  }
-  .About_1{
-    margin-top: 17vw;
-    width: 100%;
-    height: 50vw;
-    top: 14vw;
-    margin-left: -2vw;
-    text-align: center;
-  }
-  .About_1 p{
-    margin-left: 7vw;
-    width: 90%;
-    /* max-height: 45vw; */
-    line-height: 4vw;
-    font-size: 18px;
-    font-weight: 400;
-  }
+
+
+  
+
   .wrap{
     display: grid;
   }
-  .form-btn{
-    overflow: hidden;
-  }
-  .join-us{
-    /* height: 8vw; */
-    padding: 3vw;
-    margin-top: 1vw;
-    margin-left: -2%;
-    /* width: 25em; */
-    margin-bottom: 1.2vw;
-    
-  }
+
+
   .btnbtn{
     position: relative;
     bottom: 6vw;
     left: 67%;
     /* width: 6vw; */
-  }
-  .homefooterhead{
-    margin-top: 4vw;
-
-    height: 90vw;
-  }
-  .welcomIntro{
-    /* line-height: 7vw; */
-    /* width: 100%; */
-    padding-top: 2vw;
-    /* padding-bottom: 10vw; */
-    margin-bottom: 18vw;
   }
   .Welcome div{
     margin-bottom: -25vw;
@@ -1623,10 +1450,7 @@ margin-top: 6em;
     
   
   }
-  .form1{
-    width: 90%;
-
-  }
+ 
 
 
 
@@ -1698,9 +1522,7 @@ margin-top: 6em;
   .Foot_extension{
     height: 30vw;
   }
-  .inputs{
-    margin-left: -4vw;
-  }
+  
   .inputs input,option{
     width: 88%;
     height: 2.5rem;
@@ -1708,10 +1530,7 @@ margin-top: 6em;
 
   }
 
-  .inputs{
-    width: 90vw;
-    /* padding-right: -4vw; */
-  }
+  
   /* .names{
     width: 100%;
   } */
@@ -1726,39 +1545,11 @@ margin-top: 6em;
     width: 92%;
     height: 35vw;
   }
-  .homefooterhead{
-    width: 100vw;
-   
-  }
-  .homesubscribe{
-   
-    margin-left: 2%;
-    height: 20em;
-  }
-  .homesubscribe h1{
-    margin-top: -2vw;
-    
-    
-    /* padding-bottom: 2vw; */
-  }
-  .homesubscribe p{
-    line-height: 6.5vw;
-    
-  }
+
+
   #homeform{
     margin-left:10%;
     width: 70%;
-  }
-  .form-btn{
-    margin-left: 5%;
-    height: 65vw;
-  }
-  .join-us{
-    /* width: 40vw; */
-    height: 9vw;
-    margin-top: 1.7vw;
-    padding: .2rem 2rem 2rem;
-    overflow: hidden;
   }
   
   .btnbtn{
@@ -1787,8 +1578,7 @@ margin-top: 6em;
     list-style-type: decimal;
   }
   .h1h1{
-   margin-top: -4rem;
-   padding: .1rem;
+   padding: 2rem;
 
   }
   .form1{
@@ -1798,7 +1588,7 @@ margin-top: 6em;
   }
   .form_main1{
     width:100%;
-    border: 2px solid red;
+    /* border: 2px solid red; */
    
   }
   .main-text{
@@ -1811,23 +1601,12 @@ margin-top: 6em;
     margin-right: 0;
     width: 100%;
   } 
-  .About_1{
-    height: 90vw;
-    width: 80%;
-  }
+ 
   /* .oval{
     width: 100%;
 
   } */
-  .About_1 p{
-    justify-content: space-between;
-    line-height: 6vw;
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 12vw;
-    width: 100%;
-  
-  }
+
   .Ellipse_contain img {
     display: none;
   }
@@ -1839,12 +1618,11 @@ margin-top: 6em;
     width: 100%;
     margin: 0 auto;
   }
-  .Ellipse_main{
+  /* .Ellipse_main{
     margin-left: 0 auto;
     margin-right: 0 auto;
     width: 100%;
-    margin-bottom: -120vw;
-  }
+  } */
   .one{
     margin-top: -17vw;
     margin-left: -15vw;
@@ -1885,18 +1663,13 @@ margin-top: 6em;
   }
   .textsection h2{
     line-height: 12vw;
+    padding: 2rem;
   }
-  .textIntro h1{
-    line-height: 16vw;
-  }
+
 
   .coverButton{
     display: none;
   }
-  /* @media screen and (max-width:455px) {
-    .btnbtn{
-      bottom:17vw;
-    }
-  } */
+
 }
 

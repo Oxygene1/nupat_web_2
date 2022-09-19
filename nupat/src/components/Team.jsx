@@ -33,7 +33,7 @@ function Team() {
   <div>
       <Card
     img={paulo}
-    title="Olarenwaju paul"
+    title="Olanrewaju paul"
     post="COO"/>
       </div>
 
