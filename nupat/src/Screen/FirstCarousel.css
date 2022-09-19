@@ -19,7 +19,7 @@ body {
 
 .firstnewsletter{
   background-color: #131e47;
-  width: 31.5rem;
+  width:80%;
   height: 7rem;
   position:absolute;
   bottom: 1px;
@@ -30,7 +30,7 @@ body {
 .innerNewsletter{
   display: flex;
   flex-direction: row;
-  width: 25.188rem;
+  width: 80%;
   background-color: #fff;
   height: 2.688rem;
   margin-top: 3rem;
@@ -50,7 +50,7 @@ body {
   border-radius: .3rem;
   width: 4rem;
   margin-top: .4rem;
-  margin-left: 7rem;
+  margin-left: 70%;
 }
 .newsletterInput{
   margin: .5rem;

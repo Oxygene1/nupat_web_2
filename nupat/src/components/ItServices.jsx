@@ -1,5 +1,5 @@
 import React from 'react'
-import FirstDisplay from "../Images/firstDisplay.jpg"
+import FirstDisplay from "../Images/firstDisplay3.jpg"
 import { Link } from "react-router-dom";
 import styled from 'styled-components';
 const ItServices = () => {
@@ -33,11 +33,11 @@ const ItServices = () => {
  
   `
   const FirstIMGdiv = styled.div`
-    width:90%;
+    width:100%;
   
   `
   const FirstIMG =styled.img`
-  height:19.75rem;
+  // height:19.75rem;
   width:100%;
   border-radius: .5rem;
   `
@@ -98,10 +98,14 @@ const ItServices = () => {
   }
   
   `
+  const SecondDiv = styled.div`
+  
+  width:100%;
+  `
   return (
     <div>
       <Firstcarousell>
-      <div>
+      <SecondDiv>
           <ITservicesDIV>
             <ITintro>
             IT Services
@@ -118,7 +122,7 @@ const ItServices = () => {
             </Joinus>
             
           </div>
-      </div>
+      </SecondDiv>
       <FirstIMGdiv>
         <FirstIMG src={FirstDisplay} alt="" />
       </FirstIMGdiv>

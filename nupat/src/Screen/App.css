@@ -16,10 +16,10 @@ body{
   /* margin-top: 8em; */
 }
 .Hireh1div h1{
-  color: #fff;
+  color:  #1877F2;
   margin-left: 4vw;
   position: relative;
-  bottom: 18vw;
+  bottom: 22vw;
   font-weight: 800;
   font-size: 55px;
 }
@@ -424,8 +424,10 @@ flex-direction: row;
   z-index: 3;
 }
 .displayBanner{
-  background-image: url('../Images/blackshake2.jpg');
+  background-image: url('../Images/ImageBaner.jpg');
   background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3rem;
   height: 33vw;
   background-size: 100%;
 }
@@ -550,6 +552,7 @@ margin-top: 2rem;
 }
 .main-text p{
   color: #131E47;
+  align-content:center;
 }
 
 .enroll{

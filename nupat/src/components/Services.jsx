@@ -51,7 +51,7 @@ const Services = () => {
 
       
       
-      <div className='displayBanner' style={{ width:'contain'}} >
+      <div className='displayBanner' style={{ width:'100%'}} >
            
         </div>
      
@@ -60,11 +60,11 @@ const Services = () => {
       
         <div className='servicesDisplay1'>
         <div>
-        <a href="https://medium.com"><img
+      <img
           className="servicesImage"
           src={Frontend}
           alt="First slide"
-        /></a>
+        />
         <div>
         <h3>Frontend Service</h3>
         <p className='servicePara'>
@@ -80,7 +80,8 @@ const Services = () => {
         </div>
 
      
-        <div><img
+        <div>
+          <img
           className="servicesImage"
           src={Backend}
           alt="Second slide"
