@@ -9,6 +9,7 @@ const Clients = () => {
       font-size: 40px;
       line-height: 54px;
       color: #131E47;
+      margin-top: 3rem;
       margin-left:4rem;
       @media (max-width: 786px){
         font-weight: 600;

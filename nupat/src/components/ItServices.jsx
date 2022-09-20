@@ -75,26 +75,25 @@ const ItServices = () => {
   @media(max-width:786px){
     // margin-left:5%;
   }
-  
   `
-  const NumberDisplay= styled.div`
-  margin-top:2rem;
-  margin-bottom:2rem;
-  display: flex;
-  width: 100%;
-  @media (max-width: 768px) {
-    width: 100%;
-  margin-left: auto;
-    margin-right: auto;
-  }
-  // justify-content: center;
-  `
-  const Numberdiv = styled.div`
-  padding-left: 15%;
-  padding-right: 15%;
-  // margin: 0rem 10rem;
-  width: 20%;
-  `
+  // const NumberDisplay= styled.div`
+  // margin-top:2rem;
+  // margin-bottom:2rem;
+  // display: flex;
+  // width: 100%;
+  // @media (max-width: 768px) {
+  //   width: 100%;
+  // margin-left: auto;
+  //   margin-right: auto;
+  // }
+  // // justify-content: center;
+  // `
+  // const Numberdiv = styled.div`
+  // padding-left: 15%;
+  // padding-right: 15%;
+  // // margin: 0rem 10rem;
+  // width: 20%;
+  // `
   const Firstcarousell = styled.div`
   display:flex;
   flex-direction:row;
@@ -141,7 +140,7 @@ const ItServices = () => {
       </FirstIMGdiv>
 
       </Firstcarousell>
-          <NumberDisplay>
+          {/* <NumberDisplay>
           <Numberdiv>
             <h3>50+</h3>
             <h3>Students</h3>
@@ -155,9 +154,13 @@ const ItServices = () => {
             <h3>50+</h3>
             <h3>Clients</h3>
           </Numberdiv>
-          </NumberDisplay>
+          </NumberDisplay> */}
     </div>
   )
 }
 
 export default ItServices
+
+
+
+// how to inst

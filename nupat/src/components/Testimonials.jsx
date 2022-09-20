@@ -1,66 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
 // import TestimonialIMG from '../Images/testimonialIMG.jpg'
-import { useEffect, useState, useRef } from "react";
+// import { useEffect, useState, useRef } from "react";
 import Teslim from '../Videos/meet_teslim.mp4'
 import Ibrahim from '../Videos/Meet_Ib.mp4'
 import Playcenter from'../Images/playCenter.svg'
 import Playcover from'../Images/playCover.svg'
 const Testimonials = () => {
-  const [mystream, setmystream] = useState(null);
-  const [videoswitch, setvideo] = useState(true);
-  // const [audioswitch, setaudio] = useState(true);
-  const myvideo = useRef(null);
-
-  useEffect(() => {
-      navigator.mediaDevices
-          .getUserMedia({ video: true, audio: true })
-          .then((stream) => {
-              myvideo.current.srcObject = stream;
-              myvideo.current.autoplay = true;
-              myvideo.current.muted = false;
-              setmystream(stream);
-          });
-  }, []);
-
-  const handleVideo = () => {
-      if (videoswitch) {
-          setvideo(false);
-          mystream.getTracks().forEach(function (track) {
-              if (track.readyState === "live" && 
-                  track.kind === "video") {
-                  track.enabled = false;
-              }
-          });
-      } else {
-          setvideo(true);
-          mystream.getTracks().forEach(function (track) {
-              if (track.readyState === "live" && 
-                  track.kind === "video") {
-                  track.enabled = true;
-              }
-          });
-      }
-  };
-  // const handleAudio = () => {
-  //     if (audioswitch) {
-  //         setaudio(false);
-  //         mystream.getTracks().forEach(function (track) {
-  //             if (track.readyState === "live" && 
-  //                 track.kind === "audio") {
-  //                 track.enabled = false;
-  //             }
-  //         });
-  //     } else {
-  //         setaudio(true);
-  //         mystream.getTracks().forEach(function (track) {
-  //             if (track.readyState === "live" && 
-  //                 track.kind === "audio") {
-  //                 track.enabled = true;
-  //             }
-  //         });
-  //     }
-  // };
+  
+// playVideo(){
+// this.refs.vidRef.play();
+// };
   const H3 = styled.h3`
   color: #131E47;
   font-weight: bold; 
@@ -134,9 +84,9 @@ border: 2px solid red;
         </TestimonialTextDiv>
         <TestimonialIMGContainer>
           <TestimonialIMGDIV>
-          <TestimonialIMGmain src={Teslim} alt="" ></TestimonialIMGmain>
+          <TestimonialIMGmain src={Teslim} alt="testimonial video by Teslim" ></TestimonialIMGmain>
             <div>
-              <Playbutton onClick={handleVideo} >{videoswitch}
+              <Playbutton >
               <Floatimg src={Playcenter} alt=''/>
               <FloatCoverimg src={Playcover} alt=''/>
 
@@ -144,10 +94,10 @@ border: 2px solid red;
             </div>
           </TestimonialIMGDIV>
           <TestimonialIMGDIV>
-         <TestimonialIMGmain src={Ibrahim} alt=""></TestimonialIMGmain>
+         <TestimonialIMGmain src={Ibrahim} alt="testimonial video by ibrahim"></TestimonialIMGmain>
               <div>
               <Playbutton>
-              <Floatimg src={Playcenter} ref={myvideo} alt=''/>
+              <Floatimg src={Playcenter} alt='play button'/>
               <FloatCoverimg src={Playcover} alt=''/>
               </Playbutton>
               </div>
