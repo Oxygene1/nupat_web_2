@@ -1,12 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import Teslim from '../Videos/meet_teslim.mp4'
+import Joy from '../Videos/Meet_joy.mp4'
 import Ibrahim from '../Videos/Meet_Ib.mp4'
 import VideoPlayer from 'react-video-js-player'
 const Testimonials = () => {
 
   const myVideoSrc = Ibrahim;
-  const myVideoSrc2 = Teslim
+  const myVideoSrc2 = Joy
   const H3 = styled.h3`
   color: #131E47;
   font-weight: bold; 
