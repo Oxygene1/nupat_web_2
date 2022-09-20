@@ -1,5 +1,5 @@
 import React from 'react'
-import groupImage from '../Images/group-picture1.jpg';
+import groupImage from '../Images/enrollmentNew.JPG';
 import Header from './Header.jsx'
 import Footer from './Footer.jsx';
 import Form from './Form.jsx';
@@ -81,7 +81,7 @@ function FormBody() {
   `
   const WelcomeIntrodiv = styled.div`
   position: absolute;
-  top:27rem;
+  top:20rem;
   @media(max-width:786px){
     top: 8rem;
   }
@@ -94,13 +94,13 @@ function FormBody() {
       <MobileHeader/>
       {/* </div> */}
     <div>
-    
+     <div className="Welcome">
+       
+       
+     
     <div className="FormContainer">
-      
-      <div className="Welcome">
-       
-       
-      
+        {/* <div className="GroupImage">
+        </div> */}
         <input className='groupImg' type="image" img src = {groupImage} alt="photo" />
         {/* <div className="play-panel">
         <img className='playcenter' src={playcenter} alt='play icon'/>

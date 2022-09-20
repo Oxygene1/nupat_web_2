@@ -13,8 +13,8 @@ const CarouselOne = () => {
   font-size: 57px;
   line-height: 60px;
   @media (max-width: 768px) {
-    font-weight: 600;
-    font-size: 40px;
+    font-weight: 500;
+    font-size: 30px;
     padding: 1rem;
     margin-left:.8rem;
     line-height: 50px;
@@ -25,13 +25,13 @@ const CarouselOne = () => {
   width:calc(116.5% - 100px);
   display:grid;
   margin-left: auto;
-  marging-right:auto;
+  margin-top:2rem;
   @media (max-width: 768px) {
     display:grid;
-    width: 100%;
-    height:15rem;
-    // margin-left: 10%;
-    marging-right: auto;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
   `
   const Realdiv = styled.div`
   text-align: justify;
@@ -44,7 +44,6 @@ const CarouselOne = () => {
     margin-left: auto;
     margin-right: auto;
   }
-  
   `
   const LinktoJoin = styled(Link)`
     text-decoration: none;
@@ -59,6 +58,7 @@ const CarouselOne = () => {
     }
     @media (max-width: 768px) {
       padding: 1rem;
+      // margin-top:-2rem;
       margin-left: 5%;
       // margin:3rem;
       border-radius:.4rem;
@@ -75,10 +75,13 @@ const CarouselOne = () => {
   const Firstdisplaydiv = styled.div`
     width: 90%;
     position: relative;
-    margin-left:5%;
+    // margin-left:5%;
+    padding: 2rem;
     @media (max-width: 768px) {
-      margin-left:auto;
-      margin-right: auto;
+      padding:0;
+    margin-left:auto;
+    margin-right: auto;
+    width: 100%;
   }
   `
   const NumberDisplay= styled.div`
@@ -98,6 +101,9 @@ const CarouselOne = () => {
     padding-right: 15%;
     // margin: 0rem 10rem;
     width: 20%;
+    jestify-conent: center;
+    align-items: center;
+    justify-items: center;
   `
   const Realities = styled.p`
     font-style: normal;
@@ -110,6 +116,9 @@ const CarouselOne = () => {
     margin: 0 auto;
     @media (max-width: 768px) {
       padding: 1.5rem;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 32px;
     }
   
   `
@@ -117,7 +126,7 @@ const CarouselOne = () => {
   display: flex;
   flex-direction: row;
   @media (max-width:786px){
-    margin-top:-2rem;
+    // margin-top:-2rem;
     display:block;
     margin-bottom:-4rem;
   }
@@ -127,15 +136,34 @@ const CarouselOne = () => {
   width:90%;
   margin-right:auto;
   margin-left:auto;
-  padding: 3rem 2rem 2rem 2rem;
+  // padding: 3rem 2rem 2rem 2rem;
+  @media(max-width:786px){
+    width: 100%;
+  }
+  `
+  const Breakbr = styled.br`
+  @media(max-width:786px){
+    display: none;
+  }
+  
+  `
+  const Firstcarouselblock = styled.div`
+  width:95%;
+  magin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  @media (max-width:786px){
+    // margin-right:10%;
+    // width: 90%;
+  }
   `
   return (
-    <div >
-    <FirstCarousel >
-      <div className="firstcarouselblock">
+    <div>
+    <FirstCarousel>
+      <Firstcarouselblock>
           <div className="innovdiv">
             <Innovation>
-            INNOVATION <br /> AT ITS PEAK
+            INNOVATION <Breakbr /> AT ITS PEAK
             </Innovation>
           </div>
           <div>
@@ -149,7 +177,7 @@ const CarouselOne = () => {
             </ BtnJoinusdiv>
             
           </div>
-      </div>
+      </Firstcarouselblock>
       <Firstdisplaydiv>
         <DisplayIMG src={FirstDisplay} alt="" />
 

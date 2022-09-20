@@ -232,6 +232,7 @@ const Services = () => {
  	      <option value="Data Science Services">Data Science Services</option>
         <option value="Data Analysis Services">Data Analysis Services</option>
         <option value="Blockchain Technology Services">Blockchain Technology Services</option>
+        <option value="Others">Other Services</option>
         </optgroup>
          </select>
          <div>

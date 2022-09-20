@@ -6,6 +6,9 @@ import styled from "styled-components";
 const Cards = ()=>{
     const Coursesdiv = styled.div`
     margin-left: 5rem;
+    @media(max-width:786px){
+        margin: 1.5rem;
+    }
     `
     const Coursesh2 = styled.h2`
     
@@ -16,7 +19,11 @@ const Cards = ()=>{
     line-height: 54px;
 
     color: #131E47;
-    
+    @media(max-width:786px){
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 54px;
+    }
     `
     const Coursesp = styled.p`
     
@@ -25,11 +32,12 @@ const Cards = ()=>{
     font-weight: 400;
     font-size: 18px;
     line-height: 33px;
-
-    /* Nupat main */
-
     color: #131E47;
-
+    @media(max-width:786px){
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 27px;
+    }
     `
     const Tittleh5 =styled.h5`
     padding: 2rem;

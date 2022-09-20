@@ -10,11 +10,15 @@ const ItServices = () => {
   font-family: 'DM Sans';
   font-style: normal;
   @media(max-width:786px){
-    padding: 1rem;
+  padding: 1rem 0;
+  font-weight: 600;
+  font-size: 30px;
   }
   `
   const ITservicesDIV = styled.div`
-  
+  @media(max-width:786px){
+    margin-bottom: -3rem;
+  }
   `
   const Joinus =styled.div`
     margin-top: 3rem;
@@ -26,7 +30,7 @@ const ItServices = () => {
   const Realidiv = styled.div`
   margin-top: 3rem;
   @media (max-width: 768px) {
-   width: 80%;
+   width: 100%;
    margin-bottom: -3rem;
   justify-content: space-between;
   }
@@ -50,7 +54,12 @@ const ItServices = () => {
   font-family: DM sans;
   width: 90%;
   @media(max-width:786px){
-    width: 100%;
+    width: 95%;
+    padding: 1rem 1rem 1rem 0;
+    font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 23px;
   }
   `
   const JoinLink = styled(Link)`
@@ -101,6 +110,10 @@ const ItServices = () => {
   const SecondDiv = styled.div`
   
   width:100%;
+  @media(max-width:786px){
+    display: block;
+  }
+
   `
   return (
     <div>

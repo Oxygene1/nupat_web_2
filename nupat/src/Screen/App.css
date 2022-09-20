@@ -256,6 +256,7 @@ color: #131E47;
 }
 .text_button{
   display:grid;
+  width: 100%;
 }
 .btnbtn{
    position: relative;
@@ -466,13 +467,22 @@ flex-direction: row;
   width: 10vw;
   margin: 2vw;
 }
-.groupImg{
- 
+.GroupImage{
+  margin-top: 2rem;
+ background-image: url('../Images/enrollmentNew.JPG');
+ /* border: 2px solid red; */
+ background-repeat: no-repeat;
+  background-size: cover;
+height: 30vw;
 width: 100%;
-height: 60vw;
+padding: 3rem;
 
-margin-top: 2rem;
+}
+.groupImg{
 
+  margin-top:2rem;
+  width: 100%;
+  height: 45vw;
 }
 .play-panel{
   position: absolute;
@@ -513,8 +523,8 @@ margin-top: 2rem;
 } */
 .textsection{
   display: flex;
+  flex-direction: row;
   width: 100%;
-  margin-top:-3rem;
 }
 .textsection a{
   text-decoration: none;
@@ -531,17 +541,18 @@ margin-top: 2rem;
 }
 .textsection1, .textsection2{
   display: grid;
-  width: 80%;
+  width: 100%;
   margin-left:auto;
   margin-right: auto;
   /* margin: 5%; */
 }
 .TextContent{
   justify-items:space-between;
-  width:80%;
+  width:100%;
   margin-left:auto;
   margin-right:auto;
   align-items:center;
+  padding: 2rem;
 }
 
 .main-text h1{
@@ -568,7 +579,7 @@ margin-top: 2rem;
   background-color: #131E47;
 }
 .Logoo{
-  margin-left: -3rem;
+  /* margin-left: -3rem; */
 }
 
 
@@ -848,9 +859,8 @@ width: 100%;
   background-color: #131E47;
 }
 
-.homesubscribe{
-  width:80%;
-  /* height: 6rem; */
+.homesubscribe1{
+  width:100%;
   margin-bottom:2rem;
   display: flex;
   flex-direction: column;
@@ -861,12 +871,13 @@ width: 100%;
 /* div{
   border: 2px solid red;
 } */
-.homesubscribe p, h1{
+.homesubscribe1 p, h1{
   color: #fff;
  
 }
-.homesubscribe h1{
-  padding: 2rem;
+.homesubscribe1 h1{
+  line-height:30px;
+  padding: 2rem 0 1rem 0;
 }
 #homeform{
   font-size:20px;
@@ -1096,17 +1107,16 @@ width: 100%;
     height: 20vw;
   }
   .textsection{
-    display: block;
+    display: flex;
+    flex-direction: column;
     
   }
 
-  #tex{
-    width: 120vw;
-  }
+
   .textsection1, .textsection2{
     /* justify-content: center; */
-    width: 80%;
-    margin-left:2%;
+    width: 95%;
+    margin-left:auto;
     margin-right: auto;
     align-items: center;
   
@@ -1228,7 +1238,8 @@ width: 100%;
   .btnbtn{
     position: relative;
     bottom: 6vw;
-    left: 88%;
+    left: 79%;
+    padding-right: 3rem;
     /* width: 6vw; */
   }
   
@@ -1308,9 +1319,7 @@ width: 100%;
     padding: 2rem;
  
    }
-  .textsection{
-    margin-top:-3rem;
-  }
+
   .textsection h2{
     padding: 2rem;
   }
@@ -1379,13 +1388,11 @@ width: 100%;
   .btnbtn{
     position: relative;
     bottom: 6vw;
-    left: 67%;
+    left: 50%;
+    padding-right: 2rem;
     /* width: 6vw; */
   }
-  .Welcome div{
-    margin-bottom: -25vw;
-    /* overflow: hidden; */
-  }
+
   
   /* .inputs img{
     display: none;
@@ -1394,9 +1401,7 @@ width: 100%;
   .phoneNumber, .email, .names{
     height: 2.7rem;
     width: 73.5vw;
-    /* height: 6vw; */
     margin-bottom: .5rem;
-    /* margin-left: -1rem; */
   }
   .Course{
     height: 2.7rem;
@@ -1405,7 +1410,7 @@ width: 100%;
     /* margin-left: -1rem; */
   }
   textarea{
-    width: 73.4vw;
+    /* width: 73.4vw; */
     padding: 2vw;
     height: 29vw;
   }
@@ -1462,12 +1467,7 @@ width: 100%;
   
  
   }
-  .textsection{
-   
-    width:70%;
-    margin-right: -30%;
-  
-  }
+
   .aboutpics img{
     width: 100%;
   }
@@ -1543,10 +1543,11 @@ width: 100%;
   }
   
   textarea{
-    margin-left:-4vw;
-    padding-left: 5vw;
-    width: 92%;
+    /* margin-left:-4vw;
+    padding-left: 5vw; */
+    width: 100%;
     height: 35vw;
+    /* padding-right: 7rem; */
   }
 
 
@@ -1556,10 +1557,12 @@ width: 100%;
   }
   
   .btnbtn{
-    /* position: relative; */
-    bottom: 10vw;
-    left: 70%;
-    width: 13vw;
+    position: relative;
+    bottom: 15vw;
+    left: 80%;
+    z-index: 10vw;
+    padding-right: 1rem;
+
   }
   .btn-primary{
     position: relative;
@@ -1674,5 +1677,14 @@ width: 100%;
     display: none;
   }
 
+
+}
+@media screen and (max-width:400px) {
+  .phoneNumber, .email, .names{
+    height: 2.7rem;
+    width: 87vw;
+    margin-bottom: .5rem;
+    padding-right: 3rem;
+  }
 }
 

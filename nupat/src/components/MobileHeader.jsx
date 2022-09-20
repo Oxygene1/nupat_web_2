@@ -10,8 +10,8 @@ import styled from 'styled-components';
     
    const DropHamburger1 = styled.span`
    background-color: #fff;
-   width:3rem;
-   height:5px;
+   width:2.5rem;
+   height:4px;
   //  margin-top:.5rem;
   //  margin-bottom:1rem;
   //  padding:.5rem;
@@ -20,8 +20,8 @@ import styled from 'styled-components';
    `
    const DropHamburger2 = styled.span`
    background-color: #fff;
-   width:3rem;
-   height:5px;
+   width:2.5rem;
+   height:4px;
     margin-top:.5rem;
   //  margin-bottom:1rem;
   //  padding:.5rem;
@@ -30,8 +30,8 @@ import styled from 'styled-components';
    `
    const DropHamburger3 = styled.span`
    background-color: #fff;
-   width:3rem;
-   height:5px;
+   width:2.5rem;
+   height:4px;
    margin-top:.5rem;
   //  margin-bottom:1rem;
   //  padding:.5rem;
@@ -54,7 +54,7 @@ import styled from 'styled-components';
    display:flex;
    flex-direction: column;
     height: 4rem;
-    width: 5rem;
+    width: 4rem;
    `
    const NavContainer = styled.div`
    display: none;
@@ -69,7 +69,7 @@ import styled from 'styled-components';
    position: absolute;
     margin-top: 0px;
    top: 10%;
-   right: 0%;
+   right: 4%;
    width: auto;
    width: 50%;
    overflow-y: hidden;
@@ -86,7 +86,7 @@ import styled from 'styled-components';
   position: absolute;
   // margin-bottom: 1.5rem;
   margin-left: -2rem;
-  width: 7rem;
+  width: 6rem;
   `
   const Nav2 = styled.div`
   display: none;

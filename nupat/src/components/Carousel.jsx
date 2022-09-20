@@ -11,9 +11,6 @@ const Carousel =()=>{
         background: #131E47;
         @media (max-width: 768px) {
         display: block;
-        padding: 3rem;
-        margin-left: auto;
-        margin-right: auto;
         }
         width:100%;
         padding:3rem;
@@ -43,10 +40,11 @@ const Carousel =()=>{
         font-weight: 700;
         font-size: 40px;
         line-height: 44px;
+        margin-bottom: 2rem;
         @media (max-width: 768px) {
         font-style: normal;
         font-weight: 500;
-        font-size: 30px;
+        font-size: 28px;
         line-height: 20px;
         padding:10px;
           }
@@ -60,29 +58,27 @@ const Carousel =()=>{
         color: #FFFFFF;
         margin-top: 2rem;
         padding-bottom:1.5rem;
-        // margin-bottom: 1.5rem;  
+        margin-bottom: 3rem;  
         @media (max-width: 768px) {
         font-style: normal;
-        font-weight: 400;
+        font-weight: 300;
         font-size: 18px;
-        padding: 4px;
-        line-height: 20px;
+        // padding: 4px;
+        line-height: 23px;
         
         }
         `
     const PicGlass = styled.img`
-        height: 15.875rem;
-        // width: 41.125rem;
+        // height: 15.875rem;
         width: calc(95% - 100px);
         border-radius: .5rem;
         display:grid;
         margin-left: auto;
         marging-right:auto;
-        // padding: 2rem;
-        // shadow: 10px 10px 10px 10px;
-        // margin-top: 3rem;
+  
         @media (max-width: 768px) {
             width: 100%;
+            // padding:4rem;
         }
         `
     const NupatMainDiv = styled.div`
@@ -90,7 +86,7 @@ const Carousel =()=>{
         // margin-left: 5rem;
       
         @media (max-width: 768px) {
-            margin-bottom:2rem;
+            // margin-bottom:2rem;
             padding-bottom:2rem;
         }
         `
@@ -98,6 +94,11 @@ const Carousel =()=>{
         width: 100%;
         margin-right:4rem;
         padding:1rem;
+        @media(max-width:786px){
+            width:100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
         `
 return(
     <CarouselContainer>

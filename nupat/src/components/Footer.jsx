@@ -19,8 +19,6 @@ function Footer() {
     padding-left: 3rem;
     @media only screen (max-width: 768px) {
       justify-content: center;
-      margin-left:20rem;
-      margin-right: auto;
     }
     `
   const Linkedinn = styled.input`
@@ -40,16 +38,17 @@ function Footer() {
   flex-direction: row;
     @media (max-width:786px){
       display:block;
-    width: 90%;
-
+    width: 100%;
+      // padding:4rem;
     }
   margin-left: 5%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
   background-color: #131E47;
-  margin-bottom: -4vw;
+  // margin-bottom: -4vw;
   padding: 2rem;
+  padding-bottom:3rem;
   border-radius: .5rem;
   margin-bottom: 2rem;
   `
@@ -70,9 +69,11 @@ function Footer() {
   align-items: center;
   margin-top: 3rem;
   @media (max-width:786px){
-    padding-right:5rem;
+    display: block;
+    // padding:3rem;
+    // padding-right:5rem;
+    height: 8rem;
     width: 100%;
-    // margin-left: 4rem;
   }
   `
   const JoinUs = styled.button`
@@ -86,9 +87,11 @@ function Footer() {
   width:6vw;
   background-color: #fff;
   @media (max-width:786px){
+    // margin:2rem;
     padding:.2rem;
     width:22vw;
-    // margin-right: -10%;
+    margin-left: 35%;
+    margin-top: 1rem;
   }
   
   `
@@ -113,12 +116,18 @@ function Footer() {
 
   }
   `
+  const Socialli = styled.li`
+  @media(max-width:786px){
+  padding-left:14%;
+
+  }
+  `
   return (
     <div className='FootWork'>
      <Homefooterhead>
-    <div className='homesubscribe'>
+    <div className='homesubscribe1'>
     <h1>Subscribe</h1>
-    <p>Join our community and get the latest <br /> information about our products an services. </p>
+    <p>Join our community and get the latest information about our products an services. </p>
     </div>
     <FormBtn>
     <Subscribeform>
@@ -177,14 +186,19 @@ function Footer() {
          <div>
         <ul>
           <li>48, Community Road,Akoka Lagos</li>
+          <li>Contact +2348031958586, +2347081475750</li>
+          <Socialli>
+            <Socialdiv>
+            <FaceBook type='image' src={Facebook}/>
+            <Linkedinn type='image' src={Linkedin}/>
+            <Insta type='image' src={Instagram}/>
+            <Tweet type='image' src={Twitter}/>
+            </Socialdiv>
+
+          </Socialli>
         
         </ul>
-        <Socialdiv>
-          <div><FaceBook type='image' src={Facebook}/></div>
-          <div><Linkedinn type='image' src={Linkedin}/></div>
-          <div><Insta type='image' src={Instagram}/></div>
-          <div><Tweet type='image' src={Twitter}/></div>
-        </Socialdiv>
+       
         </div>
        
         </div>

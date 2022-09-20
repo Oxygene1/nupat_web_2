@@ -10,6 +10,11 @@ const Clients = () => {
       line-height: 54px;
       color: #131E47;
       margin-left:4rem;
+      @media (max-width: 786px){
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 40px;
+      }
       `
   const Clientsp = styled.p`
       font-family: 'DM Sans';
@@ -19,6 +24,9 @@ const Clients = () => {
       line-height: 27px;
       color: #1E1E1E;
       margin-left:4rem;
+      @media (max-width: 786px){
+        width:70%;
+      }
       `
   const ClientCardContainerdiv =styled.div`
       display: flex;
@@ -101,7 +109,7 @@ const Clients = () => {
       `
   return (
     <div>
-      <div>
+      {/* <div> */}
           <Clientsh2>What Our Clients are saying</Clientsh2>
           <Clientsp> Feedbacks from our clients, why wouldn’t you want to work with us.</Clientsp>
           <ClientCardContainerdiv>
@@ -120,7 +128,7 @@ const Clients = () => {
           </Carddiv>
 
           </ClientCardContainerdiv>
-      </div>
+      {/* </div> */}
 
     </div>
   )
