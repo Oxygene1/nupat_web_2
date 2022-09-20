@@ -1,17 +1,8 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 .init-text-imgy{
   display: flex;
   flex-direction: row;
   width: 100%;
 }
-
-/* .CardlistItemContainers{
-  display: grid;
-} */
 .init-img{
   width: 50%;
   margin-bottom:4vw;
@@ -68,8 +59,6 @@
 .initiative {
   padding: 3em 0 1rem 7.5%;
   color: white;
-  font-size: 31px;
-  /* display: flex; */
 }
 
 
@@ -125,10 +114,7 @@ text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: center; */
   text-align: center;
-  /* padding: 3em 6em; */
-  /* background-color: #131E47; */
   color: white;
 }
 
@@ -137,14 +123,7 @@ text-align: center;
   margin: 1.5em 0;
 }
 
-/* .homefooterhead {
-  font-size: 20px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  color: white;
-} */
+
 
 .first-nav {
   display: flex;
@@ -168,9 +147,6 @@ text-align: center;
   display: flex;
 }
 
-/* .sec-nav ul{
-  margin-right: 7em;
-} */
 
 .init-text{
   justify-content: center;
@@ -210,9 +186,6 @@ text-align: center;
 
 
 @media screen and (min-width:737px) {
-  /* .Card img{
-    width: 10px;
-  } */
 
   .wrap {
     display: flex;
@@ -228,7 +201,6 @@ text-align: center;
     text-align: left;
     display: flex;
     flex-direction: row;
-    /* align-items: center; */
     justify-content: space-between;
   }
 

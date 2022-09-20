@@ -101,7 +101,7 @@ function FormBody() {
     <div className="FormContainer">
         {/* <div className="GroupImage">
         </div> */}
-        <input className='groupImg' type="image" img src = {groupImage} alt="photo" />
+        <input className='groupImg' type="image" src = {groupImage} alt="photo" />
         {/* <div className="play-panel">
         <img className='playcenter' src={playcenter} alt='play icon'/>
         <img className='play2' src={play2} alt='play icon'/>

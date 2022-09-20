@@ -1,20 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import Testimonialimage from '../Images/testimonialIMG.jpg'
-// import { useEffect, useState, useRef } from "react";
 import Teslim from '../Videos/meet_teslim.mp4'
 import Ibrahim from '../Videos/Meet_Ib.mp4'
-// import Playcenter from'../Images/playCenter.svg'
-// import Playcover from'../Images/playCover.svg'
-// import { VideoTag, videoTagString } from 'react-video-tag'
 import VideoPlayer from 'react-video-js-player'
 const Testimonials = () => {
 
   const myVideoSrc = Ibrahim;
   const myVideoSrc2 = Teslim
-  // playVideo(){
-  // this.refs.vidRef.play();
-  // };
   const H3 = styled.h3`
   color: #131E47;
   font-weight: bold; 
@@ -64,15 +56,7 @@ width: 90%;
   margin-right: auto;
 }
 `
-  const Playbutton = styled.button`
-border: 2px solid red;
-position: relative;
-z-index: 10;
-left: 13rem;
-bottom: 15rem;
-// width: 4rem
-background: transparent;
-`
+
   // const Floatimg = styled.img`
   // position: relative;
   // z-index: 15;
@@ -103,12 +87,12 @@ background: transparent;
         </TestimonialTextDiv>
         <TestimonialIMGContainer>
           <TestimonialIMGDIV>
-          <TestimonialVIDmain poster={`${"./Images/testimonialIMG.jpg"}`} src={myVideoSrc2} />
+          <TestimonialVIDmain  src={myVideoSrc2} />
         
           </TestimonialIMGDIV>
           <TestimonialIMGDIV>
         
-          <TestimonialVIDmain poster={`${"./Images/testimonialIMG.jpg"}`} src={myVideoSrc} />
+          <TestimonialVIDmain  src={myVideoSrc} />
           </TestimonialIMGDIV>
         </TestimonialIMGContainer>
       </div>

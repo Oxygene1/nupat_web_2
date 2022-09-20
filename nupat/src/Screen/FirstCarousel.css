@@ -1,19 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
-/* *,
-*::before,
-*::after {
-  box-sizing: border-box;
- 
-} */
+
 body {
   
   font-family: DM Sans;
 }
-
-/* .innovdiv{
-
-  justify-content: start;
-} */
 
 
 
@@ -69,7 +59,6 @@ body {
 .firstheading{
   height: 100vh;
   color:#131e47;
-  /* animation: firstMove 3s; */
 
 }
 .numberdiv{
@@ -113,17 +102,14 @@ body {
 }
 .ITTitle{
   font-size: 60px;
-  /* margin: 4em 6em 0; */
   width: 80%;
   color: #fff;
 }
 .ITheading{
-/* position: absolute; */
 position: relative;
 align-content: center;
 top: 25em;
 left: 20%;
-/* background-color: #131e47; */
 max-width: 40%;
 }
 .ITImages{
@@ -133,7 +119,6 @@ max-width: 40%;
 .ITText{
   font-size: 20px;
   width: 100%;
-  /* margin: 1em 0 1em 15em; */
   color: white;
 }
 .ITBtn{
@@ -170,7 +155,7 @@ max-width: 40%;
 .ulego-text-img{
   display: flex;
   flex-direction: column;
-}  */
+}  
 
 .init1{
   margin-bottom: 3em;
@@ -247,8 +232,6 @@ margin:0.5em 0 0.5em 0;
 
 .card-text {
   padding: 1em;
-  /* padding-top: 1.5rem;
-  padding-bottom: 2em; */
 }
 
 @media screen and (max-width: 900px){
@@ -256,7 +239,6 @@ margin:0.5em 0 0.5em 0;
     position: relative;
     top: 25rem;
     padding: 1rem;
-    /* height: 80em; */
    
   
     }
@@ -267,18 +249,11 @@ margin:0.5em 0 0.5em 0;
   overflow-x: hidden;
  
 }
-  
-  /* .firstcarousel{
-    display: block;
-    overflow-x: hidden;
-    padding: -20em;
-    margin-bottom: 0;
-  } */
+ 
   .Images{
     width: 120vw;
     height: 70vh;
     padding-top: 0;
-    /* margin-top: -20rem; */
   }
   .firstTitle{
     font-size: 1.5rem;
@@ -299,34 +274,14 @@ margin:0.5em 0 0.5em 0;
   }
 
  @media screen  and (min-width:900px){
-  /* .firstcarousel{
-    display: flex;
-  } */
+
   
   .wrapper, .wrapper2 {
     display: flex;
-    /* margin: 1em 8em; */
   }
   .card{
     width: 5em;
   }
-  /* .init-text-img{
-    display: flex;
-    flex-direction: row;
-   align-items: center;
-   justify-content: center;
-   padding: 4em 6em;
-  } */
-  /* .init-img{
-    width: 500px;
-  } */
-  /* .initiative{
-    padding: 1em 1em 1em 2em;
-  } */
-  /* .init-text{
-    width: 70%;
-    font-size: 25px;
-  } */
   .ulego-text-img{
     display: flex;
     flex-direction: row;

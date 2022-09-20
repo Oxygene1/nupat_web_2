@@ -85,7 +85,7 @@ const Services = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.
         </p>
         <div>
-        <button className='scrollbtn' onClick={executeScroll} type="submit" value="Test 2" to="test2" spy={true} smooth={true} offset={50} duration={500}>Reach Us</button>
+        <button className='scrollbtn' onClick={executeScroll} type="submit" value="Test 2" to="test2" offset={50} duration={500}>Reach Us</button>
         </div>
         </div>
         
@@ -105,8 +105,6 @@ const Services = () => {
         <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}  to="form1"
-          spy={true}
-          smooth={true}
           offset={-70}
           duration={500}>Reach Us</button>
         </div>
