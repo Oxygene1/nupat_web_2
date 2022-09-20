@@ -1,16 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
-// import TestimonialIMG from '../Images/testimonialIMG.jpg'
+import Testimonialimage from '../Images/testimonialIMG.jpg'
 // import { useEffect, useState, useRef } from "react";
 import Teslim from '../Videos/meet_teslim.mp4'
 import Ibrahim from '../Videos/Meet_Ib.mp4'
-import Playcenter from'../Images/playCenter.svg'
-import Playcover from'../Images/playCover.svg'
+// import Playcenter from'../Images/playCenter.svg'
+// import Playcover from'../Images/playCover.svg'
+// import { VideoTag, videoTagString } from 'react-video-tag'
+import VideoPlayer from 'react-video-js-player'
 const Testimonials = () => {
-  
-// playVideo(){
-// this.refs.vidRef.play();
-// };
+
+  const myVideoSrc = Ibrahim;
+  const myVideoSrc2 = Teslim
+  // playVideo(){
+  // this.refs.vidRef.play();
+  // };
   const H3 = styled.h3`
   color: #131E47;
   font-weight: bold; 
@@ -19,28 +23,29 @@ const Testimonials = () => {
   font-weight: 700;
   font-size: 40px;
   line-height: 54px;`
-// const Para = styled.p`
-// font-family: 'DM Sans';
-// font-style: normal;
-// font-weight: 400;
-// font-size: 24px;
-// line-height: 33px;
-// `
-const TestimonialIMGContainer = styled.div`
+  // const Para = styled.p`
+  // font-family: 'DM Sans';
+  // font-style: normal;
+  // font-weight: 400;
+  // font-size: 24px;
+  // line-height: 33px;
+  // `
+  const TestimonialIMGContainer = styled.div`
 display: flex;
 @media (max-width: 768px) {
   display: block;
 }
 margin-left:2%;
 `
-const TestimonialIMGDIV = styled.div`
+  const TestimonialIMGDIV = styled.div`
+  width: 100%;
 margin: 2rem;
 `
-const TestimonialTextDiv =styled.div`
+  const TestimonialTextDiv = styled.div`
 margin-top: 4rem;
 margin-left: 4rem;
 `
-const Pe = styled.p`
+  const Pe = styled.p`
 font-family: 'DM Sans';
 font-style: normal;
 font-weight: 400;
@@ -48,12 +53,18 @@ font-size: 24px;
 line-height: 33px;
 color: #1E1E1E;
 `
-const TestimonialIMGmain = styled.video`
-border-radius: .5rem;
-width: 100%;
-border: 2px solid red;
+  const TestimonialVIDmain = styled(VideoPlayer)`
+  height: 30rem;
+border-radius: .8rem;
+width: 90%;
+@media (max-width: 768px) {
+  width: 80%;
+  // padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+}
 `
-const Playbutton = styled.button`
+  const Playbutton = styled.button`
 border: 2px solid red;
 position: relative;
 z-index: 10;
@@ -62,45 +73,42 @@ bottom: 15rem;
 // width: 4rem
 background: transparent;
 `
-const Floatimg = styled.img`
-position: relative;
-z-index: 15;
-left: 6rem;
-border: 2px solid red;
-`
-const FloatCoverimg = styled.img`
-width: 7rem;
-border: 2px solid red;
-`
+  // const Floatimg = styled.img`
+  // position: relative;
+  // z-index: 15;
+  // left: 6rem;
+  // border: 2px solid red;
+  // `
+  // const FloatCoverimg = styled.img`
+  // width: 7rem;
+  // border: 2px solid red;
+  // `
+
+
+  // videoTagString({
+  //   src: "https://www.ibthemespro.com/resource/krozo/resources/video-2.mp4",
+  //   poster: "img/bg-2.jpg",
+  // });
+
+
   return (
     <div>
       <div>
         <TestimonialTextDiv>
 
-        <H3>
-        Testimonials
-        </H3>
-        <Pe>Listen to the experiences of our students</Pe>
+          <H3>
+            Testimonials
+          </H3>
+          <Pe>Listen to the experiences of our students</Pe>
         </TestimonialTextDiv>
         <TestimonialIMGContainer>
           <TestimonialIMGDIV>
-          <TestimonialIMGmain src={Teslim} alt="testimonial video by Teslim" ></TestimonialIMGmain>
-            <div>
-              <Playbutton >
-              <Floatimg src={Playcenter} alt=''/>
-              <FloatCoverimg src={Playcover} alt=''/>
-
-              </Playbutton>
-            </div>
+          <TestimonialVIDmain poster={`${"./Images/testimonialIMG.jpg"}`} src={myVideoSrc2} />
+        
           </TestimonialIMGDIV>
           <TestimonialIMGDIV>
-         <TestimonialIMGmain src={Ibrahim} alt="testimonial video by ibrahim"></TestimonialIMGmain>
-              <div>
-              <Playbutton>
-              <Floatimg src={Playcenter} alt='play button'/>
-              <FloatCoverimg src={Playcover} alt=''/>
-              </Playbutton>
-              </div>
+        
+          <TestimonialVIDmain poster={`${"./Images/testimonialIMG.jpg"}`} src={myVideoSrc} />
           </TestimonialIMGDIV>
         </TestimonialIMGContainer>
       </div>

@@ -210,7 +210,7 @@ function FormBody() {
           </div>
           <div className="TextContent">
           <h2>UIUX DESIGN</h2>
-          <p>
+          <p style={{textAlign:'justify'}}>
           Enroll to our User Interface/User Experience program and get the best skillsets in Web Design and Mobile Design as well as User Interface and User Experience Design (UI/UX). This Bootcamp focuses on efficiently getting you from zero to a point where you can get hired or win freelance contracts.
 
           We will use in demand tools like Figma to show you a full workflow from start to finish. From sketching, inspiration, prototyping, wireframes to microinteractions etc, we will guide and equip you to become confident and ready to deliver as a professional Designer. <SpanContent onClick={onClick7}>Read more...</SpanContent> 
@@ -230,7 +230,7 @@ function FormBody() {
           </div>
           <div className="TextContent">
           <h2>Data Science and Analytics;(Weekend/ online)</h2>
-          <p>Enroll to our Data Science and Analytics training program and get practical guide, courses and mentorship from beginner to intermediate level. The technologies covered in this program includes Microsoft Power Bi, Microsoft Excel, SQL Database, Python & More. <SpanContent onClick={onClick8}>Read more...</SpanContent> 
+          <p style={{textAlign:'justify'}}>Enroll to our Data Science and Analytics training program and get practical guide, courses and mentorship from beginner to intermediate level. The technologies covered in this program includes Microsoft Power Bi, Microsoft Excel, SQL Database, Python & More. <SpanContent onClick={onClick8}>Read more...</SpanContent> 
           {showText8? <span>You will learn and and have practical sessions on Data Exploration and Visualizations, Model Evaluation and Analysis, Python programming language, Tensorflow, Numpy, Scikit-Learn, Data Science and Machine Learning Projects and Workflows, Data Visualization in Python with MatPlotLib and Seaborn, Transfer Learning, Image recognition and classification, Train/Test and cross validation, Supervised Learning: Classification, Regression and Time Series, Decision Trees and Random Forests, Ensemble Learning, Hyperparameter Tuning, Using Pandas Data Frames to solve complex tasks, Use Pandas to handle CSV Files, Deep Learning / Neural Networks with TensorFlow and Keras, K Nearest Neighbours, Support Vector Machines, Regression analysis (Linear Regression/Polynomial Regression), How Hadoop, Apache Spark, Kafka, and Apache Flink are used, Setting up your environment with Conda, MiniConda, and Jupyter Notebooks, Using GPUs with Google Cola
 
           You will be building several projects at every point or stage of the program as you learn from scratch all the tools, technologies and concepts that will be introduced.

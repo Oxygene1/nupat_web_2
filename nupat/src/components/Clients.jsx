@@ -32,6 +32,7 @@ const Clients = () => {
   const ClientCardContainerdiv =styled.div`
       display: flex;
       flex-direction: row;
+      justify-content: center;
       margin: 2rem 4rem 2rem 4rem;
       @media (max-width: 768px) {
         flex-direction: column;
@@ -111,8 +112,8 @@ const Clients = () => {
   return (
     <div>
       {/* <div> */}
-          <Clientsh2>What Our Clients are saying</Clientsh2>
-          <Clientsp> Feedbacks from our clients, why wouldn’t you want to work with us.</Clientsp>
+          <Clientsh2 style={{textAlign:'center'}}>What Our Clients are saying</Clientsh2>
+          <Clientsp style={{textAlign:'center'}}> Feedbacks from our clients, why wouldn’t you want to work with us.</Clientsp>
           <ClientCardContainerdiv>
 
           <Carddiv1>

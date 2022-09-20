@@ -5,7 +5,8 @@ import styled from "styled-components";
 
 const Cards = ()=>{
     const Coursesdiv = styled.div`
-    margin-left: 5rem;
+    margin-top: 3rem;
+   
     @media(max-width:786px){
         margin: 1.5rem;
     }
@@ -46,8 +47,8 @@ const Cards = ()=>{
     return(
     <div>
         <Coursesdiv>
-        <Coursesh2>Courses</Coursesh2>
-    <Coursesp>We have varieties of courses available at your disposals for either the weekend or weekdays sessions in order to suit your schedules</Coursesp> 
+        <Coursesh2 style={{textAlign:'center'}}>Courses</Coursesh2>
+    <Coursesp style={{textAlign:'center'}}>We have varieties of courses available at your disposals for either the weekend or weekdays sessions in order to suit your schedules</Coursesp> 
         </Coursesdiv>
     <div className="card1Container">  
     {cardData.map((single)=>{const {Image, Title, Text} = single

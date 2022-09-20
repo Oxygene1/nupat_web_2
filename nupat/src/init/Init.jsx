@@ -38,8 +38,8 @@ function init() {
       <Initiative/>
     </div> */}
     <div className="Benefitss">
-     <h1>Benefits of working with us</h1>
-     <p>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules</p>
+     <h1 style={{textAlign:'center'}}>Benefits of working with us</h1>
+     <p style={{textAlign:'center'}}>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules</p>
     </div>
   
     <Wrapper>

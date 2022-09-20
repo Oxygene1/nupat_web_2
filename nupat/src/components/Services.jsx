@@ -5,7 +5,7 @@ import Header from './Header.jsx'
 import Frontend from '../Images/FrontEnd.jpg'
 import Backend from '../Images/BackendNew.jpg'
 import API from '../Images/API1.png'
-import Data from '../Images/DataScience.svg'
+// import Data from '../Images/DataScience.svg'
 import UI from  '../Images/UIModern.svg'
 import Blockchain from '../Images/BlockTech.jpg'
 // import { Link, animateScroll as scroll } from "react-scroll";
@@ -13,9 +13,23 @@ import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import MobileHeader from './MobileHeader.jsx'
 // import Banner from '../Images/cont3.jpg'
-
+import styled from 'styled-components'
 
 const Services = () => {
+  const Btnbtn = styled.button`
+  display: flex;
+  padding:1rem;
+  text-decoration: none;
+  background-color:#fff;
+  border-style:none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #131E47;
+  border-radius: .8rem;
+  margin-top:2rem;
+  min-width: 6.5rem;
+  justify-content: center;
+  `
   const form = useRef();
   
 
@@ -35,7 +49,7 @@ const Services = () => {
     };
     const scrollToRef = (scrl) => window.scrollTo(0, scrl.current.offsetTop)
     const executeScroll = () => scrollToRef(form)
-   
+  
        
     
 
@@ -124,7 +138,7 @@ const Services = () => {
         <div className='servicesDisplay2'>
         <div><img
           className="servicesImage"
-          src={Data}
+          // src={Data}
           alt="First slide"
         />
         <div>
@@ -245,7 +259,11 @@ const Services = () => {
           </div>
           <div className='text_button'>
           <textarea placeholder='What details do you need ?' name='message'></textarea>
-          <button className='btnbtn' type="submit" name='submit'>Send</button> 
+          
+          <div>
+            <Btnbtn type="submit" name='submit'>Send</Btnbtn> 
+
+          </div>
             
           
           

@@ -5,7 +5,7 @@ import envelope from '../Images/envelope.svg';
 // import courses from '../Images/mortarboard.svg';
 import person from '../Images/person.svg';
 import { useRef } from 'react';
-
+import styled from 'styled-components'
 
 
 
@@ -25,7 +25,22 @@ import { useRef } from 'react';
       });
       e.target.reset()
 
+     
   };
+      const Btnbtn = styled.button`
+      display: flex;
+      padding:1rem;
+      text-decoration: none;
+      background-color:#fff;
+      border-style:none;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #131E47;
+      border-radius: .8rem;
+      margin-top:2rem;
+      min-width: 6.5rem;
+      justify-content: center;
+      `
   return(
   
   <div className='Body'>
@@ -81,17 +96,20 @@ import { useRef } from 'react';
         <option value="Blockchain Technology">Blockchain Technology</option>
         </optgroup>
          </select>
-         <div>
-        
-         </div>
         
         
       </div>
          
           </div>
           <div className='text_button'>
-          <textarea placeholder='What details do you need ?' name='message'></textarea>
-          <button className='btnbtn' type="submit" name='submit'>Send</button> 
+          <textarea placeholder='What details do you need ?' name='message'/>
+
+          <div>
+            <Btnbtn type="submit" name='submit'>Send</Btnbtn> 
+
+          </div>
+          
+          
             
           
           

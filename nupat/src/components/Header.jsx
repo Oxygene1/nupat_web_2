@@ -22,7 +22,7 @@ function Header() {
 
           <Link to="/">Home</Link>
 
-          <Link to="/enrollment">CodeCademy</Link>
+          <Link to="/enrollment">Code Camp</Link>
           <Link to="/Services">IT <span>Services</span></Link>
           <a href="#" rel="noreferrer">Nupat Initiative</a>
           {/* <div className="dropdown dropnavy">

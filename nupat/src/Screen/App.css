@@ -16,12 +16,12 @@ body{
   /* margin-top: 8em; */
 }
 .Hireh1div h1{
-  color:  #1877F2;
+  color:  #fff;
   margin-left: 4vw;
   position: relative;
   bottom: 22vw;
-  font-weight: 800;
-  font-size: 55px;
+  font-weight: 700;
+  font-size: 44px;
 }
 .ServicesIntro p, h2{
   color: #131E47;
@@ -31,7 +31,7 @@ body{
   justify-content: space-between;
   /* text-align: center; */
   margin-top: 3rem;
-  margin-left: 4rem;
+  /* margin-left: 4rem; */
 }
 .Benefitss h1{
   font-family: 'DM Sans';
@@ -46,7 +46,7 @@ body{
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
-  line-height: 31px;
+  line-height: 28px;
   color: #1E1E1E;
 }
 .h1h2{
@@ -258,23 +258,7 @@ color: #131E47;
   display:grid;
   width: 100%;
 }
-.btnbtn{
-   position: relative;
-   /* right: 5%; */
-  left: 92%; 
-  float: right;
-  width: 6em;
-  bottom: 3em;
-  z-index:2;
-  text-decoration: none;
-  /* color: #131E47; */
-  background-color:#fff;
-  border-style:none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #131E47;
-  
-}
+
 
 .telephone{
   position: relative;
@@ -746,6 +730,7 @@ width: 100%;
 }
 .Welcome{
   margin-top:-2rem;
+  width:100%;
 }
 
 .cardContainer{
@@ -948,11 +933,16 @@ width: 100%;
 /* div{
   border: 2px solid red;
 } */
+.textIntro{
+ margin-top:2rem;
+  margin-left: 2%;
+}
 .textIntro h1{
-  /* margin-bottom: 2vw; */
-  margin-left: 5vw;
   color: #131E47;
-  padding:2rem;
+  padding-top:1rem;
+  padding-bottom:1rem;
+  /* margin-left:5%; */
+  /* padding:2rem; */
 }
 
 
@@ -1203,12 +1193,7 @@ width: 100%;
     overflow: hidden;
   }
 }
-.btnbtn{
-  position: relative;
-  bottom: 6vw;
-  left: 88%;
-  width: 6vw;
-}
+
 
 @media screen and (max-width: 1400px){
 
@@ -1235,13 +1220,7 @@ width: 100%;
     margin-bottom: 1.2vw;
   } */
 
-  .btnbtn{
-    position: relative;
-    bottom: 6vw;
-    left: 79%;
-    padding-right: 3rem;
-    /* width: 6vw; */
-  }
+
   
   
   .form1{
@@ -1385,13 +1364,6 @@ width: 100%;
   }
 
 
-  .btnbtn{
-    position: relative;
-    bottom: 6vw;
-    left: 50%;
-    padding-right: 2rem;
-    /* width: 6vw; */
-  }
 
   
   /* .inputs img{
@@ -1414,10 +1386,7 @@ width: 100%;
     padding: 2vw;
     height: 29vw;
   }
-  .btnbtn{
-    width: 10vw;
-    left: 82%;
-  }
+
 
   .envelope{
     display: none;
@@ -1556,14 +1525,7 @@ width: 100%;
     width: 70%;
   }
   
-  .btnbtn{
-    position: relative;
-    bottom: 15vw;
-    left: 80%;
-    z-index: 10vw;
-    padding-right: 1rem;
 
-  }
   .btn-primary{
     position: relative;
     z-index: 40;

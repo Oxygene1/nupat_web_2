@@ -12,6 +12,8 @@ function Footer() {
     background: #1877F2;
     padding: .5rem;
     border-radius:45%;
+    width: 2rem;
+    height: 2rem;
     // marging-right:1rem;
     `
   const Socialdiv = styled.div`
@@ -24,14 +26,20 @@ function Footer() {
   const Linkedinn = styled.input`
     margin-left: 1rem;
     marging-right:1rem;
+    width: 2rem;
+    height: 2rem;
     `
   const Insta =styled.input`
     margin-left: 1rem;
     marging-right:1rem;
+    width: 2rem;
+    height: 2rem;
     `
   const Tweet = styled.input`
     margin-left: 1rem;
     marging-right:1rem;
+    width: 2rem;
+    height: 2rem;
     `
   const Homefooterhead = styled.div`
   display:flex;
@@ -127,7 +135,7 @@ function Footer() {
      <Homefooterhead>
     <div className='homesubscribe1'>
     <h1>Subscribe</h1>
-    <p>Join our community and get the latest information about our products an services. </p>
+    <p>Join our community and get the latest information about our products and services. </p>
     </div>
     <FormBtn>
     <Subscribeform>
