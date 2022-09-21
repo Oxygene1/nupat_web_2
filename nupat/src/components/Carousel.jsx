@@ -63,28 +63,28 @@ const Carousel =()=>{
         font-style: normal;
         font-weight: 300;
         font-size: 18px;
-        // padding: 4px;
         line-height: 23px;
         
         }
         `
     const PicGlass = styled.img`
         // height: 15.875rem;
-        width: calc(95% - 100px);
+        width: 90%;
         border-radius: .5rem;
         display:grid;
         margin-left: auto;
         marging-right:auto;
-  
+        
         @media (max-width: 768px) {
             width: 100%;
             // padding:4rem;
         }
         `
     const NupatMainDiv = styled.div`
-        width: 100%;
+        width: 90%;
         // margin-left: 5rem;
-      
+        margin-left: auto;
+        margin-right: auto;
         @media (max-width: 768px) {
             // margin-bottom:2rem;
             padding-bottom:2rem;
@@ -92,7 +92,7 @@ const Carousel =()=>{
         `
     const PicGlassdiv =styled.div`
         width: 100%;
-        margin-right:4rem;
+        // margin-right:4rem;
         padding:1rem;
         @media(max-width:786px){
             width:100%;

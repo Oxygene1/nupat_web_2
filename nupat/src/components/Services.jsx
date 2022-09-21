@@ -5,7 +5,7 @@ import Header from './Header.jsx'
 import Frontend from '../Images/FrontEnd.jpg'
 import Backend from '../Images/BackendNew.jpg'
 import API from '../Images/API1.png'
-// import Data from '../Images/DataScience.svg'
+import Data from '../Images/datasc.png'
 import UI from  '../Images/UIModern.svg'
 import Blockchain from '../Images/BlockTech.jpg'
 // import { Link, animateScroll as scroll } from "react-scroll";
@@ -66,11 +66,12 @@ const Services = () => {
       
       
       <div className='displayBanner' style={{ width:'100%'}} >
+      <div className='Hireh1div'><h1>Hire Our Gifted Hands</h1></div>
            
         </div>
      
       <div className='ServicesIntro'>
-       <div className='Hireh1div'><h1>Hire Our Gifted Hands</h1></div>
+       
       
         <div className='servicesDisplay1'>
         <div>
@@ -82,7 +83,7 @@ const Services = () => {
         <div>
         <h3>Frontend Service</h3>
         <p className='servicePara'>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.
+          With our knowledge in different kinds of web frameworks and technology like React, Vue, and Angular, our skilled engineers create products that are user friendly and aligned with your company's goals and objectives.
         </p>
         <div>
         <button className='scrollbtn' onClick={executeScroll} type="submit" value="Test 2" to="test2" offset={50} duration={500}>Reach Us</button>
@@ -102,7 +103,7 @@ const Services = () => {
         />
        <div>
         <h3>Backend Services</h3>
-        <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
+        <p className='servicePara'>We use the latest .NET framework and software design/architecture, to develop enterprise backend applications for any kind of business ranging from fintech apps to e-commercer solutions.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}  to="form1"
           offset={-70}
@@ -121,7 +122,7 @@ const Services = () => {
         <div>
         <div>
         <h3>API Service</h3>
-        <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
+        <p className='servicePara'>We design efficient REST APIs tailored to meet your business needs so as to facilite seamless extension of functionalities to your web/mobile applications </p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
         </div>
@@ -136,13 +137,13 @@ const Services = () => {
         <div className='servicesDisplay2'>
         <div><img
           className="servicesImage"
-          // src={Data}
+          src={Data}
           alt="First slide"
         />
         <div>
         <div>
-        <h3>Data Scientist Services</h3>
-        <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
+        <h3>Data Science Services</h3>
+        <p className='servicePara'>Our team of Data Scientists are versertile and well detailed with the use of contemporaray tools to collect large data sets for analytical, statistical, and programming solutions that are explicitly tailored toward the needs of an organization. </p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
         </div>
@@ -163,7 +164,7 @@ const Services = () => {
         <div>
         <div>
         <h3>UI/UX Services</h3>
-        <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
+        <p className='servicePara'>Our UI/UX designers are well farmilia withr user interface for an apps, websites, or other interactive media. Their collaboration with product managers and engineers to gathering requirements from users before designing ideas that can be communicated using storyboards.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
         </div>

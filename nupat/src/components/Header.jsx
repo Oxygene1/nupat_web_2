@@ -1,11 +1,14 @@
 
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import React from 'react'
 import logo from '../Images/Logo.svg';
+// import styled from "styled-components";
 // import dropIcon from '../Images/drop.svg';
 // import Dropdown1 from '../components/Dropdown.jsx'
 
 function Header() {
+
+  const NormalLink = ""
   
   return (
 
@@ -13,18 +16,17 @@ function Header() {
       <div className='Navigation' style={{ justifyContent:"center", marginRight:"0"}}>
         <div className='Logo'>
           <Link to='/'>
-            <img src={logo} alt="Logo" />
+            <img src={logo} alt="Logo"/>
           </Link>
         </div>
        <div className="navDiv" style={{display:"flex"}}>
         {/* <nav> */}
 
 
-          <Link to="/">Home</Link>
-
-          <Link to="/enrollment">Code Camp</Link>
-          <Link to="/Services">IT <span>Services</span></Link>
-          <a href="#" rel="noreferrer">Nupat Initiative</a>
+          <NavLink activeClassName="active-link" to="/">Home</NavLink>
+          <NavLink activeClassName="active-link" to="/enrollment">Code Camp</NavLink>
+          <NavLink activeClassName="active-link" to="/Services">IT <span>Services</span></NavLink>
+          <a href="#">Nupat Initiative</a>
           {/* <div className="dropdown dropnavy">
             <a className="dropbtn" target="_blank" rel="noreferrer">Products</a>
             <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />

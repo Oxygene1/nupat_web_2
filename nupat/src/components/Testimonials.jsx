@@ -80,19 +80,19 @@ width: 90%;
       <div>
         <TestimonialTextDiv>
 
-          <H3>
+          <H3 style={{textAlign:'center'}}>
             Testimonials
           </H3>
-          <Pe>Listen to the experiences of our students</Pe>
+          <Pe style={{textAlign:'center'}}>Listen to the experiences of our students</Pe>
         </TestimonialTextDiv>
         <TestimonialIMGContainer>
           <TestimonialIMGDIV>
-          <TestimonialVIDmain  src={myVideoSrc2} />
+          <TestimonialVIDmain poster={'https://i.ytimg.com/vi/WMdQ8wOBlmE/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCo3i7XcxLI-05BpsYcp4LDSkGS4A'}  src={myVideoSrc2} />
         
           </TestimonialIMGDIV>
           <TestimonialIMGDIV>
         
-          <TestimonialVIDmain  src={myVideoSrc} />
+          <TestimonialVIDmain poster={'https://i.ytimg.com/vi/UMI7bEQLdD8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCi66xUIcQfb29yIZyWT1ETMocpUg'} src={myVideoSrc} />
           </TestimonialIMGDIV>
         </TestimonialIMGContainer>
       </div>

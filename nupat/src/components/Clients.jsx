@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import client from '../Images/Clientss.jpg'
+import client from '../Images/Client3.jpeg'
+import ClientTwo from "../Images/clientTwo.jpeg"
 const Clients = () => {
   const Clientsh2 = styled.h2`
       font-family: 'DM Sans';
@@ -77,6 +78,9 @@ const Clients = () => {
       margin-right: auto;
       margin-top: 3rem;
       margin-bottom:2rem;
+      width: 12rem;
+      height: 12rem;
+      border: 2px solid #fff;
       
       `
   const Contentp = styled.p`
@@ -99,16 +103,7 @@ const Clients = () => {
       text-align: center;
       color: #FFFFFF;
     `
-    const Jobp = styled.p`
-      font-family: 'Open Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 22px;
-      text-align: center;
-      color: #03CFD6;
-    
-      `
+
   return (
     <div>
       {/* <div> */}
@@ -118,15 +113,15 @@ const Clients = () => {
 
           <Carddiv1>
             <Clientsimg src={client} alt="" />
-            <Contentp>I really don’t know what to write rigt now, I <br /> will write this content later</Contentp>
+            <Contentp>Its been a lovely time working with <br /> Nupat Technologies</Contentp>
             <Namep>Anuoluwapo <br /> Adedeji</Namep>
-            <Jobp>UIUX Designer</Jobp>
+            {/* <Jobp>UIUX Designer</Jobp> */}
           </Carddiv1>
           <Carddiv>
-            <Clientsimg src={client} alt="" />
-            <Contentp>I really don’t know what to write rigt now, I <br /> will write this content later</Contentp>
+            <Clientsimg src={ClientTwo} alt="" />
+            <Contentp>The teaching style and services they<br />provide is top notch</Contentp>
               <Namep>Anuoluwapo <br /> Adedeji</Namep>
-              <Jobp>UIUX Designer</Jobp>
+              {/* <Jobp>UIUX Designer</Jobp> */}
           </Carddiv>
 
           </ClientCardContainerdiv>
