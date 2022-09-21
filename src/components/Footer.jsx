@@ -47,9 +47,8 @@ function Footer() {
     @media (max-width:786px){
       display:block;
     width: 100%;
-      // padding:4rem;
+    margin:0;
     }
-  margin-left: 5%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;

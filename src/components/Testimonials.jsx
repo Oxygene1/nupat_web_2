@@ -15,13 +15,6 @@ const Testimonials = () => {
   font-weight: 700;
   font-size: 40px;
   line-height: 54px;`
-  // const Para = styled.p`
-  // font-family: 'DM Sans';
-  // font-style: normal;
-  // font-weight: 400;
-  // font-size: 24px;
-  // line-height: 33px;
-  // `
   const TestimonialIMGContainer = styled.div`
 display: flex;
 @media (max-width: 768px) {
@@ -53,9 +46,8 @@ color: #1E1E1E;
 border-radius: .8rem;
 width: 90%;
 @media (max-width: 768px) {
-  width: 90%;
-  margin-left: 0;
-  margin-right: auto;
+  width: 85%;
+  margin-right: 3rem;
 }
 `
 

@@ -844,7 +844,7 @@ width: 100%;
   margin-top: 12vw;
 }
 .textIntro{
- margin-top:2rem;
+ /* margin-top:2rem; */
   margin-left: 2%;
 }
 .textIntro h1{
@@ -888,6 +888,10 @@ width: 100%;
 @media screen and (max-width: 768px) {
   .play-panel{
     top: 55vw;
+  }
+  .servicesImag{
+    width: 6rem;
+    height:4rem;
   }
   .dropdropmenu{
 
@@ -1119,11 +1123,11 @@ width: 100%;
     margin-left: 5vw;
   
   }
-  .Course{
+  /* .Course{
     width: 99%;
     margin-bottom: 2rem;
 
-  }
+  } */
   .Logo{
 
     top: 2vw;
@@ -1240,19 +1244,14 @@ width: 100%;
   
 
 
-  .phoneNumber, .email, .names{
-    height: 2.7rem;
-    width: 73.5vw;
-    margin-bottom: .5rem;
-  }
   .Course{
     height: 2.7rem;
-    width: 73.5vw;
+    /* width: 72vw; */
     margin-bottom: 2rem;
   }
   textarea{
     padding: 2vw;
-    height: 29vw;
+    height: 40vw;
   }
 
 
@@ -1352,17 +1351,6 @@ width: 100%;
   }
   .Foot_extension{
     height: 30vw;
-  }
-  
-  .inputs input,option{
-    width: 88%;
-    height: 2.5rem;
-    padding-left: 0 auto;
-
-  }
-  .Course {
-    width:79vw;
-   
   }
   
   textarea{
@@ -1482,12 +1470,5 @@ width: 100%;
 
 
 }
-@media screen and (max-width:400px) {
-  .phoneNumber, .email, .names{
-    height: 2.7rem;
-    width: 87vw;
-    margin-bottom: .5rem;
-    padding-right: 3rem;
-  }
-}
+
 

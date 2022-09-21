@@ -85,6 +85,12 @@ function FormBody() {
   @media(max-width:786px){
     top: 8rem;
   }
+  @media(max-width:600px){
+    top: 7rem;
+  }
+  @media(max-width:400px){
+    top: 5rem;
+  }
   `
  
   return (
@@ -114,7 +120,7 @@ function FormBody() {
 
        </div>
        <div className='textIntro'>
-       <h1>Courses</h1>
+       <h1 style={{textAlign:'center'}}>Courses</h1>
        </div>
         
         <div className='textsection' id='tex'>
