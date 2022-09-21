@@ -1,0 +1,211 @@
+.init-text-imgy{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.init-img{
+  width: 50%;
+  margin-bottom:4vw;
+}
+.init-img-main{
+  width: 70%;
+}
+.card-text,.card-title{
+  color: #131E47;
+}
+.init-btn{
+  background-color: #fff;
+  color: #131E47;
+  padding: .4rem;
+  border:none;
+  border-radius:6px;
+  margin: 2rem;
+  margin-left: 20%;
+}
+
+.initiative .wrapperPaper,
+#homeform {
+  background-color: #131E47;
+}
+
+.wrapper1 {
+  display: flex;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  padding-bottom: 4em;
+}
+@media screen and (max-width: 800px) {
+  .wrapper1 {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+}
+
+.Card {
+  margin: 7px;
+  color: white;
+}
+
+.ulego {
+  background-color: white;
+  max-width: 100%;
+}
+
+
+
+.initiative {
+  padding: 3em 0 1rem 7.5%;
+  color: white;
+}
+
+
+.initiative h1 {
+  font-size: 40px;
+}
+
+.ulegoh2 {
+  padding: 1em 0;
+  margin-left: 8%;
+  font-size: 60px;
+  font-weight: 600;
+  color: #131e47;
+}
+.ulego-text h3{
+  font-weight: 700;
+  color: #131E47;
+  margin-top: 7vw;
+}
+.ulego-btn{
+  color: #fff;
+  background-color: #131E47;
+  padding: .7rem;
+  border-radius: 8px;
+  width: 15VW;
+  border-style: none;
+  margin-bottom: 10vw;
+}
+
+.ulego-text-imgy{
+  display: flex;
+  flex-direction: row;
+  width: 95%;
+
+}
+
+.ulego-textbtn{
+
+margin-left: 20%;
+
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+text-align: center;
+
+}
+
+
+
+.Foot-nav {
+  padding: 4em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+}
+
+.Foot-nav li {
+  list-style: none;
+  margin: 1.5em 0;
+}
+
+
+
+.first-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first-nav ul {
+  margin-right: 8em;
+}
+
+#homeform {
+  font-size: 20px;
+  padding: 0.5em;
+  border: none;
+  color: white;
+  margin-right: 1em;
+}
+
+.sec-nav {
+  display: flex;
+}
+
+
+.init-text{
+  justify-content: center;
+  max-width: 80%;
+}
+.join-us {
+  height: 47px;
+  width: 100%;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 0em 1em;
+  font-size: 20px;
+  font-weight: 10px;
+  color: #131E47;
+}
+@media screen and (max-width:913px) {
+  .ulego-text-imgy{
+    display: block;
+    margin-left:-5%;
+  }
+
+  .init-text-imgy{
+    display: block;
+
+  }
+  .init-text{
+    justify-content: center;
+    max-width: 50%;
+  }
+  .init-img{
+    justify-content: center;
+    margin-left: 20%;
+  }
+}
+
+
+
+
+@media screen and (min-width:737px) {
+
+  .wrap {
+    display: flex;
+    background-color: #131E47;
+  }
+
+  .Card {
+    margin: 7px;
+  }
+
+  .Foot-nav {
+    padding: 4em 7em;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+
+
+
+
+}

@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
+
+body {
+  
+  font-family: DM Sans;
+}
+
+
+
+.firstnewsletter{
+  background-color: #131e47;
+  width:80%;
+  height: 7rem;
+  position:absolute;
+  bottom: 2.1rem;
+  right:2.1em;
+  display: flex;
+
+}
+.innerNewsletter{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background-color: #fff;
+  height: 2.688rem;
+  margin-top: 3rem;
+  margin-left: 10%;
+}
+@media screen and (max-width: 786px){
+  .firstnewsletter{
+    display: none;
+  }
+}
+
+.newsletterbtn{
+  color: #fff ;
+  background-color: #131e47;
+  padding: .2rem;
+  border-style: none ;
+  border-radius: .3rem;
+  width: 4rem;
+  margin-top: .4rem;
+  margin-left: 10rem;
+}
+.newsletterInput{
+  margin: .5rem;
+  outline-style: none;
+  border-style: none;
+}
+
+
+
+.numberDisplay{
+  margin-top:-2rem;
+  margin-bottom:2rem;
+  display: flex;
+  justify-content: center;
+}
+.firstheading{
+  height: 100vh;
+  color:#131e47;
+
+}
+.numberdiv{
+  padding: 1rem;
+  margin: 0rem 10rem;
+}
+
+.firstText{
+  text-align: start;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 52px;
+  width: 80%;
+  animation: firstMove 3s;
+  color:#131e47;
+
+}
+.firstBtn{
+    border-radius: 10px;
+    padding: 10px 40px;
+    border: none;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: #131e47;
+    color: white;
+}
+.imageCarousel{
+  margin-left: -5em;
+  animation: firstMove2 3s;
+}
+.bgCarousel{
+  width: 80vw;
+}
+.Images{
+  width: 45vw;
+  height: 80vh;
+}
+.ITcarousel{
+  margin-top: -12em;
+  
+}
+.ITTitle{
+  font-size: 60px;
+  width: 80%;
+  color: #fff;
+}
+.ITheading{
+position: relative;
+align-content: center;
+top: 25em;
+left: 20%;
+max-width: 40%;
+}
+.ITImages{
+  height: 100vh;
+  width: 98vw;
+}
+.ITText{
+  font-size: 20px;
+  width: 100%;
+  color: white;
+}
+.ITBtn{
+  border-radius: 10px;
+  padding: 10px 30px;
+  border: none;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: white;
+  color:#131e47;
+  margin-left: 15em;
+}
+@keyframes firstMove {
+  0%{
+    transform: translateX(-100px);
+    
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+@keyframes firstMove2 {
+  0%{
+    transform: translateX(100px);
+    
+  }
+  100%{
+    transform: translate(0);
+  }
+}
+
+
+
+.ulego-text-img{
+  display: flex;
+  flex-direction: column;
+}  
+
+.init1{
+  margin-bottom: 3em;
+}
+
+.eclipse{
+  display: flex;
+  justify-content: space-between;
+}
+.eclipse1{
+  margin-bottom: -5em;
+  margin-top: 2em;
+}
+.star{
+  margin-right: 22em;
+}
+.eclipse2{
+  justify-content: center;
+  display: flex;
+  gap: 12em;
+}
+.eclipse3{
+  margin-top: -8em;
+  margin-left: -12em;
+}
+.star2{
+  margin-top: -6em;
+}
+.ulegoimg{
+  width: 90%;
+  height: 30vw;
+  margin-left: 15%;
+}
+ 
+ .head {
+  font-weight: 500;
+  font-size: 35px;
+margin:0.5em 0 0.5em 0;
+ }
+ .head-text{
+  font-weight: 400;
+  font-size: 23px;
+ }
+ .heading{
+  text-align: center;
+  width: 95%;
+ }
+.wrapper, .wrapper2{
+  margin: 0 3em 0 1em ;
+  display: grid;
+  grid-template-columns: 3fr;
+  justify-content: center;
+  align-items: center; 
+}
+.App{
+  margin-top: 11em;
+}
+.Card {
+
+  border-radius: 10px;
+  box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  padding: 3em 0em;
+  background-color: rgb(254, 255, 246);
+}
+.card-title{
+  margin-bottom: 1em;
+  padding: 1rem;
+}
+
+.card-text {
+  padding: 1em;
+}
+
+@media screen and (max-width: 900px){
+  .ITheading{
+    position: relative;
+    top: 25rem;
+    padding: 1rem;
+   
+  
+    }
+   
+*,
+*::before,
+*::after {
+  overflow-x: hidden;
+ 
+}
+ 
+  .Images{
+    width: 120vw;
+    height: 70vh;
+    padding-top: 0;
+  }
+  .firstTitle{
+    font-size: 1.5rem;
+    width: 80%;
+  }
+  .firstText{
+    font-size: 1rem;
+    width: 50%;
+    line-height: 1.5rem;
+  }
+  .firstheading{
+    margin: 1em 2em;
+    margin-bottom: -35rem;
+  }
+  .firstBtn{
+    padding: 1em 2em;
+    font-size: 15px;
+  }
+
+ @media screen  and (min-width:900px){
+
+  
+  .wrapper, .wrapper2 {
+    display: flex;
+  }
+  .card{
+    width: 5em;
+  }
+  .ulego-text-img{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    padding: 2em 0 3em 0;
+  }
+  .ulego-text{
+    font-size: 40px;
+    padding-left: 3em;
+  }
+  .ulego-btn{margin-left: 6.5em;
+    background-color: #131e47;
+  }
+  .ulego-img{
+    width: 60%;
+  }
+  .ulegoh2{
+    margin-left: 2em;
+  }
+
+ }
+}
