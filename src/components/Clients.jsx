@@ -36,7 +36,9 @@ const Clients = () => {
       justify-content: center;
       margin: 2rem 4rem 2rem 4rem;
       @media (max-width: 768px) {
+        margin: 2rem 0 0 5%;
         flex-direction: column;
+        width: 100%;
       }
       
       `
@@ -49,25 +51,22 @@ const Clients = () => {
       margin-right:1rem;
       @media (max-width: 768px) {
         margin-bottom:1rem;
-        width:100%;
+        width:90%;
         padding:2rem;
       }
-      // justify-content:center;
-      // align-items: center;
       
       `
   const Carddiv = styled.div`
       background: #131E47;
-      // box-shadow: -16px -16px 0px rgba(3, 207, 214, 0.25);
       border-radius: 8px;
       width: 36.75rem;
-      // height: 27.75rem;
-      // margin:1rem;
       justify-content: center;
       align-items: center;
       @media (max-width: 768px) {
+        // margin-left: auto;
+        // margin-right: 5rem;
         margin-bottom:1rem;
-        width:100%;
+        width:90%;
         padding:2rem;
       }
       `
@@ -114,7 +113,7 @@ const Clients = () => {
           <Carddiv1>
             <Clientsimg src={client} alt="" />
             <Contentp>Its been a lovely time working with <br /> Nupat Technologies</Contentp>
-            <Namep>Anuoluwapo <br /> Adedeji</Namep>
+            <Namep>Augustine <br/> Aguworumba</Namep>
             {/* <Jobp>UIUX Designer</Jobp> */}
           </Carddiv1>
           <Carddiv>

@@ -36,6 +36,9 @@ margin: 2rem;
   const TestimonialTextDiv = styled.div`
 margin-top: 4rem;
 margin-left: 4rem;
+@media(max-width: 786px){
+  margin-left: 0;
+}
 `
   const Pe = styled.p`
 font-family: 'DM Sans';
@@ -50,34 +53,16 @@ color: #1E1E1E;
 border-radius: .8rem;
 width: 90%;
 @media (max-width: 768px) {
-  width: 80%;
-  // padding: 2rem;
-  margin-left: auto;
+  width: 90%;
+  margin-left: 0;
   margin-right: auto;
 }
 `
 
-  // const Floatimg = styled.img`
-  // position: relative;
-  // z-index: 15;
-  // left: 6rem;
-  // border: 2px solid red;
-  // `
-  // const FloatCoverimg = styled.img`
-  // width: 7rem;
-  // border: 2px solid red;
-  // `
-
-
-  // videoTagString({
-  //   src: "https://www.ibthemespro.com/resource/krozo/resources/video-2.mp4",
-  //   poster: "img/bg-2.jpg",
-  // });
-
 
   return (
     <div>
-      <div>
+      
         <TestimonialTextDiv>
 
           <H3 style={{textAlign:'center'}}>
@@ -95,7 +80,7 @@ width: 90%;
           <TestimonialVIDmain poster={'https://i.ytimg.com/vi/UMI7bEQLdD8/hqdefault.jpg?sqp=-oaymwEcCNACELwBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLCi66xUIcQfb29yIZyWT1ETMocpUg'} src={myVideoSrc} />
           </TestimonialIMGDIV>
         </TestimonialIMGContainer>
-      </div>
+      
     </div>
   )
 }
