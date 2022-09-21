@@ -23,9 +23,9 @@ function Header() {
         {/* <nav> */}
 
 
-          <NavLink activeClassName="active-link" to="/">Home</NavLink>
-          <NavLink activeClassName="active-link" to="/enrollment">Code Camp</NavLink>
-          <NavLink activeClassName="active-link" to="/Services">IT <span>Services</span></NavLink>
+          <NavLink className="active-link" to="/">Home</NavLink>
+          <NavLink className="active-link" to="/enrollment">Code Camp</NavLink>
+          <NavLink className="active-link" to="/Services">IT <span>Services</span></NavLink>
           <a href="#">Nupat Initiative</a>
           {/* <div className="dropdown dropnavy">
             <a className="dropbtn" target="_blank" rel="noreferrer">Products</a>
