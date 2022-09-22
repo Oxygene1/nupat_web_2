@@ -58,7 +58,8 @@ const Carousel =()=>{
         color: #FFFFFF;
         margin-top: 2rem;
         padding-bottom:1.5rem;
-        margin-bottom: 3rem;  
+        margin-bottom: 3rem; 
+        text-align:justify; 
         @media (max-width: 768px) {
         font-style: normal;
         font-weight: 300;
