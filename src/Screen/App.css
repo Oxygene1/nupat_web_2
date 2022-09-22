@@ -7,6 +7,10 @@ body{
 .mainAboutPage{
   width: 100%;
 }
+a:hover {
+  color: #10d4d8 !important;
+  transition: .5s ease-in-out;
+}
 
 .ServicesIntro{
   background-color: #fff;
@@ -92,7 +96,7 @@ li{
   width: 100%;
   padding-top: 2vw;
   background: #131E47;
-  height: 5rem;
+  height: 6rem;
 }
 .HeadAbout{
   margin-top: 3rem;
@@ -101,6 +105,10 @@ li{
   z-index: 20;
 }
 
+.active{
+  border-bottom: 2px solid #10d4d8;
+  padding-bottom: 5px;
+}
 
 .Joiny{
   text-decoration: none;

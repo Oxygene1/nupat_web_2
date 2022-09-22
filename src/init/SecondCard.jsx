@@ -3,17 +3,19 @@ import styled from "styled-components";
 
 function SecondCard(props) {
   const Cardey = styled.div`
-  width: 4rem;
+  // width: 4rem;
   display: flex;
   flex-direction: column;
   // justify-content: center;
   align-items: center;
   margin-bottom:  2em;
-  // padding: 1em;
   border-radius: 10px;
   box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
   padding: 4em 0 5em;
-  width: 100%;
+  width: 30vw;
+  @media(max-width:600px){
+    width: 90%;
+  }
   
   `
   const Cardimg = styled.img`

@@ -45,7 +45,7 @@ function init() {
     <Wrapper>
       <Card
     image={Mentor}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="we provide the best programs structured with diverse and brilliant mentors that put all their efforts and skills to positively influece, shape and reshape the mindset of interns to prepare them for service."
     title="Mentorship"/>
 
 <Card
@@ -72,7 +72,7 @@ function init() {
 
 <Card
     image={Master}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="With the program structure, a one-day per-week master class is designed to educate interns on values, ethics and complexities that influence success in their world as tech persons"
     title="Masterclass"/>
 
 <Card

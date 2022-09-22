@@ -105,7 +105,7 @@ return(
         
     <NupatMainDiv>
        <NupatH1>Nupat Code Camp</NupatH1>
-       <NupatP>Be a part of our 4- month hands on intensive training to be a Mobile Developer</NupatP>
+       <NupatP>Be a part of our 4- month hands on intensive training to be the best amongst contemporary sophisticated developers in the world of tech </NupatP>
         <LinkToEnrollment to='/enrollment'>Enroll Now</LinkToEnrollment>
     </NupatMainDiv>
 
