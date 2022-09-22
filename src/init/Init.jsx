@@ -50,12 +50,12 @@ function init() {
 
 <Card
     image={Community}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="The environment is conducive and encompass multidiverse developers from different stacks and areas of the tech community."
     title="Community"/>
 
 <Card
     image={Portfolio}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="During the course of the internship program, the designed curriculum will enable them to work on live project and also place them on an internship accross reknowned organizations and this in turn builds their prowess and portfolios."
     title="Portfolio"/>
 
 
@@ -72,7 +72,7 @@ function init() {
 
 <Card
     image={Master}
-    text="With the program structure, a one-day per-week master class is designed to educate interns on values, ethics and complexities that influence success in their world as tech persons"
+    text="With the program structure at NUPAT, a one-day per-week master class is designed to educate interns/students on values, ethics and complexities that influence success in their world as a tech person"
     title="Masterclass"/>
 
 <Card

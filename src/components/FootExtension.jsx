@@ -9,7 +9,7 @@ const FootExtension = () => {
       <div className='Foot_extension'>
    
          <CopyDIV> 
-          <p style={{color:'#fff', textAlign:'center'}}>copyright &copy; NUPAT TECHNOLOGIES 2022</p>
+          <p style={{color:'#fff', textAlign:'center'}}>copyright &copy; 2022 NUPAT TECHNOLOGIES LTD, all rights reserved</p>
          </CopyDIV>
 
       </div>

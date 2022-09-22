@@ -3,10 +3,8 @@ import styled from "styled-components";
 
 function SecondCard(props) {
   const Cardey = styled.div`
-  // width: 4rem;
   display: flex;
   flex-direction: column;
-  // justify-content: center;
   align-items: center;
   margin-bottom:  2em;
   border-radius: 10px;
