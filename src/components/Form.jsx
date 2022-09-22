@@ -86,8 +86,9 @@ import styled from 'styled-components'
       <select    type="Course"
             name="Course"
             className="Course" >
-        <option value="NaN">Choose a Course</option>
+       
         <optgroup>
+        <option placeholder='Choose a course' value="NaN">Choose a course</option>
         <option value="Fontend">Fontend</option>
         <option value="Backend">Backend</option>
         <option value="UI/UX">UI/UX</option>

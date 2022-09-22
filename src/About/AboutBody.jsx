@@ -52,6 +52,9 @@ width: 70%;
 // margin-left:10%;
 // margin-right:10%;
 width:34.875rem;
+@media (max-width:786px){
+  text-align: center;
+}
 `
 const Ellipsemain= styled.div`
 width: 90%;
@@ -81,14 +84,30 @@ line-height: 36px;
 color: #000000;
 `
 const Ecdiv = styled.div`
-margin-right:25%;
+margin-right: 25%;
+@media (max-width:786px){
+  margin-right: 5%;
+}
+
 
 `
 const Ecdiv2 = styled.div`
 margin-left:25%;
+@media (max-width:786px){
+  margin-left:5%;
+}
 
 `
 const Otherh1 = styled.h3`
+color: #131E47;
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+line-height: 52px;
+`
+const Otherh2 =styled.h3`
+text-align: center;
 color: #131E47;
 font-family: 'DM Sans';
 font-style: normal;
@@ -173,8 +192,8 @@ width:100%
 
         <Ellipsecontain>
           <Ecdiv>
-            <Otherh1>Our Goals</Otherh1>
-            <ul style={{textAlign:'justify'}}>
+            <Otherh2>Our Goals</Otherh2>
+            <ul className='OtherList' style={{textAlign:'justify',fontSize:'24px'}}>
               <li>Establishment of aleding tech hub / innovationtion center in Africa </li>
               <li>Raising the largest community of developers in Africa</li>
               <li>Become Africa’s leading provider of Software Services and Applications through innovative drive</li>

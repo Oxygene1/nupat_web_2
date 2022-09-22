@@ -563,7 +563,16 @@ padding: 3rem;
   width: 12rem;
   border-radius: 50%;
 }
-
+option{
+  color:#131E47;
+  font-size: 18px;
+  font-weight: 400;
+}
+option:hover{
+  color: #fff;
+  background-color: #131E47;
+  cursor: pointer;
+}
 
 
 .Ellipse_contain p{
