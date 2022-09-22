@@ -31,7 +31,7 @@ function SecondCard(props) {
 
   <Cardey>
     <Cardimg type="image" src={props.image} alt="/"/>
-    <div className="card-text">
+    <div className="card-text" style={{textAlign:'center'}}>
       {props.text}
       </div>
     <CardTittle>
