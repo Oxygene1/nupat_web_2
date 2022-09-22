@@ -196,7 +196,7 @@ const CarouselOne = () => {
       </FirstCarousel>
       <NumberDisplay>
           <Numberdiv>
-            <h3>50+</h3>
+            <h3>100+</h3>
             <h3>Students</h3>
           </Numberdiv>
 
