@@ -119,7 +119,7 @@ const Clients = () => {
           <Carddiv>
             <Clientsimg src={ClientTwo} alt="" />
             <Contentp>The teaching style and services they<br />provide is top notch</Contentp>
-              <Namep>Anuoluwapo <br /> Adedeji</Namep>
+              <Namep>Adegunwa <br /> Fisola</Namep>
               {/* <Jobp>UIUX Designer</Jobp> */}
           </Carddiv>
 

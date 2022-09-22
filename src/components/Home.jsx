@@ -12,6 +12,7 @@ import Team from './Team'
 import Testimonials from './Testimonials';
 import Clients from './Clients';
 import styled from 'styled-components';
+import { useEffect } from 'react';
 
 function App() {
   const HeaderMobile = styled(MobileHeader)`
@@ -21,6 +22,10 @@ function App() {
   }
   
   `
+
+  useEffect(() => {
+    window.title
+  },[])
   return (
 
     <div >

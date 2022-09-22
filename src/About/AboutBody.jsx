@@ -20,10 +20,9 @@ const Ellipsecontain = styled.div`
 display: flex;
 flex-direction:row;
 @media (max-width: 768px) {
-  flex-direction: column-reverse;
+  flex-direction: column;
 }
-  // justify-content: center;
-  // margin-right:5%;
+ 
   width:100%;
   margin-top:3rem;
   
@@ -44,7 +43,7 @@ const Visionp = styled.p`
 font-family: 'DM Sans';
 font-style: normal;
 font-weight: 400;
-font-size: 32px;
+font-size: 20px;
 line-height: 42px;
 // justify-content:center;
 // text-align: center;
@@ -55,9 +54,11 @@ width: 70%;
 width:34.875rem;
 `
 const Ellipsemain= styled.div`
-// width: 100%;
-margin-left:10%;
-margin-right: auto;
+width: 90%;
+display: flex:
+justify-content: center;
+marging-right:5%;
+margin-left:5%;
 
 `
 const About1 = styled.div`
@@ -72,19 +73,19 @@ color:#131E47;
 `
 const Aboutp = styled.p`
 
-font-family: 'DM Sans';
+font-family: 'open Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
-line-height: 26px;
+line-height: 36px;
 color: #000000;
 `
 const Ecdiv = styled.div`
-margin-right:15%;
+margin-right:25%;
 
 `
 const Ecdiv2 = styled.div`
-margin-left:15%;
+margin-left:25%;
 
 `
 const Otherh1 = styled.h3`
@@ -94,7 +95,9 @@ font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 52px;
-
+`
+const Imagediv = styled.div`
+width:100%
 `
 
   return (
@@ -108,77 +111,70 @@ line-height: 52px;
       
       <div>
       
+      
       <div className="myContainer">
+      <div className='AboutMainIMGDIV'>
+
+      </div>
         <About1>
           <Abouth1>About Us</Abouth1>
-          <Aboutp>NUPAT Technologies is a software development company from African descent birthed by the vision of becoming a leading brand in world class innovation and delivery of masterpiece and cutting edge technology.
-
+          <Aboutp style={{textAlign:'justify'}}>NUPAT TECHNOLOGIES is an intensive practical software development boot-camp that will usher in a new generation of indigenous software developers that will drive innovation and software development in the information and technological industry. The training utilizes the experience and skill sets of veterans in the industry. Quality practical training and online resources are used in a conducive, team building and challenging environment to inspire and mold the interns to become great tech experts.
+          NUPAT Technologies is a software development company from African descent birthed by the vision of becoming a leading brand in world class innovation and delivery of masterpiece and cutting edge technology.
           The Company is founded by a group of distinct, highly skilled, innovative and experienced tech experts.
 
           The Company is registered with the Corporate Affairs Commission of the Federal Republic of Nigeria, established under the Companies and Allied Matters Act 1990.
-
           Nupat is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.
 
-          We can help to maintain and modernize your IT infrastructure and solve various infrastructure-specific issues a business may face.</Aboutp>
+          We can help to maintain and modernize your IT infrastructure and solve various infrastructure-specific issues a business may face.
+          </Aboutp>
         </About1>
 
-        {/* <div className='oval'>
 
-        </div> */}
-        <div className='aboutpics'>
-        {/* <img className='' src={About1} alt=''/>
-        <img className='' src={About2} alt=''/>
-        <img className='' src={About3} alt=''/>
-        <img className='' src={About4} alt=''/> */}
-        </div>
-        {/* <div className='oval2'>
-
-        </div> */}
 
         <Ellipsemain>
         <Ellipsecontain>
           <Ecdiv>
             <Otherh1>Our Vision</Otherh1>
-            <Visionp>Our vision is to become a leading brand in the worldclass innovation and delivery of masterpiece and cutting-edge technology</Visionp>
+            <Visionp style={{textAlign:'justify'}}>Our vision is to become a leading brand in the worldclass innovation and delivery of masterpiece and cutting-edge technology</Visionp>
           </Ecdiv>
-          <div>
+          <Imagediv>
           <input type="image" className='Ellipseimg' src={Ellipse1} alt=''/>
-          </div>
+          </Imagediv>
         </Ellipsecontain>
         <Ellipsecontain2>
-          <div>
+          <Imagediv>
           <input type="image" className='Ellipseimg2' src={Ellipse2} alt=''/>
             
-          </div>
+          </Imagediv>
           <Ecdiv2>
           <Otherh1>Our Mission</Otherh1>
-            <Visionp>Our  Mission is to touch lives around the globe through technology and cause a global shift and focus to Nigeria and Africa at large as the world’s center for future motivations and worldclass inventions</Visionp>
+            <Visionp style={{textAlign:'justify'}}>Our  Mission is to touch lives around the globe through technology and cause a global shift and focus to Nigeria and Africa at large as the world’s center for future motivations and worldclass inventions</Visionp>
           </Ecdiv2>
         </Ellipsecontain2>
         <Ellipsecontain>
           <Ecdiv>
             <Otherh1>Our Vision</Otherh1>
-            <Visionp>Our vision is to become a leading brand in the worldclass innovation and delivery of masterpiece and cutting-edge technology</Visionp>
+            <Visionp style={{textAlign:'justify'}}>Our vision is to become a leading brand in the worldclass innovation and delivery of masterpiece and cutting-edge technology</Visionp>
           </Ecdiv>
-          <div>
+          <Imagediv>
           <input type="image" className='Ellipseimg' src={Ellipse3} alt=''/>
-          </div>
+          </Imagediv>
         </Ellipsecontain>
         <Ellipsecontain2>
-          <div>
+          <Imagediv>
           <input type="image" className='Ellipseimg2'  src={Ellipse4} alt=''/>
             
-          </div>
+          </Imagediv>
           <Ecdiv2>
           <Otherh1>Our Strategy</Otherh1>
-            <Visionp>We are building a great team  of talents and experts innovation driven with plans centered on maximum clients satisfaction</Visionp>
+            <Visionp style={{textAlign:'justify'}}>We are building a great team  of talents and experts innovation driven with plans centered on maximum clients satisfaction</Visionp>
           </Ecdiv2>
         </Ellipsecontain2>
 
         <Ellipsecontain>
           <Ecdiv>
             <Otherh1>Our Goals</Otherh1>
-            <ul>
+            <ul style={{textAlign:'justify'}}>
               <li>Establishment of aleding tech hub / innovationtion center in Africa </li>
               <li>Raising the largest community of developers in Africa</li>
               <li>Become Africa’s leading provider of Software Services and Applications through innovative drive</li>
@@ -186,9 +182,9 @@ line-height: 52px;
               <li>Become  a major player in Fin - Tech Solutions in Africa</li>
             </ul>
           </Ecdiv>
-          <div>
+          {/* <Imagediv>
           <input type="image" className='Ellipseimg' src={Ellipse3} alt=''/>
-          </div>
+          </Imagediv> */}
         </Ellipsecontain>
 
         

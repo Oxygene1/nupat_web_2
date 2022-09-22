@@ -40,7 +40,7 @@ const Carousel =()=>{
         font-weight: 700;
         font-size: 40px;
         line-height: 44px;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
         @media (max-width: 768px) {
         font-style: normal;
         font-weight: 500;
@@ -105,7 +105,7 @@ return(
         
     <NupatMainDiv>
        <NupatH1>Nupat Code Camp</NupatH1>
-       <NupatP>Be a part of our 4- month hands on intensive training to be the best amongst contemporary sophisticated developers in the world of tech </NupatP>
+       <NupatP>Nupat Code camp is an intensive practical software development boot-camp that will usher in a new generation of indigenous software developers that will drive innovation and software development in the information and technological industry. The training utilizes the experience and skill sets of veterans in the industry. Quality practical training and online resources are used in a conducive, team building and challenging environment to inspire and mold the interns to become great tech experts. </NupatP>
         <LinkToEnrollment to='/enrollment'>Enroll Now</LinkToEnrollment>
     </NupatMainDiv>
 

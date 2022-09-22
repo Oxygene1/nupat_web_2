@@ -24,9 +24,10 @@ function Header() {
 
 
           <NavLink exact activeClassName="active" className="active-link1" to="/">Home</NavLink>
+          <NavLink to="/about">About Us</NavLink>
           <NavLink to="/enrollment">Code Camp</NavLink>
           <NavLink to="/Services">IT <span>Services</span></NavLink>
-          <a href="#">Nupat Initiative</a>
+          <a href="https://nupatinitiatives.org">Nupat Initiative</a>
           {/* <div className="dropdown dropnavy">
             <a className="dropbtn" target="_blank" rel="noreferrer">Products</a>
             <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />

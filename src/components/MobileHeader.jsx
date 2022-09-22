@@ -154,7 +154,8 @@ color:#131E47;
         <Maindropdiv className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu" }>
         <DropItemdiv>
   
-          <Links  to="/">Home</Links>     
+          <Links  to="/">Home</Links>  
+          <Link to="/about">About Us</Link>   
           <Links to="/enrollment">Code Camp</Links>
           <Links  to="/Services">IT <span>Services</span></Links>
           <Hyper href="#" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></Hyper>

@@ -11,7 +11,12 @@ a:hover {
   color: #10d4d8 !important;
   transition: .5s ease-in-out;
 }
-
+.AboutMainIMGDIV{
+  background: url('../Images/AboutNupat.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 30rem;
+}
 .ServicesIntro{
   background-color: #fff;
   width: 100%;
@@ -551,11 +556,11 @@ padding: 3rem;
   width: 16vw;
 }
 .Ellipseimg{
-  width: 15rem;
+  width: 12rem;
   border-radius: 50%;
 }
 .Ellipseimg2{
-  width: 15rem;
+  width: 12rem;
   border-radius: 50%;
 }
 
