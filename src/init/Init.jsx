@@ -39,7 +39,7 @@ function init() {
     </div> */}
     <div className="Benefitss">
      <h1 style={{textAlign:'center'}}>Benefits of working with us</h1>
-     <p style={{textAlign:'center'}}>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules</p>
+     <p style={{textAlign:'center'}}>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules.</p>
     </div>
   
     <Wrapper>
@@ -67,17 +67,17 @@ function init() {
     <Wrapper>
 <Card
     image={Internship}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="We offer internship programms that covers a wide range of courses such as UI/UX, backend(.NET, C-##,nodejs), frontend, fullstack, mobile software dev(flutter, dart, react native) blockchain technology, data science and machine leaerning, data analysis."
     title="Internships"/>
 
 <Card
     image={Master}
-    text="With the program structure at NUPAT, a one-day per-week master class is designed to educate interns/students on values, ethics and complexities that influence success in their world as a tech person"
+    text="With the program structure at NUPAT, a one-day per-week master class is designed to educate interns/students on values, ethics and complexities that influence success in their world as a tech person."
     title="Masterclass"/>
 
 <Card
     image={Excellence}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="At NUPAT TECHNOLOGIES we have a perception of what your imagination is, and we exceed the limit with excellence."
     title="Excellence"/>
 
     </Wrapper>
