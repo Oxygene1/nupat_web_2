@@ -19,13 +19,16 @@ function init() {
   const Wrapper = styled.div `
   display: flex;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  // grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   // padding-bottom: 4em;
-  margin: 4rem;
+  // margin: 4rem;
   @media (max-width: 768px) {
     display: block;
-    place-items:center;
+    width: 100%;
+    padding: 0 2% 2% 0;
+    // place-items:center;
   }
   
   `

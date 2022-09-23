@@ -24,7 +24,7 @@ const Accomodation = ()=>{
                 <div className='heading'>
                 <h1 className='carouselHead accHead'>Accomodation</h1>
                 <p className='carouselText accText'>{accomodationImages[currImg].Text}</p>
-                <Link to={'/enrollment'} style={{borderRadius: "10px", padding: "10px 30px",border: "none",fontSize: "15px",textDecoration:"none", backgroundColor: "#131e47", color: "white"}}>Enroll Now</Link>
+                <Link to={'/code-camp'} style={{borderRadius: "10px", padding: "10px 30px",border: "none",fontSize: "15px",textDecoration:"none", backgroundColor: "#131e47", color: "white"}}>Enroll Now</Link>
                 </div>
                 
                 <div className='innerCarousel' style={{ borderRadius: "10px"}}>

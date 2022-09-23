@@ -24,9 +24,9 @@ function Header() {
 
 
           <NavLink exact activeClassName="active" className="active-link1" to="/">Home</NavLink>
-          <NavLink to="/about">About Us</NavLink>
-          <NavLink to="/enrollment">Code Camp</NavLink>
-          <NavLink to="/Services">IT <span>Services</span></NavLink>
+          <NavLink to="/About-us">About Us</NavLink>
+          <NavLink to="/code-camp">Code Camp</NavLink>
+          <NavLink to="/IT-Services">IT <span>Services</span></NavLink>
           <a href="https://nupatinitiatives.org">Nupat Initiative</a>
           {/* <div className="dropdown dropnavy">
             <a className="dropbtn" target="_blank" rel="noreferrer">Products</a>

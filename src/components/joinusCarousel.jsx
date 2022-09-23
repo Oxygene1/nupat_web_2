@@ -14,7 +14,7 @@ const CarouselOne = () => {
   line-height: 60px;
   @media (max-width: 768px) {
     font-weight: 500;
-    font-size: 30px;
+    font-size: 27px;
     padding: 1rem;
     margin-left:.8rem;
     line-height: 50px;
@@ -37,7 +37,10 @@ const CarouselOne = () => {
   text-align: justify;
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  // width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top:2rem;
   @media (max-width: 768px) {
     width: 100%;
     margin-top:-2rem;
@@ -58,8 +61,7 @@ const CarouselOne = () => {
     }
     @media (max-width: 768px) {
       padding: 1rem;
-      // margin-top:-2rem;
-      margin-left: 5%;
+      margin-left: 3%;
       // margin:3rem;
       border-radius:.4rem;
   }
@@ -67,6 +69,7 @@ const CarouselOne = () => {
   const BtnJoinusdiv = styled.div`
     margin-top: 1rem;
     @media (max-width: 768px) {
+      margin-top: 0;
       padding:2rem 0 2rem 0;
       // margin:3rem;
   }
@@ -75,7 +78,6 @@ const CarouselOne = () => {
   const Firstdisplaydiv = styled.div`
     width: 90%;
     position: relative;
-    // margin-left:5%;
     padding: 2rem;
     @media (max-width: 768px) {
       padding:0;
@@ -90,6 +92,7 @@ const CarouselOne = () => {
     display: flex;
     width: 100%;
     @media (max-width: 768px) {
+      margin-bottom:0;
       width: 100%;
     margin-left: auto;
       margin-right: auto;
@@ -104,6 +107,11 @@ const CarouselOne = () => {
     jestify-conent: center;
     align-items: center;
     justify-items: center;
+    display: flex;
+    @media (max-width: 768px) {
+      display: none;
+      padding:0;
+    }
   `
   const Realities = styled.p`
     font-style: normal;
@@ -119,6 +127,7 @@ const CarouselOne = () => {
       font-weight: 400;
       font-size: 18px;
       line-height: 32px;
+      
     }
   
   `
@@ -126,17 +135,14 @@ const CarouselOne = () => {
   display: flex;
   flex-direction: row;
   @media (max-width:786px){
-    // margin-top:-2rem;
     display:block;
-    margin-bottom:-4rem;
   }
-  background-color:#fff;
-  justify-content: center;
-  align-items: center;
+  // background-color:#fff;
+  // justify-content: center;
+  
   width:90%;
   margin-right:auto;
   margin-left:auto;
-  // padding: 3rem 2rem 2rem 2rem;
   @media(max-width:786px){
     width: 100%;
   }
@@ -149,34 +155,39 @@ const CarouselOne = () => {
   `
   const Firstcarouselblock = styled.div`
   width:95%;
-  magin-top: 3rem;
   margin-left: auto;
   margin-right: auto;
+  align-items: center;
+  margin-top: 4rem;
   @media (max-width:786px){
-    // margin-right:10%;
-    // width: 90%;
+    margin-top: 0;
   }
+  `
+  const Newsletterbtndiv = styled.div`
+  padding-top:.4rem;
+  margin-left:20%;
+  
   `
   return (
     <div>
     <FirstCarousel>
       <Firstcarouselblock>
-          <div className="innovdiv">
+        
             <Innovation>
             INNOVATION <Breakbr /> AT ITS PEAK
             </Innovation>
-          </div>
-          <div>
+         
+       
             <Realdiv>
 
             <Realities>We are raising world class tech professionals, building problem solving innovations and helping you bring your dreams  to realities</Realities>
             </Realdiv>
 
             <BtnJoinusdiv>
-            <LinktoJoin to="/enrollment" className="JoinLink">Join US</LinktoJoin>
+            <LinktoJoin to="/code-camp">Join US</LinktoJoin>
             </ BtnJoinusdiv>
             
-          </div>
+      
       </Firstcarouselblock>
       <Firstdisplaydiv>
         <DisplayIMG src={FirstDisplay} alt="" />
@@ -186,9 +197,9 @@ const CarouselOne = () => {
             <div className="newsletterInputdiv">
                 <input className="newsletterInput" type="text" placeholder="Send Us an email" />
             </div>
-            <div>
+            <Newsletterbtndiv>
                 <button className="newsletterbtn">Send</button>
-            </div>
+            </Newsletterbtndiv>
           </div>
         </div>
       </Firstdisplaydiv>

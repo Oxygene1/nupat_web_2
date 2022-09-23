@@ -21,13 +21,7 @@ a:hover {
   background-color: #fff;
   width: 100%;
 }
-.Hireh1div h1{
- 
-  padding:0 0.8rem 0 0.8rem ;
-  color:  #fff;
-  font-weight: 700;
-  font-size: 44px;
-}
+
 .ServicesIntro p, h2{
   color: #131E47;
 
@@ -59,15 +53,13 @@ a:hover {
 
 .servicePara{
   color: #131E47;
+  text-align: justify;
 
 }
 .Logo{
   position: relative;
-  top: -4.5vw;
-    left: -4vw;
 }
 .Logo img{
-  position: absolute;
   height: 8rem;
 }
 
@@ -132,6 +124,11 @@ li{
 
 
 }
+.CardlistItemContainers{
+  width: 100%;
+  
+}
+
 
 
 .nav2{
@@ -373,33 +370,31 @@ flex-direction: row;
 .dropdown:hover .dropdown-content {display: grid;}
 
 
-
-
-.Hireh1div{
-  position: absolute;
-  top: 20rem;
-  left: 30%;
-  background-color: rgba(19, 30, 71, 0.6);
-  border-radius: .8rem;
-  width: auto;
+.servicesmanin{
+  width: 100%;
 }
+
+
 .displayBanner{
   background-image: url('../Images/ImageBaner.jpg');
-  background-repeat: no-repeat;
   background-size: cover;
-  padding: 3rem;
-  height: 33vw;
-  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 30rem;
   position: relative;
 }
 .servicesDisplay1,.servicesDisplay2{
-  width: 92%;
-  margin: 1%;
-  margin-left: 3%;
+  width: 95%;
+
+  margin-left:auto;
+  margin-right: auto;
   justify-content: space-between;
   display: flex;
   text-align: center;
 
+}
+.servicesDisplay2{
+  margin-top: 2rem;
 }
 .servicesDisplay1{
   margin-top: 4em;
@@ -409,7 +404,7 @@ flex-direction: row;
   padding-bottom: 1rem;
 }
 .servicesDisplay1 p,.servicesDisplay2 p{
- margin: 1rem 2rem 2rem 2rem;
+ margin: 1rem 1rem 1rem 1rem;
 }
 .servicesDisplay2{
   margin-bottom: 4em;
@@ -430,16 +425,18 @@ flex-direction: row;
  background-image: url('../Images/enrollmentNew.JPG');
  background-repeat: no-repeat;
   background-size: cover;
-height: 30vw;
+height: 30rem;
 width: 100%;
 padding: 3rem;
 
 }
 .groupImg{
-
-  margin-top:2rem;
+  background-image: url('../Images/enrollmentPageIMG.JPG');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 45vw;
+  height: 35rem;
 }
 .play-panel{
   position: absolute;
@@ -466,7 +463,7 @@ padding: 3rem;
 .play2{
   position:relative;
   width: 17%;
-  border: 2px solid red;
+  /* border: 2px solid red; */
   left: 40%;
   z-index: 2;
 }
@@ -475,6 +472,7 @@ padding: 3rem;
   display: flex;
   flex-direction: row;
   width: 100%;
+  margin-bottom: 2rem;
 }
 .textsection a{
   text-decoration: none;
@@ -497,11 +495,11 @@ padding: 3rem;
 }
 .TextContent{
   justify-items:space-between;
-  width:100%;
+  width:95%;
   margin-left:auto;
   margin-right:auto;
   align-items:center;
-  padding: 2rem;
+ 
 }
 
 .main-text h1{
@@ -516,14 +514,13 @@ padding: 3rem;
 }
 
 .enroll{
-  height: 5vw;
   padding-top: 1rem;
-  padding-bottom: .1rem;
+  padding-bottom: 1rem;
 }
 
 
 .Foot_extension{
-  height:6vw;
+  height: 9rem;
   width: 100%;
   background-color: #131E47;
 }
@@ -803,13 +800,11 @@ width: 100%;
   line-height:30px;
   padding: 2rem 0 1rem 0;
 }
-#homeform{
-  font-size:20px;
-  padding:0.5em;
-  border: none;
-  color: white;
-  margin-right: 1em;
-  background-color: #131E47;
+
+.FootWork{
+  margin-top: 1vw;
+  width: 100%;
+
 }
 
 .Foot-nav{
@@ -836,11 +831,7 @@ width: 100%;
   display: flex;
   flex-direction: column;
 }
-.FootWork{
-  margin-top: 1vw;
-  width: 100%;
 
-}
 .coverButton{
   position: absolute;
   height: 3vw;
@@ -874,13 +865,13 @@ width: 100%;
   padding-top:1rem;
   padding-bottom:1rem;
 }
-.servicesImage{
-  width: 7rem;
-  height: 7rem;
-}
+
 .active-link{
   text-decoration: underline;
   text-decoration-color:#1877F2 ;
+}
+.OrderedList li{
+  width:100%;
 }
 @media screen and (max-width:914px) {
   .nav2{
@@ -911,10 +902,7 @@ width: 100%;
   .play-panel{
     top: 55vw;
   }
-  .servicesImag{
-    width: 6rem;
-    height:4rem;
-  }
+ 
   .dropdropmenu{
 
     padding-left: 20vw;
@@ -922,6 +910,12 @@ width: 100%;
     margin-left: -120vw;
   
   
+  }
+  .textIntro h1{
+    color: #131E47;
+    padding-top:1rem;
+    padding-bottom: 1rem;
+    padding-bottom:0;
   }
 
   .navigation-menu.expanded {
@@ -936,13 +930,35 @@ width: 100%;
   .HomeDropDown{
     display: flex;
   }
+  .textsection a{
+    text-decoration: none;
+    color: white;
+    background-color: #131E47;
+  
+    border-radius: 8px;
+    margin: 0;
+  
+    align-items: flex-start;
+    gap: 10px;
+    
+  
+  }
+
+  .TextContent{
+    padding-bottom: 1rem;
+     
+     
+    }
+
 }
 
 @media screen and (min-width:737px){
   
   .play-panel{
     top: 55vw;
+    background-color: rgba(188, 189, 195, 0.6);
   }
+
 
 
     .Foot-nav{
@@ -969,6 +985,7 @@ width: 100%;
   display: flex;
 }
 
+
 @media only screen and (max-width: 650px){
   .play-panel{
     top: 66vw;
@@ -980,6 +997,7 @@ width: 100%;
   .form1{
     margin-left: 13%;
   }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -995,10 +1013,7 @@ width: 100%;
         display: block;
   }
 
-  .FootWork{
-    width: 100%;
-  
-  }
+
   
   .navDiv{
     display: none;
@@ -1014,7 +1029,7 @@ width: 100%;
 
   
   .Foot_extension{
-    height: 20vw;
+    height: 12rem;
   }
   .textsection{
     display: flex;
@@ -1068,23 +1083,15 @@ width: 100%;
     width: 100%;
     overflow: hidden;
   }
+  .textsection h2{
+    padding: 1rem 0 1rem 0;
+   font-size: 27px;
+   font-weight: 500;
+  }
 }
 
 @media screen and (max-width: 670px){
-  .Hireh1div h1{
-    font-weight: 500;
-    font-size: 27px;
-    overflow: hidden;
-  
-  }
-  .Hireh1div{
-    top: 7rem;
-    
-  }
 
-  .displayBanner{
-    height: 15rem;
-  }
   .HomeDropDown{
     display: flex;
   }
@@ -1125,6 +1132,26 @@ width: 100%;
   .Navigation{
     display:none;
 
+  }
+  .Benefitss h1{
+  
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 40px;
+    color: #131E47;
+  }
+  .Benefitss p{
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    color: #1E1E1E;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
   }
   .navDiv{
     display: none;
@@ -1200,12 +1227,15 @@ width: 100%;
 @media screen and (max-width:600px){
 
   .h1h1{
-    padding: 2rem;
+    font-size: 22px;
+    font-weight: 500;
  
    }
 
   .textsection h2{
-    padding: 2rem;
+    padding: .8rem 0 .8rem 0;
+   font-size: 27px;
+   font-weight: 500;
   }
   .Navigation{
     height: 5em;
@@ -1241,12 +1271,10 @@ width: 100%;
     padding-bottom: 2vw;
     list-style-type: decimal;
   }
-  .enroll{
-    height: 18vw;
-  }
-  .enroll1 a{
+ 
+  /* .enroll1 a{
     margin-top: 2vw;
-  }
+  } */
 
   .aboutpics img{
     height: 70vw;
@@ -1371,9 +1399,9 @@ width: 100%;
   .wrap{
     display: grid;
   }
-  .Foot_extension{
-    height: 30vw;
-  }
+  /* .Foot_extension{
+    height: 9rem;
+  } */
   
   textarea{
 
@@ -1382,10 +1410,7 @@ width: 100%;
   }
 
 
-  #homeform{
-    margin-left:10%;
-    width: 70%;
-  }
+
   
 
   .btn-primary{
@@ -1475,14 +1500,10 @@ width: 100%;
     margin-top: 2vw;
     height: 13vw;
   }
-  .FootWork{
-    margin-left: -3vw;
-    width: 100%;
-  
-  }
+
   .textsection h2{
-    line-height: 12vw;
-    padding: 2rem;
+
+    padding:1rem 0 1rem 0;
   }
 
 

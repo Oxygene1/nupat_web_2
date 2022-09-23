@@ -11,6 +11,7 @@ const Carousel =()=>{
         background: #131E47;
         @media (max-width: 768px) {
         display: block;
+        padding:1rem 0 1rem 0;
         }
         width:100%;
         padding:3rem;
@@ -46,7 +47,7 @@ const Carousel =()=>{
         font-weight: 500;
         font-size: 28px;
         line-height: 20px;
-        padding:10px;
+        padding:10px 0 10px 0;
           }
         `
       const NupatP = styled.p`
@@ -65,7 +66,7 @@ const Carousel =()=>{
         font-weight: 300;
         font-size: 18px;
         line-height: 23px;
-        
+        margin-bottom: 0; 
         }
         `
     const PicGlass = styled.img`
@@ -77,8 +78,10 @@ const Carousel =()=>{
         marging-right:auto;
         
         @media (max-width: 768px) {
-            width: 100%;
-            // padding:4rem;
+            width: 95%;
+           
+            margin-left: auto;
+            margin-right: auto;
         }
         `
     const NupatMainDiv = styled.div`

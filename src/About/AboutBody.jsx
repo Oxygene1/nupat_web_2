@@ -22,6 +22,11 @@ flex-direction:row;
 @media (max-width: 768px) {
   flex-direction: column;
 }
+@media (max-width:786px){
+  width: 100%;
+  margin-right:auto;
+  margin-left:auto;
+}
  
   width:100%;
   margin-top:3rem;
@@ -38,6 +43,11 @@ width:100%;
 // margin-left:5%;
   // justify-content: center;
   margin-top:3rem;
+  @media (max-width:786px){
+    width: 100%;
+    marging-right:auto;
+    margin-left:auto;
+  }
 `
 const Visionp = styled.p`
 font-family: 'DM Sans';
@@ -54,6 +64,7 @@ width: 70%;
 width:34.875rem;
 @media (max-width:786px){
   text-align: center;
+  width:100%
 }
 `
 const Ellipsemain= styled.div`
@@ -63,6 +74,12 @@ justify-content: center;
 marging-right:5%;
 margin-left:5%;
 
+
+`
+const EllipsecontainLast= styled.div`
+width: 100%;
+margin-left:0;
+margin-rigth:0;
 `
 const About1 = styled.div`
 width: 90%;
@@ -76,25 +93,37 @@ color:#131E47;
 `
 const Aboutp = styled.p`
 
-font-family: 'open Sans';
+font-family: 'DM Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
 line-height: 36px;
 color: #000000;
+@media (max-width:786px){
+  width: 100%;
+  // margin-right:auto;
+  // margin-left: auto;
+}
 `
 const Ecdiv = styled.div`
 margin-right: 25%;
 @media (max-width:786px){
-  margin-right: 5%;
+  width: 100%;
+  margin-right:auto;
+  margin-left: auto;
 }
-
-
+`
+const EcdivLast =styled.div`
+width:100%;
+margin-left: auto;
+margin-right: auto;
 `
 const Ecdiv2 = styled.div`
 margin-left:25%;
 @media (max-width:786px){
-  margin-left:5%;
+  width: 100%;
+  margin-right:auto;
+  margin-left: auto;
 }
 
 `
@@ -117,6 +146,15 @@ line-height: 52px;
 `
 const Imagediv = styled.div`
 width:100%
+`
+const OrderedList =styled.ul`
+width: 100%;
+@media (max-width:786px){
+  line-height:18px;
+  width: 95%;
+  margin-left:auto;
+  margin-right: auto;
+}
 `
 
   return (
@@ -190,24 +228,20 @@ width:100%
           </Ecdiv2>
         </Ellipsecontain2>
 
-        <Ellipsecontain>
-          <Ecdiv>
+
+
+        
+      </Ellipsemain>
+      <EllipsecontainLast>
             <Otherh2>Our Goals</Otherh2>
-            <ul className='OtherList' style={{textAlign:'justify',fontSize:'24px'}}>
+            <OrderedList className='OrderedList' style={{fontSize:'18px'}}>
               <li>Establishment of aleding tech hub / innovationtion center in Africa </li>
               <li>Raising the largest community of developers in Africa</li>
               <li>Become Africa’s leading provider of Software Services and Applications through innovative drive</li>
               <li>Setting upnthe largest AI center in Africa , with expertise in Robotics and Data Science</li>
               <li>Become  a major player in Fin - Tech Solutions in Africa</li>
-            </ul>
-          </Ecdiv>
-          {/* <Imagediv>
-          <input type="image" className='Ellipseimg' src={Ellipse3} alt=''/>
-          </Imagediv> */}
-        </Ellipsecontain>
-
-        
-      </Ellipsemain>
+            </OrderedList>       
+        </EllipsecontainLast>
      
       
       </div>

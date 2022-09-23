@@ -135,13 +135,7 @@ text-align: center;
   margin-right: 8em;
 }
 
-#homeform {
-  font-size: 20px;
-  padding: 0.5em;
-  border: none;
-  color: white;
-  margin-right: 1em;
-}
+
 
 .sec-nav {
   display: flex;

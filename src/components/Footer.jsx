@@ -40,6 +40,7 @@ function Footer() {
     marging-right:1rem;
     width: 2rem;
     height: 2rem;
+
     `
   const Homefooterhead = styled.div`
   display:flex;
@@ -103,10 +104,17 @@ function Footer() {
   
   `
   const Subscribeinput = styled.input`
+  width:100%;
+  border: 2px solid #fff;
+  outline-style:none;
+  color:#fff;
+  border-radius: 5px;
+  padding:.5rem;
   @media(max-width:786px){
     width: 100%;
-    margin-right: 4rem;
-
+    border: 2px solid #fff;
+    outline-style:none;
+    color:#fff;
   }
   `
   const Subscribeform = styled.form`
@@ -118,9 +126,7 @@ function Footer() {
   `
   const Subscribeform2 = styled.div`
   @media(max-width:786px){
-    // padding:3rem;
     width: 100%;
-
   }
   `
   const Socialli = styled.li`
@@ -182,7 +188,7 @@ function Footer() {
         <ul>
           <li>About</li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/About-us">About Us</Link>
           </li>
           <li>Career</li>
           <li><Link to="/OurTeam">Leadership</Link></li>

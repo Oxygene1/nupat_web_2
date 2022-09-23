@@ -1,5 +1,5 @@
 import React,  { useState} from 'react';
-import { Link } from "react-router-dom";
+import { NavLink,Link } from "react-router-dom";
 import logo from '../Images/Logo.svg';
 import Dropdown from 'react-bootstrap/Dropdown';
 import styled from 'styled-components';
@@ -56,6 +56,17 @@ import styled from 'styled-components';
     height: 4rem;
     width: 4rem;
    `
+   const Toggle2 = styled.button`
+   cursor: pointer;
+   display:flex;
+   flex-direction: column;
+    height: 4rem;
+    width: 4rem;
+    background-color: transparent;
+    border-style: none;
+    padding:0;
+    margin:0;
+   `
    const NavContainer = styled.div`
    display: none;
    @media (max-width: 768px) {
@@ -66,17 +77,16 @@ import styled from 'styled-components';
    
    `
    const Maindropdiv = styled.div`
-   position: absolute;
+   position: fixed;
     margin-top: 0px;
-   top: 10%;
-   right: 4%;
-  //  width: auto;
-   width: 70%;
+   top: 0;
+    left: 50%;
+   width: 100%;
    overflow-y: hidden;
    border-radius:4px;
    z-index:100;
    height: auto;
-   padding:1rem;
+ 
    `
   const BrandLogo =styled.img`
   width:6rem;
@@ -105,13 +115,22 @@ import styled from 'styled-components';
   flex-direction: column;
   background-color: #fff;
   padding: 2rem;
-  // position:relative;
-  // z-index: 50;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100vh;
+  position:fixed;
+  transform: (100%);
+  transition: 1s ease;
+  animation: slide-in 0.5s forwards;
+  -webkit-animation: slide-in 0.5s forwards;
+  animation: slide-out 0.5s forwards;
+  -webkit-animation: slide-out 0.5s forwards;
+ 
 `
-const Links = styled(Link)`
+const Links = styled(NavLink)`
 text-decoration: none;
 color:#131E47;
+margin-bottom: 1rem;
 &:hover{
   color:#131E47;
   padding: 1rem;
@@ -125,7 +144,11 @@ color:#131E47;
   padding: 1rem;
 }
 `
-   
+const Ssvg = styled.svg`
+  width:27px;
+  color:#131E47;
+`
+
   
 
     return (
@@ -153,12 +176,16 @@ color:#131E47;
 
         <Maindropdiv className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu" }>
         <DropItemdiv>
-  
-          <Links  to="/">Home</Links>  
-          <Link to="/about">About Us</Link>   
-          <Links to="/enrollment">Code Camp</Links>
-          <Links  to="/Services">IT <span>Services</span></Links>
-          <Hyper href="#" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></Hyper>
+        <Toggle2 onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
+        <Ssvg  xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3" />
+        </Ssvg>
+          </Toggle2>
+          <Links exact activeClassName="active" className="active-link1" to="/">Home</Links>  
+          <Links to="/About-us">About Us</Links>   
+          <Links to="/code-camp">Code Camp</Links>
+          <Links  to="/IT-Services">IT <span>Services</span></Links>
+          <Hyper href="https://www.nupatinitiatives.org" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></Hyper>
 
         </DropItemdiv>
         </Maindropdiv>
