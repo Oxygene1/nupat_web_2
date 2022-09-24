@@ -165,24 +165,35 @@ const CarouselOne = () => {
   padding-top:.4rem;
   margin-left:20%;
   @media (max-width:786px){
-    margin-left:40%;
+    margin-left:55%;
   }
-  @media (max-width:690px){
-    margin-left:35%;
-  }
-  @media (max-width:630px){
-    margin-left:33%;
-  }
-  @media (max-width:586px){
-    margin-left:25%;
+  // @media (max-width:690px){
+  //   margin-left:35%;
+  // }
+  // @media (max-width:630px){
+  //   margin-left:33%;
+  // }
+  // @media (max-width:586px){
+  //   margin-left:30%;
+  // }
+  @media (max-width:550px){
+    margin-left:26%;
   }
   @media (max-width:485px){
     margin-left:20%;
   }
   @media (max-width:440px){
     margin-left:auto;
-    margin-right:auto;
+    margin-left:15%;
   }
+  @media (max-width:422px){
+    margin-left:auto;
+    margin-left:12%;
+  }
+  @media (max-width:590px){
+    margin-left:6%;
+  }
+
   `
   const InnerNewsletter =styled.div`
   display: flex;
@@ -192,7 +203,8 @@ const CarouselOne = () => {
   height: 2.688rem;
   margin-top: 3rem;
   @media (max-width:786px){
-    width:90%;
+    width:100%;
+    padding-right: 4px;
   }
   `
   return (

@@ -58,14 +58,16 @@ a:hover {
 }
 .Logo{
   position: relative;
+  margin-left: 2rem;
 }
 .Logo img{
   height: 8rem;
 }
 
 .navDiv{
-  margin-left: 35%;
-  margin-bottom:1vw;
+  padding-left: 42%;
+  float: right;
+  /* margin-bottom:1vw; */
     display: flex;
     align-self: flex-end;
 }
@@ -86,12 +88,12 @@ li{
   display: none;
 }
 .Navigation{
-  justify-content: space-between;
+  /* justify-content: space-between; */
   display: flex;
   flex-direction: row;
- align-items: center;
+  padding-left: 2%;
   width: 100%;
-  padding-top: 2vw;
+  padding-bottom: 1rem;
   background: #131E47;
   height: 6rem;
 }
@@ -885,10 +887,6 @@ width: 100%;
     align-items: center;
     width: 100%;
   }
-  .Navigation{
-  padding-right: 4rem;
-
-  }
   .dropdropmenu{
 
     padding-left: 20vw;
@@ -902,7 +900,7 @@ width: 100%;
 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 786px) {
   .play-panel{
     top: 55vw;
   }
@@ -1191,11 +1189,7 @@ width: 100%;
     margin-bottom: 2rem;
 
   } */
-  .Logo{
 
-    top: 2vw;
-    left: 3vw;
-  }
  
   .navigation-menu a, Link {
   
@@ -1250,9 +1244,6 @@ width: 100%;
     padding: .8rem 0 .8rem 0;
    font-size: 27px;
    font-weight: 500;
-  }
-  .Navigation{
-    height: 5em;
   }
   .HomeDropDown{
     display: flex;

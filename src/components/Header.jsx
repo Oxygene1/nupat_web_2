@@ -2,21 +2,25 @@
 import { NavLink, Link } from "react-router-dom";
 import React from 'react'
 import logo from '../Images/Logo.svg';
-// import styled from "styled-components";
+import styled from "styled-components";
 // import dropIcon from '../Images/drop.svg';
 // import Dropdown1 from '../components/Dropdown.jsx'
 
 function Header() {
-  
+  const Logodiv = styled.div`
+
+  // position:relative;
+  // right: 6.5rem;
+  `
   return (
 
     <div>
-      <div className='Navigation' style={{ justifyContent:"center", marginRight:"0"}}>
-        <div className='Logo'>
+      <div className='Navigation'>
+        <Logodiv>
           <Link to='/'>
             <img src={logo} alt="Logo"/>
           </Link>
-        </div>
+        </Logodiv>
        <div className="navDiv" style={{display:"flex"}}>
         {/* <nav> */}
 
