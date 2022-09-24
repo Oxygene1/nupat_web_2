@@ -13,7 +13,7 @@ const FootExtension = () => {
   @media (max-width:786px){
     padding-top: 3rem;
     font-size: 15px;
-    // padding-bottom: 3rem;
+    font-size: 18px;
 
   }
   

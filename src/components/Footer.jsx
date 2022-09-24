@@ -134,7 +134,7 @@ function Footer() {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-left:27%;
+    padding-left:20%;
 
   }
   `
