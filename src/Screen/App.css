@@ -159,7 +159,6 @@ a:hover{
 
 .form1{
   display:grid;
-  padding:3em;
   width: 100%;
   margin-top: 3rem;
   margin-left: auto;
@@ -172,7 +171,8 @@ a:hover{
   
     width:90%;
     background-color: #131E47;
-    padding-right: 7%;
+    padding: 5rem;
+    /* padding-right: 7%; */
     margin-left: auto;
     margin-right: auto;
  
@@ -187,7 +187,7 @@ a:hover{
 .phoneNumber, .email{
   font-weight: 600;
   color: #131E47;
-  width: 98%;
+  width: 100%;
   height: 4rem;
   padding-left: 3rem;
   outline: none;
@@ -197,7 +197,7 @@ a:hover{
 }
 .names{
   padding-left: 3rem;
-  width: 98%;
+  width: 100%;
   height: 4rem;
   font-weight: 600;
   color: #131E47;
@@ -219,9 +219,9 @@ a:hover{
 
 .Course{
   text-transform:capitalize;
-  margin-bottom:1vw;
+  margin-bottom:2rem;
   margin-top: 1rem;
-  width: 98%;
+  width:100%;
   height: 4rem;
   padding-left: 3rem;
   border-radius: 4px;
@@ -231,13 +231,14 @@ a:hover{
 
 
 textarea{
-  width: 98%;
-height: 16vw;
+  width: 100%;
+height: 20rem;
 outline-style: none;
-padding:3vw;
+padding:1rem;
 font-family: 'Montserrat', sans-serif;
 font-family: 'Source Sans Pro', sans-serif;
-font-weight: 600;
+font-weight: 400;
+font-size: 27px;
 color: #131E47;
 }
 .text_button{
@@ -378,10 +379,12 @@ flex-direction: row;
 .displayBanner{
   background-image: url('../Images/ImageBaner.jpg');
   background-size: cover;
+  max-width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   height: 30rem;
   position: relative;
+  margin: 0 auto;
 }
 .servicesDisplay1,.servicesDisplay2{
   width: 95%;
@@ -394,7 +397,7 @@ flex-direction: row;
 
 }
 .servicesDisplay2{
-  margin-top: 2rem;
+  padding-top: 5rem;
 }
 .servicesDisplay1{
   margin-top: 4em;
@@ -873,6 +876,9 @@ width: 100%;
 .OrderedList li{
   width:100%;
 }
+.inputs{
+  width: 100%;
+}
 @media screen and (max-width:914px) {
   .nav2{
     display:block;
@@ -921,9 +927,7 @@ width: 100%;
   .navigation-menu.expanded {
     display: block;
   }
-  .form1{
-    margin-left: 13%;
-  }
+
 }
 
 @media screen and (max-width:737px){
@@ -972,9 +976,7 @@ width: 100%;
       display: flex;
       flex-direction: row;
     }
-    .form1{
-      margin-left: 5%;
-    }
+
 }
 @media  screen and(max-width:695px) {
   .play-panel{
@@ -992,10 +994,6 @@ width: 100%;
   }
   .HomeDropDown{
     display: flex;
-  }
-
-  .form1{
-    margin-left: 13%;
   }
 
 }
@@ -1081,7 +1079,6 @@ width: 100%;
 @media screen and (max-width: 970px){
   .form_main1{
     width: 100%;
-    overflow: hidden;
   }
   .textsection h2{
     padding: 1rem 0 1rem 0;
@@ -1103,25 +1100,19 @@ width: 100%;
   }
   .form_main1{
     width: 100%;
-    overflow: hidden;
   }
 
 }
 @media screen and (max-width: 820px){
   .form_main1{
     width: 90%;
-    overflow: hidden;
   }
 }
 @media screen and (max-width: 1000px){
      
 }
 @media screen and (max-width: 1240px){
-     
-  .form1{
-    width: 100%;
-    overflow: hidden;
-  }
+
 }
 
 
@@ -1157,9 +1148,9 @@ width: 100%;
     display: none;
   }
 
-  .navigation-menu {
+  /* .navigation-menu {
     margin-left: auto;
-  }
+  } */
   .wrap{
     display: grid;
   }
@@ -1167,11 +1158,6 @@ width: 100%;
 
   
   
-  .form1{
-    width: 89%;
-    margin-left: 5vw;
-  
-  }
   /* .Course{
     width: 99%;
     margin-bottom: 2rem;
@@ -1202,7 +1188,7 @@ width: 100%;
   
     text-decoration: none;
     display: block;
-    width: 100%;
+    width: 100vw;
   }
 
   .coverButton{
@@ -1295,12 +1281,11 @@ width: 100%;
 
 
   .Course{
-    height: 2.7rem;
-    /* width: 72vw; */
-    margin-bottom: 2rem;
+  
+    margin-bottom: 1rem;
   }
   textarea{
-    padding: 2vw;
+    /* padding: 2vw; */
     height: 40vw;
   }
 
@@ -1436,11 +1421,7 @@ width: 100%;
    padding: 2rem;
 
   }
-  .form1{
-    width: 100%;
-    margin-left: .1vw;
 
-  }
   .form_main1{
     width:100%;
    

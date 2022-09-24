@@ -7,8 +7,6 @@ import logo from '../Images/Logo.svg';
 // import Dropdown1 from '../components/Dropdown.jsx'
 
 function Header() {
-
-  const NormalLink = ""
   
   return (
 

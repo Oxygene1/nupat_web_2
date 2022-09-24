@@ -17,15 +17,7 @@ body {
   display: flex;
   padding-left: 10%;
 }
-.innerNewsletter{
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  background-color: #fff;
-  height: 2.688rem;
-  margin-top: 3rem;
-  /* margin-left: 10%; */
-}
+
 @media screen and (max-width: 786px){
   .firstnewsletter{
     /* right:8%; */

@@ -42,15 +42,15 @@ const Services = () => {
 
   `
   const Servicediv =styled.div`
-  margin-top:2rem;
+  // margin-top:2rem;
   @media (max-width:786px){
-   margin-top:2rem;
+   margin-top:1rem;
   }
   `
   const ServicesImage =styled.svg`
   color:#131E47;
-  width: 10rem;
-  height: 7rem;
+  width: 5rem;
+  height:5rem;
   
   `
   const form = useRef();
@@ -86,11 +86,6 @@ const Services = () => {
         </div>
       <div className='servicesmanin'>
 
-      
-      
-   
-     
-      {/* <div className='ServicesIntro'> */}
        
       
         <div className='servicesDisplay1'>

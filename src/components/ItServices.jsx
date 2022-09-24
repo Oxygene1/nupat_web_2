@@ -60,11 +60,10 @@ const ItServices = () => {
   // width: 90%;
   text-align: justify:
   @media(max-width:786px){
-    text-align: justify:
-    width:100% !important;
-    // padding: 1rem 1rem 1rem 0;
+    text-align: left:
+    width:100%;
     font-style: normal;
-  font-weight: 300;
+  font-weight: 200;
   font-size: 18px;
   // line-height: 28px;
   }
@@ -116,7 +115,7 @@ const ItServices = () => {
           <div>
             <Realidiv>
 
-            <Realidivp style={{textAlign:'justify'}}>We offer technological solutions ranging from building website to building both web and mobile applications. We also have a pool of developers, Designers, Data Analysts for outsourcing.</Realidivp>
+            <Realidivp style={{textAlign:'left'}}>We offer technological solutions ranging from building website to building both web and mobile applications. We also have a pool of developers, Designers, Data Analysts for outsourcing.</Realidivp>
             </Realidiv>
 
             <Joinus>

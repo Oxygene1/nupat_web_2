@@ -27,19 +27,11 @@ function init() {
   @media (max-width: 768px) {
     display: block;
     width: 100%;
-    padding: 0 2% 2% 0;
-    // place-items:center;
   }
   
   `
   return (
     <>
-    {/* <div>
-      <Ulego/>
-    </div>
-    <div>
-      <Initiative/>
-    </div> */}
     <div className="Benefitss">
      <h1 style={{textAlign:'center'}}>Benefits of working with us</h1>
      <p style={{textAlign:'center'}}>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules.</p>

@@ -60,10 +60,10 @@ const Carousel =()=>{
         margin-top: 2rem;
         padding-bottom:1.5rem;
         margin-bottom: 3rem; 
-        text-align:justify; 
+        text-align:left; 
         @media (max-width: 768px) {
         font-style: normal;
-        font-weight: 300;
+        font-weight: 200;
         font-size: 18px;
         line-height: 23px;
         margin-bottom: 0; 

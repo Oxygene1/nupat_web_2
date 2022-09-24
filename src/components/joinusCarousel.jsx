@@ -2,8 +2,6 @@ import React from "react";
 import { Link } from "react-router-dom";
 import FirstDisplay from "../Images/firstDisplay.jpg"
 import styled from "styled-components";
-// import 'bootstrap/dist/css/bootstrap.min.css';
-
 const CarouselOne = () => {
   const Innovation = styled.h1`
   color: #131e47;
@@ -166,7 +164,36 @@ const CarouselOne = () => {
   const Newsletterbtndiv = styled.div`
   padding-top:.4rem;
   margin-left:20%;
-  
+  @media (max-width:786px){
+    margin-left:40%;
+  }
+  @media (max-width:690px){
+    margin-left:35%;
+  }
+  @media (max-width:630px){
+    margin-left:33%;
+  }
+  @media (max-width:586px){
+    margin-left:25%;
+  }
+  @media (max-width:485px){
+    margin-left:20%;
+  }
+  @media (max-width:440px){
+    margin-left:auto;
+    margin-right:auto;
+  }
+  `
+  const InnerNewsletter =styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  background-color: #fff;
+  height: 2.688rem;
+  margin-top: 3rem;
+  @media (max-width:786px){
+    width:90%;
+  }
   `
   return (
     <div>
@@ -193,14 +220,14 @@ const CarouselOne = () => {
         <DisplayIMG src={FirstDisplay} alt="" />
 
         <div className="firstnewsletter">
-          <div className="innerNewsletter">
+          <InnerNewsletter>
             <div className="newsletterInputdiv">
                 <input className="newsletterInput" type="text" placeholder="Send Us an email" />
             </div>
             <Newsletterbtndiv>
                 <button className="newsletterbtn">Send</button>
             </Newsletterbtndiv>
-          </div>
+          </InnerNewsletter>
         </div>
       </Firstdisplaydiv>
 

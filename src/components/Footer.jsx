@@ -131,8 +131,32 @@ function Footer() {
   `
   const Socialli = styled.li`
   @media(max-width:786px){
-  padding-left:14%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:27%;
 
+  }
+  `
+  const Logodiv = styled.div`
+  @media(max-width:786px){
+    margin-top:-4rem;
+    margin-left: auto;
+    margin-right: auto;
+  `
+  const Uldiv = styled.div`
+  @media(max-width:786px){
+    padding:0;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  `
+  const Mainul = styled.ul`
+  @media(max-width:786px){
+    padding:0;
+    margin-left: auto;
+    margin-right: auto; 
+    line-height:24px;
   }
   `
   return (
@@ -155,37 +179,29 @@ function Footer() {
 
     <div className="Foot-nav">
         <div className="logo-nav">
-        <div>
-        <img className="Logoo" src={logoo} alt="Logo" />
-        </div>
-        <div>
-        <ul>
+        <Logodiv>
+        <img src={logoo} alt="Logo" />
+        </Logodiv>
+        <Uldiv>
+        <Mainul>
           <li>Quick Links</li>
           <li>FAQ</li>
           <li>News</li>
           <li>Nupat Initiative</li>
-        </ul>
+        </Mainul>
+        </Uldiv>
         </div>
-        </div>
-        <div>
-        <ul>
+        <Uldiv>
+        <Mainul style={{textAlign:'center'}}>
           <li>What we do</li>
           <li>Codecamp</li>
           <li>IT Services</li>
           {/* <li>Our products</li> */}
          
-        </ul>
-        </div>
-        {/* <div>
-        <ul>
-          <li>Community</li>
-          <li>Project 1000</li>
-          
-        </ul>
-        </div> */}
-       
-        <div>
-        <ul>
+        </Mainul>
+        </Uldiv>
+        <Uldiv>
+        <Mainul style={{textAlign:'center'}}>
           <li>About</li>
           <li>
             <Link to="/About-us">About Us</Link>
@@ -194,10 +210,10 @@ function Footer() {
           <li><Link to="/OurTeam">Leadership</Link></li>
           <li>Mentors</li>
           <li>Contact us</li>
-        </ul>
-        </div>
+        </Mainul>
+        </Uldiv>
          <div>
-        <ul>
+        <Mainul style={{textAlign:'center'}}>
           <li>48, Community Road,Akoka Lagos</li>
           <li>Contact +2348031958586, +2347081475750</li>
           <Socialli>
@@ -210,7 +226,7 @@ function Footer() {
 
           </Socialli>
         
-        </ul>
+        </Mainul>
        
         </div>
        

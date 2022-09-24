@@ -10,7 +10,7 @@ function SecondCard(props) {
   border-radius: 10px;
   justify-content: center;
   box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
-  padding: 4em 0 5em;
+  padding: 3em 0 3em;
  
   @media(max-width:786px){
     justify-content: center;
@@ -33,8 +33,8 @@ function SecondCard(props) {
   }
   `
   const CardTittle = styled.h3`
-  // margin-bottom: 1em;
-  padding:2rem;
+  margin-top: 1em;
+  padding:0.8rem;
   
   `
   return ( 

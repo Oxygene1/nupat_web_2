@@ -72,10 +72,12 @@ function FormBody() {
 
   color: #fff;
   margin-left: 4rem;
-  margin-top: 4vw;  
+  margin-top: 10rem;   
   // position:relative;
   font-size: 50px;
   @media(max-width:786px){
+    padding:1rem;
+    margin-top: 10rem; 
     line-height:20px;
     font-size:20px;
   }
