@@ -78,8 +78,7 @@ margin-left:5%;
 `
 const EllipsecontainLast= styled.div`
 width: 100%;
-margin-left:0;
-margin-rigth:0;
+margin:0 auto;
 `
 const About1 = styled.div`
 width: 90%;
@@ -113,11 +112,11 @@ margin-right: 25%;
   margin-left: auto;
 }
 `
-const EcdivLast =styled.div`
-width:100%;
-margin-left: auto;
-margin-right: auto;
-`
+// const EcdivLast =styled.div`
+// width:100%;
+// margin-left: auto;
+// margin-right: auto;
+// `
 const Ecdiv2 = styled.div`
 margin-left:25%;
 @media (max-width:786px){
@@ -150,10 +149,12 @@ width:100%
 const OrderedList =styled.ul`
 width: 100%;
 @media (max-width:786px){
+  list-style-type:none;
   line-height:18px;
-  width: 95%;
-  margin-left:auto;
-  margin-right: auto;
+  font-size:22px;
+  max-width: 100%;
+  // margin-left:auto;
+  // margin-right: auto;
 }
 `
 
@@ -232,9 +233,13 @@ width: 100%;
 
         
       </Ellipsemain>
+     
+     
+      
+      </div>
       <EllipsecontainLast>
             <Otherh2>Our Goals</Otherh2>
-            <OrderedList className='OrderedList' style={{fontSize:'18px'}}>
+            <OrderedList className='orderList' style={{fontSize:'18px'}}>
               <li>Establishment of aleding tech hub / innovationtion center in Africa </li>
               <li>Raising the largest community of developers in Africa</li>
               <li>Become Africa’s leading provider of Software Services and Applications through innovative drive</li>
@@ -242,9 +247,6 @@ width: 100%;
               <li>Become  a major player in Fin - Tech Solutions in Africa</li>
             </OrderedList>       
         </EllipsecontainLast>
-     
-      
-      </div>
      
       <div>
       <Form/>

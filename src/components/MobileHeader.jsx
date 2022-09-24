@@ -82,7 +82,7 @@ function MobileHeader(e) {
    `
   const NavContainer = styled.div`
    display: none;
-   @media (max-width: 768px) {
+   @media (max-width: 786px) {
     display: block;
     flex-direction: colomn;
     position: relative;
