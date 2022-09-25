@@ -14,7 +14,9 @@ import Ellipse3 from '../Images/Ellipse3.jpg';
 import Ellipse4 from '../Images/Ellipse4.jpg';
 import MobileHeader from '../components/MobileHeader.jsx';
 import styled from 'styled-components';
+import useDocumentTitle from '../commons/useTitle';
 function AboutBody() {
+  useDocumentTitle("About Us")
 const Ellipsecontain = styled.div`
 
 display: flex;
@@ -157,6 +159,9 @@ width: 100%;
   // margin-right: auto;
 }
 `
+// useEffect(() => {
+//   document.title = "About Us";  
+// }, []);
 
   return (
     <div>

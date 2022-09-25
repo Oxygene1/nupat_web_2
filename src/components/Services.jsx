@@ -5,8 +5,10 @@ import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import MobileHeader from './MobileHeader.jsx'
 import styled from 'styled-components'
-
+import useTitle from '../commons/useTitle.js';
+import useDocumentTitle from '../commons/useTitle';
 const Services = () => {
+  
   const Btnbtn = styled.button`
   display: flex;
   padding:1rem;
@@ -53,6 +55,7 @@ const Services = () => {
   height:5rem;
   
   `
+  useDocumentTitle("Our Services")
   const form = useRef();
   
 
@@ -72,6 +75,8 @@ const Services = () => {
     };
     const scrollToRef = (scrl) => window.scrollTo(0, scrl.current.offsetTop)
     const executeScroll = () => scrollToRef(form)
+  
+
   
   return (
     <div>

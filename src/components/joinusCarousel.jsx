@@ -161,51 +161,76 @@ const CarouselOne = () => {
     margin-top: 0;
   }
   `
-  const Newsletterbtndiv = styled.div`
-  padding-top:.4rem;
-  margin-left:20%;
-  @media (max-width:786px){
-    margin-left:55%;
-  }
-  // @media (max-width:690px){
-  //   margin-left:35%;
-  // }
-  // @media (max-width:630px){
-  //   margin-left:33%;
-  // }
-  // @media (max-width:586px){
-  //   margin-left:30%;
-  // }
-  @media (max-width:550px){
-    margin-left:26%;
-  }
-  @media (max-width:485px){
-    margin-left:20%;
-  }
-  @media (max-width:440px){
-    margin-left:auto;
-    margin-left:15%;
-  }
-  @media (max-width:422px){
-    margin-left:auto;
-    margin-left:12%;
-  }
-  @media (max-width:590px){
-    margin-left:6%;
-  }
-
+  const Newsletterbtndiv = styled.div` 
+  // width: 80%;
   `
   const InnerNewsletter =styled.div`
   display: flex;
   flex-direction: row;
-  width: 80%;
+  width: 100%;
+  padding: 1rem;
   background-color: #fff;
-  height: 2.688rem;
-  margin-top: 3rem;
+  `
+  const InnerNewsletter2 = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  background-color: #fff;
+  padding: 1rem;
+  `
+  const SecondNewsLetterdiv = styled.div`
+  display:none;
   @media (max-width:786px){
-    width:100%;
-    padding-right: 4px;
+    padding: 1rem;
+    display:flex;
+    border-radius:1rem;
+    width: 90%;
+    background-color:#131e47;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    margin-bottom: 1.5rem;
   }
+  `
+  const Newsletterbtn = styled.button`
+ 
+    border-style: none;
+    color: #fff;
+    background-color:#131e47;
+    border-radius: 4px;
+    padding: 1rem;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  `
+  const NewsletterInputdiv2 =styled.div`
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  // justify-content: center;
+  `
+  const NewsletterInput = styled.input`
+    width: 100%;
+    border-style: none;
+    outline-stle: none;
+    font-size: 18px;
+    font-weight: 24px;
+    font-family:DM sans;
+  `
+  const NewsletterInputdiv = styled.div`
+  width:80%;
+  `
+  const Newsletterbtn2 = styled.button`
+    border-style: none;
+    color: #fff;
+    background-color:#131e47;
+    border-radius: 4px;
+    padding: .5rem;
+    background-color:#131e47;
+  `
+  const Newsletterbtndiv2 = styled.div`
+  width:30%;
   `
   return (
     <div>
@@ -233,14 +258,26 @@ const CarouselOne = () => {
 
         <div className="firstnewsletter">
           <InnerNewsletter>
-            <div className="newsletterInputdiv">
+            <NewsletterInputdiv>
                 <input className="newsletterInput" type="text" placeholder="Send Us an email" />
-            </div>
+            </NewsletterInputdiv>
             <Newsletterbtndiv>
-                <button className="newsletterbtn">Send</button>
+            <Newsletterbtn2>Send</Newsletterbtn2>
             </Newsletterbtndiv>
           </InnerNewsletter>
         </div>
+        <SecondNewsLetterdiv>
+          <InnerNewsletter2>
+            <NewsletterInputdiv2>
+                <NewsletterInput type="text" placeholder="Send Us an email" />
+            </NewsletterInputdiv2>
+            <Newsletterbtndiv2>
+                
+                <Newsletterbtn>Send</Newsletterbtn>
+            </Newsletterbtndiv2>
+          </InnerNewsletter2>
+        </SecondNewsLetterdiv>
+
       </Firstdisplaydiv>
 
       </FirstCarousel>

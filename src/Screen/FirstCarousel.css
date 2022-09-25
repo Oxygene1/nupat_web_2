@@ -10,27 +10,19 @@ body {
 .firstnewsletter{
   background-color: #131e47;
   width:80%;
-  height: 7rem;
+  /* height: 7rem; */
   position:relative;
-  bottom: 7.1rem;
+  bottom:8.5rem;
   left:20%;
   display: flex;
-  padding-left: 10%;
+  border-radius: .5rem;
+  padding: 2rem;
+  /* padding-left: 10%; */
 }
 
 @media screen and (max-width: 786px){
   .firstnewsletter{
-    /* right:8%; */
-    bottom: 0;
-    width:90%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    position: sticky;
-    left: 0;
-    padding: 0 2rem 0 2rem;
-    /* margin: 0 auto; */
+    display: none;
   }
 }
 
@@ -45,7 +37,7 @@ body {
   /* margin-left: 10vw; */
 }
 .newsletterInput{
-  margin: .5rem;
+  padding: .5rem;
   outline-style: none;
   border-style: none;
 }

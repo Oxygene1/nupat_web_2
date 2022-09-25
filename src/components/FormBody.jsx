@@ -8,9 +8,11 @@ import Banner2 from '../Images/display-courses2.jpg';
 import MobileHeader from './MobileHeader.jsx'
 import styled from 'styled-components';
 import { useState } from 'react';
+import useDocumentTitle from '../commons/useTitle';
 
 
 function FormBody() {
+  useDocumentTitle("Enrollment Page")
   const [showText1, setShowText] = useState(false);
   const [showText2, setShowText2] = useState(false);
   const [showText3, setShowText3] = useState(false);
@@ -96,7 +98,11 @@ function FormBody() {
   //   top: 5rem;
   // }
   `
- 
+  // useEffect(() => {
+  //   document.title = "Enrollment Pages";  
+  // }, []);
+
+
   return (
   <div>
     {/* <div className='fixedHeader'> */}
