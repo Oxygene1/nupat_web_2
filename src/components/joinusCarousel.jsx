@@ -168,7 +168,7 @@ const CarouselOne = () => {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding: 1rem;
+  padding: .5rem;
   background-color: #fff;
   `
   const InnerNewsletter2 = styled.div`
@@ -197,7 +197,7 @@ const CarouselOne = () => {
     border-style: none;
     color: #fff;
     background-color:#131e47;
-    border-radius: 4px;
+    border-radius: 0 4px 4px 0;
     padding: 1rem;
     width: 90%;
     margin-left: auto;
@@ -212,11 +212,12 @@ const CarouselOne = () => {
   `
   const NewsletterInput = styled.input`
     width: 100%;
-    border-style: none;
-    outline-stle: none;
+    border: 1px solid #131E47;
+    outline: 1px solid #131E47;
     font-size: 18px;
     font-weight: 24px;
     font-family:DM sans;
+    padding-left:.5rem;
   `
   const NewsletterInputdiv = styled.div`
   width:80%;
