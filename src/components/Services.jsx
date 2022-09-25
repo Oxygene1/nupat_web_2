@@ -200,7 +200,7 @@ const Services = () => {
         <div>
         <div>
         <h3>Blockchain Expert Service</h3>
-        <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
+        <p className='servicePara'>Our Blockchain developers are are vast with creating systems to record and store blockchain data in a way that prevents changes or hacks. They can also design secure blockchain technologies, develop application features and interfaces, and maintain client and server-side applications.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
         </div>
