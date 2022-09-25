@@ -14,7 +14,7 @@ const CarouselOne = () => {
     font-weight: 500;
     font-size: 27px;
     padding: 1rem;
-    margin-left:.8rem;
+    // margin-left:.8rem;
     line-height: 50px;
   }
   `
@@ -27,6 +27,7 @@ const CarouselOne = () => {
   @media (max-width: 768px) {
     display:grid;
     width: 90%;
+    margin-top: 0;
     margin-left: auto;
     margin-right: auto;
   }
@@ -40,7 +41,7 @@ const CarouselOne = () => {
   margin-right: auto;
   margin-top:2rem;
   @media (max-width: 768px) {
-    width: 100%;
+    width: 95%;
     margin-top:-2rem;
     margin-left: auto;
     margin-right: auto;
@@ -121,7 +122,8 @@ const CarouselOne = () => {
     padding: 1rem 1rem 2rem 0;
     margin: 0 auto;
     @media (max-width: 768px) {
-      padding: 1.5rem;
+      padding: 0;
+      width: 100%; 
       font-weight: 400;
       font-size: 18px;
       line-height: 32px;
@@ -158,7 +160,11 @@ const CarouselOne = () => {
   align-items: center;
   margin-top: 4rem;
   @media (max-width:786px){
+    margin-top: 2rem;
     margin-top: 0;
+    width: 95%;
+    margin-left: auto;
+  margin-right: auto;
   }
   `
   const Newsletterbtndiv = styled.div` 
