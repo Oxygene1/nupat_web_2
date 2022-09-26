@@ -76,7 +76,7 @@ color:#131E47;
 `
 const Aboutp = styled.p`
 
-font-family: 'open Sans';
+font-family: 'DM Sans';
 font-style: normal;
 font-weight: 400;
 font-size: 20px;
