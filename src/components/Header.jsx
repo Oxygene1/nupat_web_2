@@ -25,7 +25,7 @@ function Header() {
         {/* <nav> */}
 
 
-          <NavLink exact activeClassName="active" className="active-link1" to="/">Home</NavLink>
+          <NavLink exact activeClassName="active" to="/">Home</NavLink>
           <NavLink to="/About-us">About Us</NavLink>
           <NavLink to="/code-camp">Code Camp</NavLink>
           <NavLink to="/IT-Services">IT <span>Services</span></NavLink>

@@ -82,6 +82,8 @@ function FormBody() {
     margin-top: 10rem; 
     line-height:20px;
     font-size:20px;
+    margin-left:2rem;
+    
   }
 
   `

@@ -46,13 +46,16 @@ const Services = () => {
   const Servicediv =styled.div`
   // margin-top:2rem;
   @media (max-width:786px){
-   margin-top:1rem;
+   margin-top:2rem;
   }
   `
   const ServicesImage =styled.svg`
   color:#131E47;
   width: 5rem;
   height:5rem;
+  @media (max-width:786px){
+    margin-top:2rem;
+   }
   
   `
   useDocumentTitle("Our Services")
@@ -147,8 +150,6 @@ const Services = () => {
           </div>
          
       </Servicediv>
-       
-
 
         </div>
         <div className='servicesDisplay2'>

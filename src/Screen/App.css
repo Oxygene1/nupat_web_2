@@ -893,14 +893,13 @@ width: 100%;
     margin-top: 5vw;
     margin-left: -90vw;
     width: 80vw;
-  
-  
   }
 }
 
-
-
 @media screen and (max-width: 786px) {
+  .servicesDisplay2{
+    padding-top: 2rem;
+  }
   .play-panel{
     top: 55vw;
   }
@@ -936,9 +935,14 @@ width: 100%;
   
   
   }
+  .orderList{
+    width: 100%;
+  }
   .orderList li{
-    padding: 1rem;
+    /* padding: 1rem; */
     line-height: 22px;
+    font-size: 18px;
+    width: 100%;
     /* margin-bottom: -1rem; */
   }
   .textIntro h1{

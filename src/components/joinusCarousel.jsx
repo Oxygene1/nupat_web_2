@@ -266,7 +266,7 @@ const CarouselOne = () => {
         <div className="firstnewsletter">
           <InnerNewsletter>
             <NewsletterInputdiv>
-                <input className="newsletterInput" type="text" placeholder="Send Us an email" />
+                <input className="newsletterInput" type="text" placeholder="Subscribe to our newsletter"/>
             </NewsletterInputdiv>
             <Newsletterbtndiv>
             <Newsletterbtn2>Send</Newsletterbtn2>
@@ -276,7 +276,7 @@ const CarouselOne = () => {
         <SecondNewsLetterdiv>
           <InnerNewsletter2>
             <NewsletterInputdiv2>
-                <NewsletterInput type="text" placeholder="Send Us an email" />
+                <NewsletterInput type="text" placeholder="Subscribe to our newsletter"/>
             </NewsletterInputdiv2>
             <Newsletterbtndiv2>
                 

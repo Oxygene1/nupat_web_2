@@ -202,7 +202,6 @@ function Footer() {
         </Uldiv>
         <Uldiv>
         <Mainul style={{textAlign:'center'}}>
-          <li>About</li>
           <li>
             <Link to="/About-us">About Us</Link>
           </li>
@@ -218,10 +217,10 @@ function Footer() {
           <li>Contact +2348031958586, +2347081475750</li>
           <Socialli>
             <Socialdiv>
-            <FaceBook type='image' src={Facebook}/>
-            <Linkedinn type='image' src={Linkedin}/>
-            <Insta type='image' src={Instagram}/>
-            <Tweet type='image' src={Twitter}/>
+            <a href='https://www.facebook.com/nupattechnologies/'><FaceBook type='image' src={Facebook}/></a>
+             <a href='https://www.linkedin.com/company/nupat-technologies/'><Linkedinn type='image' src={Linkedin}/></a>
+            <a href='https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=user_system_sheet&utm_content=nkedc9z'> <Insta type='image' src={Instagram}/></a>
+            <a href='https://twitter.com/NupatOfficial?s=09'><Tweet type='image' src={Twitter}/></a>
             </Socialdiv>
 
           </Socialli>

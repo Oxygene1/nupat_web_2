@@ -38,6 +38,7 @@ body {
 }
 .newsletterInput{
   padding: .5rem;
+  width: 100%;
   outline-style: none;
   border-style: none;
 }
