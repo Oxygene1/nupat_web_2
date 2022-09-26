@@ -19,24 +19,19 @@ function init() {
   const Wrapper = styled.div `
   display: flex;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  // grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   // padding-bottom: 4em;
-  margin: 4rem;
+  // margin: 4rem;
   @media (max-width: 768px) {
     display: block;
-    place-items:center;
+    width: 100%;
   }
   
   `
   return (
     <>
-    {/* <div>
-      <Ulego/>
-    </div>
-    <div>
-      <Initiative/>
-    </div> */}
     <div className="Benefitss">
      <h1 style={{textAlign:'center'}}>Benefits of working with us</h1>
      <p style={{textAlign:'center'}}>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules.</p>

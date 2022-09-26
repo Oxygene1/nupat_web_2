@@ -32,7 +32,7 @@ const ItServices = () => {
   @media (max-width: 768px) {
    width: 100%;
    margin-bottom: -3rem;
-  justify-content: space-between;
+  // justify-content: space-between;
   }
  
   `
@@ -42,8 +42,13 @@ const ItServices = () => {
   `
   const FirstIMG =styled.img`
   // height:19.75rem;
-  width:100%;
+  width:95%;
+  margin-left:5%;
   border-radius: .5rem;
+  @media (max-width: 768px) {
+    margin-left: 0;
+    width: 100%;
+  }
   `
   const Realidivp = styled.p`
   font-style: normal;
@@ -52,14 +57,15 @@ const ItServices = () => {
   line-height: 33px;
   color: #1E1E1E;
   font-family: DM sans;
-  width: 90%;
+  // width: 90%;
+  text-align: justify:
   @media(max-width:786px){
-    width: 95%;
-    padding: 1rem 1rem 1rem 0;
+    text-align: left:
+    width:100%;
     font-style: normal;
-  font-weight: 400;
+  font-weight: 200;
   font-size: 18px;
-  line-height: 23px;
+  // line-height: 28px;
   }
   `
   const JoinLink = styled(Link)`
@@ -76,24 +82,7 @@ const ItServices = () => {
     // margin-left:5%;
   }
   `
-  // const NumberDisplay= styled.div`
-  // margin-top:2rem;
-  // margin-bottom:2rem;
-  // display: flex;
-  // width: 100%;
-  // @media (max-width: 768px) {
-  //   width: 100%;
-  // margin-left: auto;
-  //   margin-right: auto;
-  // }
-  // // justify-content: center;
-  // `
-  // const Numberdiv = styled.div`
-  // padding-left: 15%;
-  // padding-right: 15%;
-  // // margin: 0rem 10rem;
-  // width: 20%;
-  // `
+
   const Firstcarousell = styled.div`
   display:flex;
   flex-direction:row;
@@ -126,11 +115,11 @@ const ItServices = () => {
           <div>
             <Realidiv>
 
-            <Realidivp>We offer technological solutions ranging from building website to building both web and mobile applications. We also have a pool of developers, Designers, Data Analysts for outsourcing.</Realidivp>
+            <Realidivp style={{textAlign:'left'}}>We offer technological solutions ranging from building website to building both web and mobile applications. We also have a pool of developers, Designers, Data Analysts for outsourcing.</Realidivp>
             </Realidiv>
 
             <Joinus>
-            <JoinLink to="/Services">Join US</JoinLink>
+            <JoinLink to="/IT-Services">Join US</JoinLink>
             </Joinus>
             
           </div>
@@ -140,21 +129,7 @@ const ItServices = () => {
       </FirstIMGdiv>
 
       </Firstcarousell>
-          {/* <NumberDisplay>
-          <Numberdiv>
-            <h3>50+</h3>
-            <h3>Students</h3>
-          </Numberdiv>
 
-          <Numberdiv>
-            <h3>7+</h3>
-            <h3>Courses</h3>
-          </Numberdiv>
-          <Numberdiv>
-            <h3>50+</h3>
-            <h3>Clients</h3>
-          </Numberdiv>
-          </NumberDisplay> */}
     </div>
   )
 }

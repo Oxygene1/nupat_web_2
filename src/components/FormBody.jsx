@@ -1,5 +1,5 @@
 import React from 'react'
-import groupImage from '../Images/enrollmentPageIMG.JPG';
+// import groupImage from '../Images/enrollmentPageIMG.JPG';
 import Header from './Header.jsx'
 import Footer from './Footer.jsx';
 import Form from './Form.jsx';
@@ -8,9 +8,11 @@ import Banner2 from '../Images/display-courses2.jpg';
 import MobileHeader from './MobileHeader.jsx'
 import styled from 'styled-components';
 import { useState } from 'react';
+import useDocumentTitle from '../commons/useTitle';
 
 
 function FormBody() {
+  useDocumentTitle("Enrollment Page")
   const [showText1, setShowText] = useState(false);
   const [showText2, setShowText2] = useState(false);
   const [showText3, setShowText3] = useState(false);
@@ -68,31 +70,41 @@ function FormBody() {
   
   `
   const WelcomIntro = styled.h1`
+  // position: absolute;
+
   color: #fff;
   margin-left: 4rem;
-  margin-top: 4vw;  
-  position:relative;
+  margin-top: 10rem;   
+  // position:relative;
   font-size: 50px;
   @media(max-width:786px){
-    font-size: 33px;
-    padding:2rem;
+    padding:1rem;
+    margin-top: 10rem; 
+    line-height:20px;
+    font-size:20px;
+    margin-left:2rem;
+    
   }
 
   `
   const WelcomeIntrodiv = styled.div`
-  position: absolute;
-  top:20rem;
+  // position:relative;
+  // top:20rem;
   @media(max-width:786px){
-    top: 8rem;
+    
   }
-  @media(max-width:600px){
-    top: 7rem;
-  }
-  @media(max-width:400px){
-    top: 5rem;
-  }
+  // @media(max-width:600px){
+  //   top: 7rem;
+  // }
+  // @media(max-width:400px){
+  //   top: 5rem;
+  // }
   `
- 
+  // useEffect(() => {
+  //   document.title = "Enrollment Pages";  
+  // }, []);
+
+
   return (
   <div>
     {/* <div className='fixedHeader'> */}
@@ -105,25 +117,20 @@ function FormBody() {
        
      
     <div className="FormContainer">
-        {/* <div className="GroupImage">
-        </div> */}
-        <input className='groupImg' type="image" src = {groupImage} alt="photo" />
-        {/* <div className="play-panel">
-        <img className='playcenter' src={playcenter} alt='play icon'/>
-        <img className='play2' src={play2} alt='play icon'/>
-        <img className='playborder' src={playborder} alt='play icon'/>
-        </div>
-       */}
+        <div className="GroupImage">
         <WelcomeIntrodiv>
         <WelcomIntro>Welcome to NUPAT Code Camp</WelcomIntro>
         </WelcomeIntrodiv>
+
+        </div>
+       
 
        </div>
        <div className='textIntro'>
        <h1 style={{textAlign:'center'}}>Courses</h1>
        </div>
         
-        <div className='textsection' id='tex'>
+        <div className='textsection'>
         
         <div className='textsection1'>
           <div  className="TextContent">

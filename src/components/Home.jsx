@@ -13,6 +13,7 @@ import Testimonials from './Testimonials';
 import Clients from './Clients';
 import styled from 'styled-components';
 import { useEffect } from 'react';
+import useDocumentTitle from '../commons/useTitle';
 
 function App() {
   const HeaderMobile = styled(MobileHeader)`
@@ -22,10 +23,8 @@ function App() {
   }
   
   `
+  useDocumentTitle("NUPAT TECHNOLOGIES")
 
-  useEffect(() => {
-    window.title
-  },[])
   return (
 
     <div >

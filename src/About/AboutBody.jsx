@@ -14,13 +14,20 @@ import Ellipse3 from '../Images/Ellipse3.jpg';
 import Ellipse4 from '../Images/Ellipse4.jpg';
 import MobileHeader from '../components/MobileHeader.jsx';
 import styled from 'styled-components';
+import useDocumentTitle from '../commons/useTitle';
 function AboutBody() {
+  useDocumentTitle("About Us")
 const Ellipsecontain = styled.div`
 
 display: flex;
 flex-direction:row;
 @media (max-width: 768px) {
   flex-direction: column;
+}
+@media (max-width:786px){
+  width: 100%;
+  margin-right:auto;
+  margin-left:auto;
 }
  
   width:100%;
@@ -38,6 +45,11 @@ width:100%;
 // margin-left:5%;
   // justify-content: center;
   margin-top:3rem;
+  @media (max-width:786px){
+    width: 100%;
+    marging-right:auto;
+    margin-left:auto;
+  }
 `
 const Visionp = styled.p`
 font-family: 'DM Sans';
@@ -54,6 +66,7 @@ width: 70%;
 width:34.875rem;
 @media (max-width:786px){
   text-align: center;
+  width:100%
 }
 `
 const Ellipsemain= styled.div`
@@ -63,6 +76,18 @@ justify-content: center;
 marging-right:5%;
 margin-left:5%;
 
+
+`
+const EllipsecontainLast= styled.div`
+width: 95%;
+margin-left: auto;
+margin-right: auto;
+// padding:1rem;
+@media (max-width:786px){
+  width: 100%;
+  // margin-right:auto;
+  // margin-left: auto;
+}
 `
 const About1 = styled.div`
 width: 90%;
@@ -82,19 +107,31 @@ font-weight: 400;
 font-size: 20px;
 line-height: 36px;
 color: #000000;
+@media (max-width:786px){
+  width: 100%;
+  // margin-right:auto;
+  // margin-left: auto;
+}
 `
 const Ecdiv = styled.div`
 margin-right: 25%;
 @media (max-width:786px){
-  margin-right: 5%;
+  width: 100%;
+  margin-right:auto;
+  margin-left: auto;
 }
-
-
 `
+// const EcdivLast =styled.div`
+// width:100%;
+// margin-left: auto;
+// margin-right: auto;
+// `
 const Ecdiv2 = styled.div`
 margin-left:25%;
 @media (max-width:786px){
-  margin-left:5%;
+  width: 100%;
+  margin-right:auto;
+  margin-left: auto;
 }
 
 `
@@ -114,10 +151,48 @@ font-style: normal;
 font-weight: 700;
 font-size: 40px;
 line-height: 52px;
+@media (max-width:786px){
+  ont-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 22px;
+  margin-bottom: 0;
+  margin-top:2rem;
+  padding: .8rem;
+}
 `
 const Imagediv = styled.div`
 width:100%
 `
+const OrderedList =styled.ul`
+width: 100%;
+display: block;
+@media (max-width:786px){
+  display: none;
+}
+`
+const AboutUsli = styled.li`
+@media(max-width:786px){
+padding: .5rem;
+margin: 0 0 0 0;
+line-height: 30px;
+font-size:20px;
+width: 100%;
+
+}
+
+`
+const MobileListdiv =styled.div`
+display: none;
+@media (max-width:786px){
+  display:block;
+  width: 100%;
+  padding: 1rem;
+}
+`
+// useEffect(() => {
+//   document.title = "About Us";  
+// }, []);
 
   return (
     <div>
@@ -131,7 +206,7 @@ width:100%
       <div>
       
       
-      <div className="myContainer">
+      <div>
       <div className='AboutMainIMGDIV'>
 
       </div>
@@ -190,27 +265,35 @@ width:100%
           </Ecdiv2>
         </Ellipsecontain2>
 
-        <Ellipsecontain>
-          <Ecdiv>
-            <Otherh2>Our Goals</Otherh2>
-            <ul className='OtherList' style={{textAlign:'justify',fontSize:'24px'}}>
-              <li>Establishment of aleding tech hub / innovationtion center in Africa </li>
-              <li>Raising the largest community of developers in Africa</li>
-              <li>Become Africa’s leading provider of Software Services and Applications through innovative drive</li>
-              <li>Setting upnthe largest AI center in Africa , with expertise in Robotics and Data Science</li>
-              <li>Become  a major player in Fin - Tech Solutions in Africa</li>
-            </ul>
-          </Ecdiv>
-          {/* <Imagediv>
-          <input type="image" className='Ellipseimg' src={Ellipse3} alt=''/>
-          </Imagediv> */}
-        </Ellipsecontain>
+
 
         
       </Ellipsemain>
      
+     
       
       </div>
+      <EllipsecontainLast>
+      {/* <div> */}
+
+            <Otherh2>Our Goals</Otherh2>
+            <OrderedList style={{fontSize:'18px'}}>
+              <AboutUsli>Establishment of aleding tech hub / innovationtion center in Africa </AboutUsli>
+              <AboutUsli>Raising the largest community of developers in Africa</AboutUsli>
+              <AboutUsli>Become Africa’s leading provider of Software Services and Applications through innovative drive</AboutUsli>
+              <AboutUsli>Setting upnthe largest AI center in Africa , with expertise in Robotics and Data Science</AboutUsli>
+              <AboutUsli>Become  a major player in Fin - Tech Solutions in Africa</AboutUsli>
+            </OrderedList>  
+            <MobileListdiv>
+            <p>Establishment of aleding tech hub / innovationtion center in Africa.</p>
+            <p>Raising the largest community of developers in Africa.</p>
+            <p>Become Africa’s leading provider of Software Services and Applications through innovative drive.</p>
+            <p> Setting upnthe largest AI center in Africa , with expertise in Robotics and Data Science.</p> 
+            <p>Become a major player in Fin - Tech Solutions in Africa.</p>
+
+            </MobileListdiv>     
+      {/* </div> */}
+        </EllipsecontainLast>
      
       <div>
       <Form/>

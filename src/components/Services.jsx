@@ -1,21 +1,14 @@
 import React from 'react'
 import Footer from './Footer.jsx'
 import Header from './Header.jsx'
-// import FrontPic from '../Images/hire us.gif'
-import Frontend from '../Images/FrontEnd.jpg'
-import Backend from '../Images/BackendNew.jpg'
-import API from '../Images/API1.png'
-import Data from '../Images/datasc.png'
-import UI from  '../Images/UIModern.svg'
-import Blockchain from '../Images/BlockTech.jpg'
-// import { Link, animateScroll as scroll } from "react-scroll";
 import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import MobileHeader from './MobileHeader.jsx'
-// import Banner from '../Images/cont3.jpg'
 import styled from 'styled-components'
-
+import useTitle from '../commons/useTitle.js';
+import useDocumentTitle from '../commons/useTitle';
 const Services = () => {
+  
   const Btnbtn = styled.button`
   display: flex;
   padding:1rem;
@@ -30,6 +23,42 @@ const Services = () => {
   min-width: 6.5rem;
   justify-content: center;
   `
+  const HireUsh1 =styled.h1`
+  color:  #fff;
+  font-weight: 700;
+  font-size: 35px;
+  padding:.4rem;
+  margin-left:40%;
+  // text-align:center;
+  // padding-top:4rem;
+  @media (max-width:786px){
+    font-size: 25px;
+    font-weight: 500;
+  }
+  `
+  const Hireh1div = styled.div`
+  width:100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  height:100%;
+  padding-top:15rem;
+
+  `
+  const Servicediv =styled.div`
+  // margin-top:2rem;
+  @media (max-width:786px){
+   margin-top:2rem;
+  }
+  `
+  const ServicesImage =styled.svg`
+  color:#131E47;
+  width: 5rem;
+  height:5rem;
+  @media (max-width:786px){
+    margin-top:2rem;
+   }
+  
+  `
+  useDocumentTitle("Our Services")
   const form = useRef();
   
 
@@ -50,37 +79,30 @@ const Services = () => {
     const scrollToRef = (scrl) => window.scrollTo(0, scrl.current.offsetTop)
     const executeScroll = () => scrollToRef(form)
   
-       
-    
 
-
+  
   return (
-    <div className='IT'>
-      {/* <div className='fixedHeader2'> */}
+    <div>
 
       <Header/>
       <MobileHeader/>
-      {/* </div> */}
-      <div className='servicesmanin'>
 
-      
-      
-      <div className='displayBanner' style={{ width:'100%'}} >
-      <div className='Hireh1div'><h1>Hire Our Gifted Hands</h1></div>
+
+      <div className='displayBanner'>
+      <Hireh1div><HireUsh1>IT Services</HireUsh1></Hireh1div>
            
         </div>
-     
-      <div className='ServicesIntro'>
+      <div className='servicesmanin'>
+
        
       
         <div className='servicesDisplay1'>
         <div>
-      <img
-          className="servicesImage"
-          src={Frontend}
-          alt="First slide"
-        />
-        <div>
+        <ServicesImage xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+  <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
+      </ServicesImage>
+
+        <Servicediv>
         <h3>Frontend Service</h3>
         <p className='servicePara'>
           With our knowledge in different kinds of web frameworks and technology like React, Vue, and Angular, our skilled engineers create products that are user friendly and aligned with your company's goals and objectives.
@@ -88,19 +110,18 @@ const Services = () => {
         <div>
         <button className='scrollbtn' onClick={executeScroll} type="submit" value="Test 2" to="test2" offset={50} duration={500}>Reach Us</button>
         </div>
-        </div>
+        </Servicediv>
         
         
          
         </div>
 
      
-        <div>
-          <img
-          className="servicesImage"
-          src={Backend}
-          alt="Second slide"
-        />
+        <Servicediv>
+        <ServicesImage xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M9 17.25v1.007a3 3 0 01-.879 2.122L7.5 21h9l-.621-.621A3 3 0 0115 18.257V17.25m6-12V15a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 15V5.25m18 0A2.25 2.25 0 0018.75 3H5.25A2.25 2.25 0 003 5.25m18 0V12a2.25 2.25 0 01-2.25 2.25H5.25A2.25 2.25 0 013 12V5.25" />
+      </ServicesImage>
+
        <div>
         <h3>Backend Services</h3>
         <p className='servicePara'>We use the latest .NET framework and software design/architecture, to develop enterprise backend applications for any kind of business ranging from fintech apps to e-commercer solutions.</p>
@@ -110,15 +131,14 @@ const Services = () => {
           duration={500}>Reach Us</button>
         </div>
         </div>
-        </div>
+        </Servicediv>
 
-      <div>
+      <Servicediv>
 
-         <img
-          className="servicesImage"
-          src={API}
-          alt="Third slide"
-        />
+      <ServicesImage xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M9 9V4.5M9 9H4.5M9 9L3.75 3.75M9 15v4.5M9 15H4.5M9 15l-5.25 5.25M15 9h4.5M15 9V4.5M15 9l5.25-5.25M15 15h4.5M15 15v4.5m0-4.5l5.25 5.25" />
+      </ServicesImage>
+
         <div>
         <div>
         <h3>API Service</h3>
@@ -129,17 +149,14 @@ const Services = () => {
         </div>
           </div>
          
-      </div>
-       
-
+      </Servicediv>
 
         </div>
         <div className='servicesDisplay2'>
-        <div><img
-          className="servicesImage"
-          src={Data}
-          alt="First slide"
-        />
+        <Servicediv><ServicesImage xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 00-3.375-3.375h-1.5A1.125 1.125 0 0113.5 7.125v-1.5a3.375 3.375 0 00-3.375-3.375H8.25M9 16.5v.75m3-3v3M15 12v5.25m-4.5-15H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 00-9-9z" />
+      </ServicesImage>
+
         <div>
         <div>
         <h3>Data Science Services</h3>
@@ -150,17 +167,18 @@ const Services = () => {
         </div>
           </div>
         
-        </div>
+        </Servicediv>
 
        
         
         
      
-        <div><img
-          className="servicesImage"
-          src={UI}
-          alt="Second slide"
-        />
+        <Servicediv>
+          
+        <ServicesImage xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+        <path strokeLinecap="round" strokeLinejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 006 3.75v16.5a2.25 2.25 0 002.25 2.25h7.5A2.25 2.25 0 0018 20.25V3.75a2.25 2.25 0 00-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" /></ServicesImage>
+
+
         <div>
         <div>
         <h3>UI/UX Services</h3>
@@ -171,27 +189,26 @@ const Services = () => {
         </div>
           </div>
        
-        </div>
+        </Servicediv>
         
 
-      <div>
+      <Servicediv>
 
-         <img
-          className="servicesImage"
-          src={Blockchain}
-          alt="Third slide"
-        />
+      <ServicesImage xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+      <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 013.75 9.375v-4.5zM3.75 14.625c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5a1.125 1.125 0 01-1.125-1.125v-4.5zM13.5 4.875c0-.621.504-1.125 1.125-1.125h4.5c.621 0 1.125.504 1.125 1.125v4.5c0 .621-.504 1.125-1.125 1.125h-4.5A1.125 1.125 0 0113.5 9.375v-4.5z" />
+      <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 6.75h.75v.75h-.75v-.75zM6.75 16.5h.75v.75h-.75v-.75zM16.5 6.75h.75v.75h-.75v-.75zM13.5 13.5h.75v.75h-.75v-.75zM13.5 19.5h.75v.75h-.75v-.75zM19.5 13.5h.75v.75h-.75v-.75zM19.5 19.5h.75v.75h-.75v-.75zM16.5 16.5h.75v.75h-.75v-.75z" />
+    </ServicesImage>
         <div>
         <div>
         <h3>Blockchain Expert Service</h3>
-        <p className='servicePara'> Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure alias numquam delectus, optio totam aliquid? Beatae impedit eveniet modi tempora distinctio neque molestias ullam, iusto sequi dolores ad provident dignissimos.</p>
+        <p className='servicePara'>Our Blockchain developers are are vast with creating systems to record and store blockchain data in a way that prevents changes or hacks. They can also design secure blockchain technologies, develop application features and interfaces, and maintain client and server-side applications.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
         </div>
         </div>
           </div>
        
-      </div>
+      </Servicediv>
        
 
 
@@ -272,7 +289,7 @@ const Services = () => {
 
     </div>
     </div>
-    </div>
+    {/* </div> */}
 
 
 
