@@ -9,6 +9,7 @@ import MobileHeader from './MobileHeader.jsx'
 import styled from 'styled-components';
 import { useState } from 'react';
 import useDocumentTitle from '../commons/useTitle';
+import { style } from '@mui/system';
 
 
 function FormBody() {
@@ -21,8 +22,9 @@ function FormBody() {
   const [showText6, setShowText6] = useState(false);
   const [showText7, setShowText7] = useState(false);
   const [showText8, setShowText8] = useState(false);
-  // const [hideText, setHideText] = useState(false)
-  // onClick = () => setHideText (true);
+
+
+
   var onClick1 = () => setShowText(true);
   var onClick2 = () => setShowText2(true);
   var onClick3 = () => setShowText3(true);
@@ -137,7 +139,9 @@ function FormBody() {
             <div>
         <h2>Data Science and Machine Learning</h2>
         <p style={{textAlign:'justify'}}>Enroll to our Data Science and Machine Learning program to become a complete Data Scientist and Machine Learning engineer. Learn Data Science and Machine Learning from scratch and get hired. 
-        In the course of this program ,we will build many real world projects to add to your portfolio.<SpanContent onClick={onClick1}>Read more...</SpanContent>{showText1?<span>The technologies and concepts that will covered in this program along with several real world projects include: Data Exploration and Visualizations, Neural Networks and Deep Learning, Model Evaluation and Analysis, Python programming language, Tensorflow, Numpy, Scikit-Learn, Data Science and Machine Learning Projects and Workflows, Data Visualization in Python with MatPlotLib and Seaborn, Transfer Learning, Image recognition and classification, Train/Test and cross validation, Supervised Learning: Classification, Regression and Time Series, Decision Trees and Random Forests, Ensemble Learning, Hyperparameter Tuning, Using Pandas Data Frames to solve complex tasks, Use Pandas to handle CSV Files, Deep Learning / Neural Networks with TensorFlow and Keras, K Nearest Neighbours, Support Vector Machines, Regression analysis (Linear Regression/Polynomial Regression), How Hadoop, Apache Spark, Kafka, and Apache Flink are used, Setting up your environment with Conda, MiniConda, and Jupyter Notebooks, Using GPUs with Google Colab.By the end of this course, you will be a complete Data Scientist that can get hired at large companies with a stack of projects you have built that you can show off to others.</span> :null} </p>
+        In the course of this program ,we will build many real world projects to add to your portfolio.<SpanContent onClick={onClick1 =>{
+          style.display= 'none'
+        }}>Read more...</SpanContent>{showText1?<span>The technologies and concepts that will covered in this program along with several real world projects include: Data Exploration and Visualizations, Neural Networks and Deep Learning, Model Evaluation and Analysis, Python programming language, Tensorflow, Numpy, Scikit-Learn, Data Science and Machine Learning Projects and Workflows, Data Visualization in Python with MatPlotLib and Seaborn, Transfer Learning, Image recognition and classification, Train/Test and cross validation, Supervised Learning: Classification, Regression and Time Series, Decision Trees and Random Forests, Ensemble Learning, Hyperparameter Tuning, Using Pandas Data Frames to solve complex tasks, Use Pandas to handle CSV Files, Deep Learning / Neural Networks with TensorFlow and Keras, K Nearest Neighbours, Support Vector Machines, Regression analysis (Linear Regression/Polynomial Regression), How Hadoop, Apache Spark, Kafka, and Apache Flink are used, Setting up your environment with Conda, MiniConda, and Jupyter Notebooks, Using GPUs with Google Colab.By the end of this course, you will be a complete Data Scientist that can get hired at large companies with a stack of projects you have built that you can show off to others.</span> :null} </p>
         </div>
         <div className='enroll'>
         <a href="https://extendedforms.io/form/969c78e1-5696-4574-b724-c81c8376b2d4/login">Enroll Now</a>
