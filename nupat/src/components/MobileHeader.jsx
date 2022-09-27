@@ -1,14 +1,13 @@
-import React,  { useState} from 'react';
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { NavLink, Link } from "react-router-dom";
 import logo from '../Images/Logo.svg';
 import Dropdown from 'react-bootstrap/Dropdown';
 import styled from 'styled-components';
-// import MainDropDown from './MainDropDown';
-   function MobileHeader(e) {
-    const [isNavExpanded, setIsNavExpanded] = useState(false)
+function MobileHeader(e) {
+  const [isNavExpanded, setIsNavExpanded] = useState(false)
 
-    
-   const DropHamburger1 = styled.span`
+
+  const DropHamburger1 = styled.span`
    background-color: #fff;
    width:2.5rem;
    height:4px;
@@ -18,7 +17,7 @@ import styled from 'styled-components';
     // border: 2px solid pink;
     border-radius: 4px;
    `
-   const DropHamburger2 = styled.span`
+  const DropHamburger2 = styled.span`
    background-color: #fff;
    width:2.5rem;
    height:4px;
@@ -28,7 +27,7 @@ import styled from 'styled-components';
   //  border: 2px solid red;
    border-radius: 4px;
    `
-   const DropHamburger3 = styled.span`
+  const DropHamburger3 = styled.span`
    background-color: #fff;
    width:2.5rem;
    height:4px;
@@ -38,14 +37,14 @@ import styled from 'styled-components';
   //  border: 2px solid green;
    border-radius: 4px;
    `
-   
-   const DropdownDiv = styled.div`
+
+  const DropdownDiv = styled.div`
    position: absolute;
    top: 3vw;
    right: 5%;
    
    `
-   const Toggle = styled.button`
+  const Toggle = styled.button`
    align-items: center;
    border-style: none;
    padding: 10px;
@@ -56,7 +55,32 @@ import styled from 'styled-components';
     height: 4rem;
     width: 4rem;
    `
-   const NavContainer = styled.div`
+  const Toggle2 = styled.button`
+   cursor: pointer;
+   display:flex;
+   flex-direction: column;
+    height: 4rem;
+    width: 4rem;
+    background-color: transparent;
+    border-style: none;
+    padding:0;
+    margin:0;
+   `
+  const Toggle3 = styled.div`
+   cursor: pointer;
+   display:flex;
+   flex-direction: column;
+    height: 100vh;
+    width: 50%;
+    background-color: transparent;
+    border-style: none;
+    padding:0;
+    margin:0;
+    // border: 2px solid red;
+    // position: absolute;
+    // right:50%;
+   `
+  const NavContainer = styled.div`
    display: none;
    @media (max-width: 768px) {
     display: block;
@@ -65,20 +89,23 @@ import styled from 'styled-components';
    }
    
    `
-   const Maindropdiv = styled.div`
-   position: absolute;
+  const Maindropdiv = styled.div`
+   position: fixed;
     margin-top: 0px;
-   top: 10%;
-   right: 4%;
-   width: auto;
-   width: 50%;
+   top: 0;
+   width: 100%;
+   height: 100vh;
    overflow-y: hidden;
-   border-radius:4px;
+  background-color: rgba(0, 0, 0, 0.5);
    z-index:100;
-   height: auto;
-   padding:1rem;
+  //  transition: .8s ease-in-out;
+   transition: .8s ease-in-out;
+   animation: slide-in 0.5s forwards;
+   -webkit-animation: ease-in 1s forwards;
+   animation: slide-out 0.5s forwards;
+   -webkit-animation: ease-out 1s backwards;
    `
-  const BrandLogo =styled.img`
+  const BrandLogo = styled.img`
   width:6rem;
   heigth:6rem;
   `
@@ -105,66 +132,92 @@ import styled from 'styled-components';
   flex-direction: column;
   background-color: #fff;
   padding: 2rem;
-  // position:relative;
-  // z-index: 50;
   box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  height: 100%;
+  position:fixed;
+  transform: translateX(0%);
+  // transition: .8s ease-in-out;
+  // animation: slide-in 0.5s forwards;
+  // -webkit-animation: ease-in 1s forwards;
+  // animation: slide-out 0.5s forwards;
+  // -webkit-animation: ease-out 1s backwards;
+ 
 `
-const Links = styled(Link)`
-text-decoration: none;
-color:#131E47;
-&:hover{
-  color:#131E47;
-  padding: 1rem;
-}
-`
-const Hyper = styled.a`
-text-decoration: none;
-color:#131E47;
-&:hover{
-  color:#131E47;
-  padding: 1rem;
-}
-`
-   
-  
+  const Links = styled(NavLink)`
+    text-decoration: none;
+    color:#131E47;
+    margin-bottom: 1rem;
+    &:hover{
+    color:#131E47;
+    padding: 1rem;
+    }
+    `
+  const Hyper = styled.a`
+    text-decoration: none;
+    color:#131E47;
+    &:hover{
+      color:#131E47;
+      padding: 1rem;
+      transition: .8s ease-in-out;
+    }
+    `
+  const Ssvg = styled.svg`
+      width:27px;
+      color:#131E47;
+    `
 
-    return (
-  <div>
 
-        <NavContainer>
-          <Nav2>
-              <Loogodiv>
-                <Link to='/'>
-                  <BrandLogo src={logo} alt="Logo" />
-                </Link>
-              </Loogodiv>
-              <DropdownDiv>
-                  <Dropdown>
-                  <Toggle onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
-                    <DropHamburger1/>
-                    <DropHamburger2/>
-                    <DropHamburger3/>
-                  </Toggle>
 
-              </Dropdown>
-            </DropdownDiv>
-          </Nav2>
-        </NavContainer>
+  return (
+    <div>
 
-        <Maindropdiv className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu" }>
+      <NavContainer>
+        <Nav2>
+          <Loogodiv>
+            <Link to='/'>
+              <BrandLogo src={logo} alt="Logo" />
+            </Link>
+          </Loogodiv>
+          <DropdownDiv>
+            <Dropdown>
+              <Toggle onClick={() => { setIsNavExpanded(!isNavExpanded) }}>
+                <DropHamburger1 />
+                <DropHamburger2 />
+                <DropHamburger3 />
+              </Toggle>
+
+            </Dropdown>
+          </DropdownDiv>
+        </Nav2>
+      </NavContainer>
+
+      <Maindropdiv onClick={() => { setIsNavExpanded(!isNavExpanded) }} className={isNavExpanded ? "navigation-menu expanded" : "navigation-menu"}>
+
+        {/* <Toggle3 onClick={() => {setIsNavExpanded(!isNavExpanded)}}>
+          </Toggle3> */}
+
         <DropItemdiv>
-  
-          <Links  to="/">Home</Links>     
-          <Links to="/enrollment">Code Camp</Links>
-          <Links  to="/Services">IT <span>Services</span></Links>
-          <Hyper href="#" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></Hyper>
+          <Toggle2 onClick={() => { setIsNavExpanded(!isNavExpanded) }}>
+          <Ssvg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          <path strokeLinecap="round" strokeLinejoin="round" d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18" />
+        </Ssvg>
+
+          </Toggle2>
+          <Links exact activeClassName="active" className="active-link1" to="/">Home</Links>
+          <Links to="/About-us">About Us</Links>
+          <Links to="/code-camp">Code Camp</Links>
+          <Links to="/IT-Services">IT <span>Services</span></Links>
+          <Hyper href="https://www.nupatinitiatives.org" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></Hyper>
 
         </DropItemdiv>
-        </Maindropdiv>
-      
-  </div>
 
-  
-    );
+
+      </Maindropdiv>
+
+    </div>
+
+
+  );
 }
 export default MobileHeader;

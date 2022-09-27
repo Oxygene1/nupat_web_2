@@ -11,6 +11,7 @@ const Carousel =()=>{
         background: #131E47;
         @media (max-width: 768px) {
         display: block;
+        padding:1rem 0 1rem 0;
         }
         width:100%;
         padding:3rem;
@@ -40,13 +41,13 @@ const Carousel =()=>{
         font-weight: 700;
         font-size: 40px;
         line-height: 44px;
-        margin-bottom: 2rem;
+        // margin-bottom: 2rem;
         @media (max-width: 768px) {
         font-style: normal;
         font-weight: 500;
         font-size: 28px;
         line-height: 20px;
-        padding:10px;
+        padding:10px 0 10px 0;
           }
         `
       const NupatP = styled.p`
@@ -58,13 +59,14 @@ const Carousel =()=>{
         color: #FFFFFF;
         margin-top: 2rem;
         padding-bottom:1.5rem;
-        margin-bottom: 3rem;  
+        margin-bottom: 3rem; 
+        text-align:left; 
         @media (max-width: 768px) {
         font-style: normal;
-        font-weight: 300;
+        font-weight: 200;
         font-size: 18px;
         line-height: 23px;
-        
+        margin-bottom: 0; 
         }
         `
     const PicGlass = styled.img`
@@ -76,8 +78,10 @@ const Carousel =()=>{
         marging-right:auto;
         
         @media (max-width: 768px) {
-            width: 100%;
-            // padding:4rem;
+            width: 95%;
+           
+            margin-left: auto;
+            margin-right: auto;
         }
         `
     const NupatMainDiv = styled.div`
@@ -105,8 +109,8 @@ return(
         
     <NupatMainDiv>
        <NupatH1>Nupat Code Camp</NupatH1>
-       <NupatP>Be a part of our 4- month hands on intensive training to be a Mobile Developer</NupatP>
-        <LinkToEnrollment to='/enrollment'>Enroll Now</LinkToEnrollment>
+       <NupatP>Nupat Code camp is an intensive practical software development boot-camp that will usher in a new generation of indigenous software developers that will drive innovation and software development in the information and technological industry. The training utilizes the experience and skill sets of veterans in the industry. Quality practical training and online resources are used in a conducive, team building and challenging environment to inspire and mold the interns to become great tech experts. </NupatP>
+        <LinkToEnrollment to='/code-camp'>Enroll Now</LinkToEnrollment>
     </NupatMainDiv>
 
     <PicGlassdiv>

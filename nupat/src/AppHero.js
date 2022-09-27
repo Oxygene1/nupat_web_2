@@ -12,9 +12,9 @@ const AppHero =()=>{
     <Routes>
       <Route path="/" >
       <Route path="" element={<Home />}/>
-        <Route path="about" element={<AboutBody />}/>
-        <Route path="Services" element={<Services />}/>
-        <Route path="enrollment" element={<FormBody />}/>
+        <Route path="About-us" element={<AboutBody />}/>
+        <Route path="IT-Services" element={<Services />}/>
+        <Route path="code-camp" element={<FormBody />}/>
         <Route path="OurTeam" element={<OurTeam />}/>
       </Route>
      

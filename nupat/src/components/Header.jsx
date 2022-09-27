@@ -2,31 +2,34 @@
 import { NavLink, Link } from "react-router-dom";
 import React from 'react'
 import logo from '../Images/Logo.svg';
-// import styled from "styled-components";
+import styled from "styled-components";
 // import dropIcon from '../Images/drop.svg';
 // import Dropdown1 from '../components/Dropdown.jsx'
 
 function Header() {
+  const Logodiv = styled.div`
 
-  const NormalLink = ""
-  
+  // position:relative;
+  // right: 6.5rem;
+  `
   return (
 
     <div>
-      <div className='Navigation' style={{ justifyContent:"center", marginRight:"0"}}>
-        <div className='Logo'>
+      <div className='Navigation'>
+        <Logodiv>
           <Link to='/'>
             <img src={logo} alt="Logo"/>
           </Link>
-        </div>
+        </Logodiv>
        <div className="navDiv" style={{display:"flex"}}>
         {/* <nav> */}
 
 
-          <NavLink activeClassName="active-link" to="/">Home</NavLink>
-          <NavLink activeClassName="active-link" to="/enrollment">Code Camp</NavLink>
-          <NavLink activeClassName="active-link" to="/Services">IT <span>Services</span></NavLink>
-          <a href="#">Nupat Initiative</a>
+          <NavLink exact activeClassName="active" to="/">Home</NavLink>
+          <NavLink to="/About-us">About Us</NavLink>
+          <NavLink to="/code-camp">Code Camp</NavLink>
+          <NavLink to="/IT-Services">IT <span>Services</span></NavLink>
+          <a href="https://nupatinitiatives.org">Nupat Initiative</a>
           {/* <div className="dropdown dropnavy">
             <a className="dropbtn" target="_blank" rel="noreferrer">Products</a>
             <img className='dropIcon1' id='dropbtn' src={dropIcon} alt="drop icon" />

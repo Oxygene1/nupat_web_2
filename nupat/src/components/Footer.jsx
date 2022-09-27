@@ -40,6 +40,7 @@ function Footer() {
     marging-right:1rem;
     width: 2rem;
     height: 2rem;
+
     `
   const Homefooterhead = styled.div`
   display:flex;
@@ -47,9 +48,8 @@ function Footer() {
     @media (max-width:786px){
       display:block;
     width: 100%;
-      // padding:4rem;
+    margin:0;
     }
-  margin-left: 5%;
   width: 80%;
   margin-left: auto;
   margin-right: auto;
@@ -104,10 +104,17 @@ function Footer() {
   
   `
   const Subscribeinput = styled.input`
+  width:100%;
+  border: 2px solid #fff;
+  outline-style:none;
+  color:#fff;
+  border-radius: 5px;
+  padding:.5rem;
   @media(max-width:786px){
     width: 100%;
-    margin-right: 4rem;
-
+    border: 2px solid #fff;
+    outline-style:none;
+    color:#fff;
   }
   `
   const Subscribeform = styled.form`
@@ -119,15 +126,37 @@ function Footer() {
   `
   const Subscribeform2 = styled.div`
   @media(max-width:786px){
-    // padding:3rem;
     width: 100%;
-
   }
   `
   const Socialli = styled.li`
   @media(max-width:786px){
-  padding-left:14%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:20%;
 
+  }
+  `
+  const Logodiv = styled.div`
+  @media(max-width:786px){
+    margin-top:-4rem;
+    margin-left: auto;
+    margin-right: auto;
+  `
+  const Uldiv = styled.div`
+  @media(max-width:786px){
+    padding:0;
+    margin-left: auto;
+    margin-right: auto; 
+  }
+  `
+  const Mainul = styled.ul`
+  @media(max-width:786px){
+    padding:0;
+    margin-left: auto;
+    margin-right: auto; 
+    line-height:24px;
   }
   `
   return (
@@ -150,62 +179,53 @@ function Footer() {
 
     <div className="Foot-nav">
         <div className="logo-nav">
-        <div>
-        <img className="Logoo" src={logoo} alt="Logo" />
-        </div>
-        <div>
-        <ul>
+        <Logodiv>
+        <img src={logoo} alt="Logo" />
+        </Logodiv>
+        <Uldiv>
+        <Mainul>
           <li>Quick Links</li>
           <li>FAQ</li>
           <li>News</li>
           <li>Nupat Initiative</li>
-        </ul>
+        </Mainul>
+        </Uldiv>
         </div>
-        </div>
-        <div>
-        <ul>
+        <Uldiv>
+        <Mainul style={{textAlign:'center'}}>
           <li>What we do</li>
           <li>Codecamp</li>
           <li>IT Services</li>
           {/* <li>Our products</li> */}
          
-        </ul>
-        </div>
-        {/* <div>
-        <ul>
-          <li>Community</li>
-          <li>Project 1000</li>
-          
-        </ul>
-        </div> */}
-       
-        <div>
-        <ul>
-          <li>About</li>
+        </Mainul>
+        </Uldiv>
+        <Uldiv>
+        <Mainul style={{textAlign:'center'}}>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/About-us">About Us</Link>
           </li>
           <li>Career</li>
           <li><Link to="/OurTeam">Leadership</Link></li>
           <li>Mentors</li>
           <li>Contact us</li>
-        </ul>
-        </div>
+        </Mainul>
+        </Uldiv>
          <div>
-        <ul>
+        <Mainul style={{textAlign:'center'}}>
           <li>48, Community Road,Akoka Lagos</li>
           <li>Contact +2348031958586, +2347081475750</li>
           <Socialli>
             <Socialdiv>
-            <FaceBook type='image' src={Facebook}/>
-            <Linkedinn type='image' src={Linkedin}/>
-            <Insta type='image' src={Instagram}/>
-            <Tweet type='image' src={Twitter}/>
+            <a href='https://www.facebook.com/nupattechnologies/'><FaceBook type='image' src={Facebook}/></a>
+             <a href='https://www.linkedin.com/company/nupat-technologies/'><Linkedinn type='image' src={Linkedin}/></a>
+            <a href='https://www.instagram.com/invites/contact/?utm_source=ig_contact_invite&utm_medium=user_system_sheet&utm_content=nkedc9z'> <Insta type='image' src={Instagram}/></a>
+            <a href='https://twitter.com/NupatOfficial?s=09'><Tweet type='image' src={Twitter}/></a>
             </Socialdiv>
 
           </Socialli>
         
-        </ul>
+        </Mainul>
        
         </div>
        

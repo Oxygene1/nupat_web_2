@@ -62,7 +62,7 @@ function  Homefooter() {
         <ul>
           <li>About</li>
           <li>
-            <Link to="/about">About Us</Link>
+            <Link to="/About-us">About Us</Link>
           </li>
           <li>Career</li>
           <li><Link to="/OurTeam">Leadership</Link></li>

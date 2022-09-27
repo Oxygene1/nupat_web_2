@@ -19,65 +19,54 @@ function init() {
   const Wrapper = styled.div `
   display: flex;
   gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr;
+  width: 100%;
+  // grid-template-columns: 1fr 1fr 1fr;
   justify-content: center;
   // padding-bottom: 4em;
-  margin: 4rem;
+  // margin: 4rem;
   @media (max-width: 768px) {
     display: block;
-    place-items:center;
+    width: 100%;
   }
   
   `
   return (
     <>
-    {/* <div>
-      <Ulego/>
-    </div>
-    <div>
-      <Initiative/>
-    </div> */}
     <div className="Benefitss">
      <h1 style={{textAlign:'center'}}>Benefits of working with us</h1>
-     <p style={{textAlign:'center'}}>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules</p>
+     <p style={{textAlign:'center'}}>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules.</p>
     </div>
   
     <Wrapper>
       <Card
     image={Mentor}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="we provide the best programs structured with diverse and brilliant mentors that put all their efforts and skills to positively influece, shape and reshape the mindset of interns to prepare them for service."
     title="Mentorship"/>
 
 <Card
     image={Community}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="The environment is conducive and encompass multidiverse developers from different stacks and areas of the tech community."
     title="Community"/>
 
 <Card
     image={Portfolio}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="During the course of the internship program, the designed curriculum will enable them to work on live project and also place them on an internship accross renowned organizations and this in turn builds their prowess and portfolios."
     title="Portfolio"/>
-
-
-
-
-
-    
     </Wrapper>
     <Wrapper>
 <Card
     image={Internship}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="We offer internship programms that covers a wide range of courses such as UI/UX, backend(.NET,C#,nodejs), frontend, fullstack, mobile software dev(flutter, dart, react native) blockchain technology, data science and machine leaerning, data analysis."
     title="Internships"/>
 
 <Card
     image={Master}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="With the program structure at NUPAT, a one-day per-week master class is designed to educate interns/students on values, ethics and complexities that influence success in their world as a tech person."
     title="Masterclass"/>
 
 <Card
     image={Excellence}
-    text="Create complex enterprise software, ensure reliable software integration, modernise your legacy system."
+    text="At NUPAT TECHNOLOGIES we have a perception of what your imagination is, and we exceed the limit with excellence."
     title="Excellence"/>
 
     </Wrapper>

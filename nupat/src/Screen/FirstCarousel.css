@@ -10,22 +10,16 @@ body {
 .firstnewsletter{
   background-color: #131e47;
   width:80%;
-  height: 7rem;
-  position:absolute;
-  bottom: 2.1rem;
-  right:2.1em;
+  /* height: 7rem; */
+  position:relative;
+  bottom:7rem;
+  left:20%;
   display: flex;
+  border-radius: .5rem;
+  padding: 2rem  1.5rem 1.5rem 2rem;
+  /* padding-left: 10%; */
+}
 
-}
-.innerNewsletter{
-  display: flex;
-  flex-direction: row;
-  width: 80%;
-  background-color: #fff;
-  height: 2.688rem;
-  margin-top: 3rem;
-  margin-left: 10%;
-}
 @media screen and (max-width: 786px){
   .firstnewsletter{
     display: none;
@@ -39,11 +33,12 @@ body {
   border-style: none ;
   border-radius: .3rem;
   width: 4rem;
-  margin-top: .4rem;
-  margin-left: 10rem;
+  /* margin-top: .4rem; */
+  /* margin-left: 10vw; */
 }
 .newsletterInput{
-  margin: .5rem;
+  padding: .5rem;
+  width: 100%;
   outline-style: none;
   border-style: none;
 }
@@ -231,7 +226,8 @@ margin:0.5em 0 0.5em 0;
 }
 
 .card-text {
-  padding: 1em;
+  line-height: 25px;
+  width: 90%;
 }
 
 @media screen and (max-width: 900px){
@@ -272,7 +268,14 @@ margin:0.5em 0 0.5em 0;
     padding: 1em 2em;
     font-size: 15px;
   }
-
+@media screen and (max-width:786px) {
+  .card-text {
+    line-height: 25px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
  @media screen  and (min-width:900px){
 
   
