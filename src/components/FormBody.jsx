@@ -1,5 +1,4 @@
 import React from 'react'
-// import groupImage from '../Images/enrollmentPageIMG.JPG';
 import Header from './Header.jsx'
 import Footer from './Footer.jsx';
 import Form from './Form.jsx';
@@ -9,7 +8,7 @@ import MobileHeader from './MobileHeader.jsx'
 import styled from 'styled-components';
 import { useState } from 'react';
 import useDocumentTitle from '../commons/useTitle';
-import { style } from '@mui/system';
+
 
 
 function FormBody() {
