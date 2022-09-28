@@ -6,6 +6,7 @@ import FormBody from "./components/FormBody.jsx";
 import OurTeam from "./components/OurTeam.jsx";
 import Home from "./components/Home.jsx";
 import Services from "./components/Services.jsx";
+import NotFound from './Screen/404/NotFound.js';
 const AppHero =()=>{
   return(
     <BrowserRouter>
@@ -16,6 +17,7 @@ const AppHero =()=>{
         <Route path="IT-Services" element={<Services />}/>
         <Route path="code-camp" element={<FormBody />}/>
         <Route path="OurTeam" element={<OurTeam />}/>
+        <Route path='*' element={<NotFound />} />
       </Route>
      
     </Routes>

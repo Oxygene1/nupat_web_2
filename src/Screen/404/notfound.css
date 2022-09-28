@@ -1,0 +1,19 @@
+.errormaincontainer{
+  text-align: center;
+}
+#constdiv{
+  background-size:contain;
+  padding: 2rem;
+  /* width: 40%; */
+
+}
+.constimg{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+.cautionsvg{
+  width: 10rem;
+  height: 10rem;
+  
+}
