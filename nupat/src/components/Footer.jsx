@@ -54,9 +54,8 @@ function Footer() {
   margin-left: auto;
   margin-right: auto;
   background-color: #131E47;
-  // margin-bottom: -4vw;
   padding: 2rem;
-  padding-bottom:3rem;
+  // padding-bottom:3rem;
   border-radius: .5rem;
   margin-bottom: 2rem;
   `
@@ -64,37 +63,31 @@ function Footer() {
   
   width: 80%;
   display:flex;
-  justify-content: center;
-  align-items: center;
   font-size:20px;
   border: 2px solid white;
   border-radius: 5px;
-  padding: 7px;
-  height: 5rem;
-  // padding: 3rem;
+  padding: 1.5rem 1.5rem 1.5rem 1.5rem;
   background-color: #131E47;
   flex-direction: row;
-  align-items: center;
-  margin-top: 3rem;
+  // height:;
   @media (max-width:786px){
     display: block;
-    // padding:3rem;
-    // padding-right:5rem;
-    height: 8rem;
+    // height: 8rem;
     width: 100%;
   }
   `
   const JoinUs = styled.button`
-  border:2px solid white;
-  border-radius: 5px;
+  // border:2px solid white;
+  border-radius: 0 5px 5px 0;
   padding: .5rem;
-  margin-left: 8%;
+  // margin-left: 8%;
   font-size: 20px;
   font-weight: 10px;
   color: #131E47;
-  width:6vw;
+  // width:6vw;
   background-color: #fff;
   @media (max-width:786px){
+    border-radius:5px;
     // margin:2rem;
     padding:.2rem;
     width:22vw;
@@ -118,6 +111,8 @@ function Footer() {
   }
   `
   const Subscribeform = styled.form`
+  margin:0;
+  width: 80%;
   @media(max-width:786px){
     // padding:3rem;
     width: 100%;
@@ -125,6 +120,7 @@ function Footer() {
   }
   `
   const Subscribeform2 = styled.div`
+  width:20%;
   @media(max-width:786px){
     width: 100%;
   }
@@ -171,7 +167,6 @@ function Footer() {
     <Subscribeinput type="text" placeholder="your email address" id="homeform"></Subscribeinput>
    </Subscribeform>
     <Subscribeform2> <JoinUs>Join Us</JoinUs> </Subscribeform2>
-  
     </FormBtn>
     </Homefooterhead>
 
@@ -213,7 +208,7 @@ function Footer() {
         </Uldiv>
          <div>
         <Mainul style={{textAlign:'center'}}>
-          <li>48, Community Road,Akoka Lagos</li>
+          <li>46, Community Road,Akoka Lagos</li>
           <li>Contact +2348031958586, +2347081475750</li>
           <Socialli>
             <Socialdiv>
