@@ -167,7 +167,7 @@ function MobileHeader(e) {
       color:#131E47;
     `
 const Sspan =styled.span`
-margin-rigth: 1rem;
+margin-left: 1rem;
 `
 
 
