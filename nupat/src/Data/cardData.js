@@ -36,7 +36,7 @@ export const cardData = [
         {
             Image: require('../Images/Vector-datascience.png'),
             Title: "Data Science/ Machine Learning",
-            Text: "Work with big data, Create algorithms to design ai/ml models, perform data analysis, processing and statistical models to enable a computer to automatically learn from data ."
+            Text: "Work with big data, Create algorithms to design AI/ML models, perform data analysis, processing and statistical models to enable a computer automatically learn from data ."
         }
 ]
     

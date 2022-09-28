@@ -8,11 +8,6 @@ import MobileHeader from './MobileHeader.jsx'
 import styled from 'styled-components';
 import { useState } from 'react';
 import useDocumentTitle from '../commons/useTitle';
-<<<<<<< HEAD
-
-=======
-// import { style } from '@mui/system';
->>>>>>> 21e2865 (typography errors corrected)
 
 
 function FormBody() {

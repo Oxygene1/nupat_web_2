@@ -34,23 +34,23 @@ function init() {
     <>
     <div className="Benefitss">
      <h1 style={{textAlign:'center'}}>Benefits of working with us</h1>
-     <p style={{textAlign:'center'}}>We have varieties of courses available at your disposals for eitherthe  weekdays or weekend sessions in order to suit your schedules.</p>
+     <p style={{textAlign:'center'}}>We have varieties of courses available at your disposal for either  weekdays or weekend sessions in order to suit your schedules.</p>
     </div>
   
     <Wrapper>
       <Card
     image={Mentor}
-    text="we provide the best programs structured with diverse and brilliant mentors that put all their efforts and skills to positively influece, shape and reshape the mindset of interns to prepare them for service."
+    text="We provide the best programs structured with diverse and brilliant mentors that put all their  skills to positively influence, shape and reshape the mindset of interns to prepare them for service."
     title="Mentorship"/>
 
 <Card
     image={Community}
-    text="The environment is conducive and encompass multidiverse developers from different stacks and areas of the tech community."
+    text="The environment is conducive and encompass diverse developers from different stacks and areas of the tech community."
     title="Community"/>
 
 <Card
     image={Portfolio}
-    text="During the course of the internship program, the designed curriculum will enable them to work on live project and also place them on an internship accross renowned organizations and this in turn builds their prowess and portfolios."
+    text="During the course of the internship program, the designed curriculum will enable our students to work on live project and also place them on an internship accross renowned organizations and this in turn builds their prowess and portfolios."
     title="Portfolio"/>
     </Wrapper>
     <Wrapper>

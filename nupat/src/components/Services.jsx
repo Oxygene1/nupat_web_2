@@ -182,7 +182,7 @@ const Services = () => {
         <div>
         <div>
         <h3>UI/UX Services</h3>
-        <p className='servicePara'>Our UI/UX designers are well farmilia withr user interface for an apps, websites, or other interactive media. Their collaboration with product managers and engineers to gathering requirements from users before designing ideas that can be communicated using storyboards.</p>
+        <p className='servicePara'>Our UI/UX designers are well familiar with user interface for apps, websites, or other interactive media. They collaborate with product managers and engineers to gather requirements from users before designing ideas that can be communicated using storyboards.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
         </div>
@@ -201,7 +201,7 @@ const Services = () => {
         <div>
         <div>
         <h3>Blockchain Expert Service</h3>
-        <p className='servicePara'>Our Blockchain developers are are vast with creating systems to record and store blockchain data in a way that prevents changes or hacks. They can also design secure blockchain technologies, develop application features and interfaces, and maintain client and server-side applications.</p>
+        <p className='servicePara'>Our Blockchain developers are vast with creating systems to record and store blockchain data in a way that prevents changes or hacks. They can also design secure blockchain technologies, develop application features and interfaces, and maintain client and server-side applications.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
         </div>

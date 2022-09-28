@@ -106,25 +106,22 @@ const Clients = () => {
   return (
     <div>
       {/* <div> */}
-          <Clientsh2 style={{textAlign:'center'}}>What Our Clients are saying</Clientsh2>
-          <Clientsp style={{textAlign:'center'}}> Feedbacks from our clients, why wouldn’t you want to work with us.</Clientsp>
+          <Clientsh2 style={{textAlign:'center'}}>What Our Clients Are Saying:</Clientsh2>
           <ClientCardContainerdiv>
 
           <Carddiv1>
             <Clientsimg src={client} alt="" />
-            <Contentp>Its been a lovely time working with <br /> Nupat Technologies</Contentp>
+            <Contentp>"Its been a lovely time working with <br /> Nupat Technologies"</Contentp>
             <Namep>Augustine <br/> Aguworumba</Namep>
-            {/* <Jobp>UIUX Designer</Jobp> */}
+            
           </Carddiv1>
           <Carddiv>
             <Clientsimg src={ClientTwo} alt="" />
-            <Contentp>The teaching style and services they<br />provide is top notch</Contentp>
+            <Contentp>"The teaching style and services they<br />provide is top notch"</Contentp>
               <Namep>Adegunwa <br /> Fisola</Namep>
-              {/* <Jobp>UIUX Designer</Jobp> */}
           </Carddiv>
 
           </ClientCardContainerdiv>
-      {/* </div> */}
 
     </div>
   )

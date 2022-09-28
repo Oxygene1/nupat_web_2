@@ -166,7 +166,9 @@ function MobileHeader(e) {
       width:27px;
       color:#131E47;
     `
-
+const Sspan =styled.span`
+margin-rigth: 1rem;
+`
 
 
   return (
@@ -208,7 +210,7 @@ function MobileHeader(e) {
           <Links to="/About-us">About Us</Links>
           <Links to="/code-camp">Code Camp</Links>
           <Links to="/IT-Services">IT <span>Services</span></Links>
-          <Hyper href="https://www.nupatinitiatives.org" target="_blank" rel="noreferrer">Nupat<span>Initiative</span></Hyper>
+          <Hyper href="https://www.nupatinitiatives.org" target="_blank" rel="noreferrer">Nupat<Sspan>Initiative</Sspan></Hyper>
 
         </DropItemdiv>
 

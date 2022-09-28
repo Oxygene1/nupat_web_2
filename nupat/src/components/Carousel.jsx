@@ -109,7 +109,7 @@ return(
         
     <NupatMainDiv>
        <NupatH1>Nupat Code Camp</NupatH1>
-       <NupatP>Nupat Code camp is an intensive practical software development boot-camp that will usher in a new generation of indigenous software developers that will drive innovation and software development in the information and technological industry. The training utilizes the experience and skill sets of veterans in the industry. Quality practical training and online resources are used in a conducive, team building and challenging environment to inspire and mold the interns to become great tech experts. </NupatP>
+       <NupatP> NUPAT Code Camp provides intensive practical software development boot-camp that is ushering in a new generation of indigenous software developers driving innovation and software development in the information and technological industry. The training utilizes the experience and skill sets of veterans in the industry. Quality practical training and online resources are used in a conducive, team building and challenging environment to inspire and mold the interns to become great tech experts. </NupatP>
         <LinkToEnrollment to='/code-camp'>Enroll Now</LinkToEnrollment>
     </NupatMainDiv>
 

@@ -212,18 +212,19 @@ display: none;
       </div>
         <About1>
           <Abouth1>About Us</Abouth1>
-          <Aboutp style={{textAlign:'justify'}}>NUPAT TECHNOLOGIES is an intensive practical software development boot-camp that will usher in a new generation of indigenous software developers that will drive innovation and software development in the information and technological industry. The training utilizes the experience and skill sets of veterans in the industry. Quality practical training and online resources are used in a conducive, team building and challenging environment to inspire and mold the interns to become great tech experts.
+          <Aboutp style={{textAlign:'justify'}}>
           NUPAT Technologies is a software development company from African descent birthed by the vision of becoming a leading brand in world class innovation and delivery of masterpiece and cutting edge technology.
           The Company is founded by a group of distinct, highly skilled, innovative and experienced tech experts.
-
+          </Aboutp>
+          <Aboutp style={{textAlign:'justify'}}>
           The Company is registered with the Corporate Affairs Commission of the Federal Republic of Nigeria, established under the Companies and Allied Matters Act 1990.
-          Nupat is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.
-
-          We can help to maintain and modernize your IT infrastructure and solve various infrastructure-specific issues a business may face.
+          Nupat is the partner of choice for many of the world’s leading enterprises, SMEs and technology challengers. We help businesses elevate their value through custom software development, product design, QA and consultancy services.We can help to maintain and modernize your IT infrastructure and solve various infrastructure-specific issues a business may face.
+          </Aboutp>
+          <Aboutp style={{textAlign:'justify'}}>
+          NUPAT TECHNOLOGIES also provides intensive practical software development boot-camp that is ushering in a new generation of indigenous software developers driving innovation and software development in the information and technological industry. The training utilizes the experience and skill sets of veterans in the industry. Quality practical training and online resources are used in a conducive, team building and challenging environment to inspire and mold the interns to become great tech experts.
+          
           </Aboutp>
         </About1>
-
-
 
         <Ellipsemain>
         <Ellipsecontain>
@@ -278,18 +279,17 @@ display: none;
 
             <Otherh2>Our Goals</Otherh2>
             <OrderedList style={{fontSize:'18px'}}>
-              <AboutUsli>Establishment of aleding tech hub / innovationtion center in Africa </AboutUsli>
+              <AboutUsli>Establishment of a leading tech hub and innovationtion center in Africa </AboutUsli>
               <AboutUsli>Raising the largest community of developers in Africa</AboutUsli>
-              <AboutUsli>Become Africa’s leading provider of Software Services and Applications through innovative drive</AboutUsli>
-              <AboutUsli>Setting upnthe largest AI center in Africa , with expertise in Robotics and Data Science</AboutUsli>
-              <AboutUsli>Become  a major player in Fin - Tech Solutions in Africa</AboutUsli>
+              <AboutUsli>Become Africa’s leading provider of Software Services and Applications through innovative drives</AboutUsli>
+              <AboutUsli>Setting up the largest AI center in Africa, with expertise in Robotics and Data Science</AboutUsli>
+              <AboutUsli>Become  a major player in Fin-Tech Solutions in Africa</AboutUsli>
             </OrderedList>  
             <MobileListdiv>
-            <p>Establishment of aleding tech hub / innovationtion center in Africa.</p>
+            <p>Establishment of leading tech hub / innovationtion center in Africa.</p>
             <p>Raising the largest community of developers in Africa.</p>
-            <p>Become Africa’s leading provider of Software Services and Applications through innovative drive.</p>
+            <p>Become Africa’s leading provider of Software Services and Applications through innovative drives.</p>
             <p> Setting upnthe largest AI center in Africa , with expertise in Robotics and Data Science.</p> 
-            <p>Become a major player in Fin - Tech Solutions in Africa.</p>
 
             </MobileListdiv>     
       {/* </div> */}

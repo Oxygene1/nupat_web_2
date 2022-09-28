@@ -48,7 +48,7 @@ import styled from 'styled-components'
   
     
     <div className='form_contain'>
-    <h1 className='h1h1'>Join The next Cohort</h1>
+    <h1 className='h1h1'>Join Our Next Cohort</h1>
     <div className='form_main1'>
       
     
@@ -103,7 +103,7 @@ import styled from 'styled-components'
          
           </div>
           <div className='text_button'>
-          <textarea placeholder='What details do you need ?' name='message'/>
+          <textarea placeholder='What details do you need?' name='message'/>
 
           <div>
             <Btnbtn type="submit" name='submit'>Send</Btnbtn> 
