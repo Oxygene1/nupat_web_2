@@ -5,7 +5,6 @@ import emailjs from 'emailjs-com';
 import { useRef } from 'react';
 import MobileHeader from './MobileHeader.jsx'
 import styled from 'styled-components'
-import useTitle from '../commons/useTitle.js';
 import useDocumentTitle from '../commons/useTitle';
 const Services = () => {
   
@@ -182,7 +181,7 @@ const Services = () => {
         <div>
         <div>
         <h3>UI/UX Services</h3>
-        <p className='servicePara'>Our UI/UX designers are well farmilia withr user interface for an apps, websites, or other interactive media. Their collaboration with product managers and engineers to gathering requirements from users before designing ideas that can be communicated using storyboards.</p>
+        <p className='servicePara'>Our UI/UX designers are well farmilia with user interface for apps, websites, or other interactive media. Their collaboration with product managers and engineers to gather requirements from users before designing ideas that can be communicated using storyboards.</p>
         <div>
         <button className='scrollbtn' onClick={executeScroll}>Reach Us</button>
         </div>

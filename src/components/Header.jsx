@@ -8,9 +8,8 @@ import styled from "styled-components";
 
 function Header() {
   const Logodiv = styled.div`
-
-  // position:relative;
-  // right: 6.5rem;
+  width:15%;
+  margin-right:32%;
   `
   return (
 

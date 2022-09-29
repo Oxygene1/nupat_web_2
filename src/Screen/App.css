@@ -65,11 +65,11 @@ a:hover {
 }
 
 .navDiv{
-  padding-left: 42%;
-  float: right;
-  /* margin-bottom:1vw; */
+  /* width: 50%; */
     display: flex;
-    align-self: flex-end;
+    margin-top: 1.5rem;
+
+
 }
 .navDiv a{
   text-decoration: none;
@@ -127,7 +127,9 @@ li{
 
 }
 .CardlistItemContainers{
-  width: 100%;
+  width: 95%;
+  margin-left: 2%;
+  margin-right: 2%;
   
 }
 

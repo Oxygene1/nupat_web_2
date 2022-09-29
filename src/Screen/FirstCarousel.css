@@ -226,8 +226,9 @@ margin:0.5em 0 0.5em 0;
 }
 
 .card-text {
-  line-height: 25px;
-  width: 90%;
+  line-height: 20x;
+  font-size: 18px;
+  width: 100%;
 }
 
 @media screen and (max-width: 900px){
@@ -271,7 +272,7 @@ margin:0.5em 0 0.5em 0;
 @media screen and (max-width:786px) {
   .card-text {
     line-height: 25px;
-    width: 90%;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
   }

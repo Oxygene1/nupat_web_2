@@ -6,35 +6,38 @@ function SecondCard(props) {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom:  2em;
+  margin-bottom:  2rem;
   border-radius: 10px;
-  justify-content: center;
+  // justify-content: center;
   box-shadow: 0px 12px 12px 1px rgb(160, 160, 160);
-  padding: 3em 0 3em;
- 
+  padding: 2rem;
+  // height:20rem;
+  width:100%;
   @media(max-width:786px){
+    height:;
+    // max-height:none;
+    // padding:2rem;
     justify-content: center;
     display: block;
     // margin: 0 2rem 2rem 0;
-    gap: 2em;
-    width: 90%;
+    gap: 1rem;
+    width: 95%;
     margin-left: auto;
     margin-right: auto;
   }
   
   `
   const Cardimg = styled.img`
-  width: 4rem;
-  height: 4rem;
+  width: 3rem;
+  height: 3rem;
   // padding: 1rem;
   @media(max-width:786px){
     margin-left:42%;
-  
   }
   `
   const CardTittle = styled.h3`
-  margin-top: 1em;
-  padding:0.8rem;
+  // margin-top: 1rem;
+  padding:1rem;
   
   `
   return ( 

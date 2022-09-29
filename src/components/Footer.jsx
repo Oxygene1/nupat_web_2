@@ -55,8 +55,7 @@ function Footer() {
   margin-right: auto;
   background-color: #131E47;
   // margin-bottom: -4vw;
-  padding: 2rem;
-  padding-bottom:3rem;
+  padding: 2rem 2rem 3rem 2rem;
   border-radius: .5rem;
   margin-bottom: 2rem;
   `
@@ -69,13 +68,11 @@ function Footer() {
   font-size:20px;
   border: 2px solid white;
   border-radius: 5px;
-  padding: 7px;
-  height: 5rem;
-  // padding: 3rem;
+  padding: .5rem;
   background-color: #131E47;
   flex-direction: row;
-  align-items: center;
-  margin-top: 3rem;
+  // align-items: center;
+  // margin-top: 3rem;
   @media (max-width:786px){
     display: block;
     // padding:3rem;
@@ -87,12 +84,13 @@ function Footer() {
   const JoinUs = styled.button`
   border:2px solid white;
   border-radius: 5px;
-  padding: .5rem;
-  margin-left: 8%;
+  // padding: .5rem;
+  // margin-left: 8%;
   font-size: 20px;
   font-weight: 10px;
   color: #131E47;
-  width:6vw;
+  padding:.4rem 2rem;
+  // width:6vw;
   background-color: #fff;
   @media (max-width:786px){
     // margin:2rem;
@@ -213,7 +211,7 @@ function Footer() {
         </Uldiv>
          <div>
         <Mainul style={{textAlign:'center'}}>
-          <li>48, Community Road,Akoka Lagos</li>
+          <li>46, Community Road,Akoka Lagos</li>
           <li>Contact +2348031958586, +2347081475750</li>
           <Socialli>
             <Socialdiv>

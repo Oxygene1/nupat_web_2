@@ -48,7 +48,7 @@ import styled from 'styled-components'
   
     
     <div className='form_contain'>
-    <h1 className='h1h1'>Join The next Cohort</h1>
+    <h1 className='h1h1'>Join The Our Next Cohort</h1>
     <div className='form_main1'>
       
     
