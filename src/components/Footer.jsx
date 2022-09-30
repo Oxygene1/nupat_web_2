@@ -205,7 +205,7 @@ function Footer() {
         <Uldiv>
           <Mainul style={{ textAlign: "center" }}>
             <li>
-              <Link to="/About-us">About Us</Link>
+              <Link to="/about-us">About Us</Link>
             </li>
             <li>Career</li>
             <li>

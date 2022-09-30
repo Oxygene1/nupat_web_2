@@ -25,7 +25,7 @@ function Header() {
 
 
           <NavLink exact activeClassName="active" to="/">Home</NavLink>
-          <NavLink to="/About-us">About Us</NavLink>
+          <NavLink to="/about-us">About Us</NavLink>
           <NavLink to="/code-camp">Code Camp</NavLink>
           <NavLink to="/IT-Services">IT <span>Services</span></NavLink>
           <a href="https://nupatinitiatives.org">Nupat Initiative</a>
