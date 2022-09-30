@@ -216,7 +216,8 @@ const CarouselOne = () => {
     border: 1px solid #131e47;
     outline: 1px solid #131e47;
     font-size: 16px;
-    font-weight: 5px;
+    line-height: 19px;
+    font-weight: 400;
     font-family: DM sans;
     padding-left: 0.5rem;
     text-align: left;
@@ -274,10 +275,7 @@ const CarouselOne = () => {
           <SecondNewsLetterdiv>
             <InnerNewsletter2>
               <NewsletterInputdiv2>
-                <NewsletterInput
-                  type="text"
-                  placeholder="Send us a message"
-                />
+                <NewsletterInput type="text" placeholder="Send us a message" />
               </NewsletterInputdiv2>
               <Newsletterbtndiv2>
                 <Newsletterbtn>Send</Newsletterbtn>

@@ -47,7 +47,7 @@ const Testimonials = () => {
     width: 90%;
     color: #10d4d8;
     outline-style: none;
-    background-color: #131e47;
+    // background-color: #131e47;
     @media (max-width: 768px) {
       width: 85%;
       margin-right: 3rem;
