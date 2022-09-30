@@ -211,7 +211,7 @@ function Footer() {
         </Uldiv>
          <div>
         <Mainul style={{textAlign:'center'}}>
-          <li>46, Community Road,Akoka Lagos</li>
+          <li>46, Community Road, Akoka Lagos</li>
           <li>Contact +2348031958586, +2347081475750</li>
           <Socialli>
             <Socialdiv>
