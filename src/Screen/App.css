@@ -437,14 +437,7 @@ width: 100%;
 padding: 3rem;
 
 }
-.groupImg{
-  background-image: url('../Images/enrollmentPageIMG.JPG');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 35rem;
-}
+
 .play-panel{
   position: absolute;
   top: 41vw;
