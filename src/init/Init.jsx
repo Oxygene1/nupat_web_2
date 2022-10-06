@@ -61,7 +61,7 @@ function init() {
       <Wrapper>
         <Card
           image={Internship}
-          text="We offer internship programms that covers a wide range of courses such as UI/UX, backend(.NET, C-##, nodejs), frontend, fullstack, mobile software dev(flutter, dart, react native) blockchain technology, data science and machine leaerning, data analysis."
+          text="We offer internship programms that covers a wide range of courses such as UI/UX, backend(.NET, C#, nodejs), frontend, fullstack, mobile software dev(flutter, dart, react native) blockchain technology, data science and machine leaerning, data analysis."
           title="Internships"
         />
 
